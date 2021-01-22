@@ -24,7 +24,7 @@ img temporary
 | ------ | ------ |
 | 19-01-2021 | Start of idea for this Website |
 | 20-01-2021 | Prototype wired Design creation |
-| 21-01-2021 | ??? |
+| 21-01-2021 | Paused for develope other project |
 | 22-01-2021 | ??? |
 | 23-01-2021 | ???|
 | 24-01-2021 | ??? |
