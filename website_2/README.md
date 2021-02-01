@@ -29,14 +29,14 @@ img temporary
 | 23-01-2021 | Paused for develope other project|
 | 24-01-2021 | Paused for develope other project |
 | 25-01-2021 | Final date for deploy of the website on the network. |
-| 25-01-2021 | Reinicialized this project |
-| 26-01-2021 | ??? |
-| 27-01-2021 | ??? |
-| 28-01-2021 | ??? |
-| 29-01-2021 | ??? |
-| 30-01-2021 | ???|
-| 31-01-2021 | ??? |
-| 01-02-2021 | New Final date for deploy of the website on the network. |
+| 31-01-2021 | Reinicialized this project |
+| 01-02-2021 | ??? |
+| 02-02-2021 | ??? |
+| 03-02-2021 | ??? |
+| 04-02-2021 | ??? |
+| 05-02-2021 | ???|
+| 06-02-2021 | ??? |
+| 07-02-2021 | New Final date for deploy of the website on the network. |
 
 License
 ----
