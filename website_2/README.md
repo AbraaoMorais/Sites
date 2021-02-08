@@ -1,7 +1,7 @@
 # MY PORTFOLIO WEBSITE
 Website containing my portfolio with extra information.
 
-![N|Solid](https://i.imgur.com/Ks75Anw.png)
+![N|Solid](http://aciappontalina.com.br/wp-content/uploads/2019/12/pontalina-pagina-contrucao.png)
 img temporary
 
 
@@ -25,18 +25,15 @@ img temporary
 | 19-01-2021 | Start of idea for this Website |
 | 20-01-2021 | Prototype wired Design creation |
 | 21-01-2021 | Paused for develope other project |
-| 22-01-2021 | Paused for develope other project |
-| 23-01-2021 | Paused for develope other project|
-| 24-01-2021 | Paused for develope other project |
-| 25-01-2021 | Final date for deploy of the website on the network. |
+| 25-01-2021 | Final first date for deploy of the website on the network. |
 | 31-01-2021 | Reinicialized this project |
-| 01-02-2021 | ??? |
-| 02-02-2021 | ??? |
-| 03-02-2021 | ??? |
-| 04-02-2021 | ??? |
-| 05-02-2021 | ???|
-| 06-02-2021 | ??? |
-| 07-02-2021 | New Final date for deploy of the website on the network. |
+| 01-02-2021 | screen design page 1 added |
+| 03-02-2021 | screen design page 2 added |
+| 04-02-2021 | screen design page 3 added |
+| 08-02-2021 | ??? |
+| 09-02-2021 | ???|
+| 10-02-2021 | ??? |
+| 20-02-2021 | New Final date for deploy of the website on the network. |
 
 License
 ----
