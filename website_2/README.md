@@ -30,9 +30,9 @@ img temporary
 | 01-02-2021 | screen design page 1 added |
 | 03-02-2021 | screen design page 2 added |
 | 04-02-2021 | screen design page 3 added |
-| 08-02-2021 | ??? |
-| 09-02-2021 | ???|
-| 10-02-2021 | ??? |
+| 08-02-2021 | screen design page 4 and 5 added  |
+| 09-02-2021 | screen design page 6 and 7 added |
+| 10-02-2021 | Prototype design completed! |
 | 20-02-2021 | New Final date for deploy of the website on the network. |
 
 License
