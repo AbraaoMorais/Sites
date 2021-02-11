@@ -5,6 +5,6 @@ var velocidadeMedia = 85;     // km/h
 /*
 function calc(){
     calc = tempoViagem/velocidadeMedia;
-  
+
 } */
 console.log(tempoViagem);
