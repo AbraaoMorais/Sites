@@ -1,0 +1,73 @@
+
+*{
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+body{
+    font-size: 9px;
+    background-color: rgb(49, 38, 38);
+    width: 100vw;
+} 
+/* ====================== NAV MENU ===============================*/
+
+.header-section{
+    display: flex;
+    width: 100%;
+    background: rgb(252, 0, 21);
+    border-color: rgb(35, 48, 221);
+    border-style: solid;
+    border-width: 5px;
+    
+    
+}
+.section-nav{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+    align-items: center;
+    width: 100%;
+    border-color: rgb(0, 163, 163);
+    border-style: solid;
+    border-width: 5px;
+    
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+    border-color: rgb(128, 78, 5);
+    border-width: 4px;
+    border-style: solid;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+nav ul li{
+    display: flex;
+    margin-left: 2.2vw;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.section-logo{
+    border-color: rgb(187, 255, 0);
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+}
+
+
+
+

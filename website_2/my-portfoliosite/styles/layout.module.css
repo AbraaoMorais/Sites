@@ -1,0 +1,28 @@
+
+
+.main {
+    min-height: 100vh;
+    /* display: flex; */
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: brown;
+    
+}
+.container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    height: 100%;
+    background-color: burlywood;
+}
+
+.footer{
+    margin: 0px;
+    padding: 20px;
+    background-color: blueviolet;
+    max-width: 1440px;
+    color: blueviolet;
+}
