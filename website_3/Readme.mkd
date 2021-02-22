@@ -6,3 +6,4 @@
 -size of all images 
     before: 1,2mb
     after: 
+
