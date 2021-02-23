@@ -1,13 +1,4 @@
 
-*{
-    margin: 0 auto;
-    padding: 0px;
-    box-sizing: border-box;
-    
-    
-}
-
-
 body{
     font-size: 16px;
     background-color: rgb(49, 38, 38);
@@ -33,7 +24,7 @@ body{
 }
 .section-nav{
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px;
     align-items: center;
     /* border-color: rgb(0, 163, 163);
     border-style: solid;
@@ -56,22 +47,26 @@ nav ul li{
     display: flex;
     margin-left: 2.2vw;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     
     
 }
 nav a{
+    padding: 5px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    transition: ease-in 0.2s;
+}
+nav a:hover{
+    color:rgb(28, 212, 233);
+    transition: ease-in 0.2s;
 }
 .section-logo{
     margin: 0px;
 }
 .section-logo img{
     width: 150px;
-    /* margin: 10px; */
-   
 }
 /* ====================== SECTIONS ===============================*/
 .main-content{
@@ -79,8 +74,9 @@ nav a{
     width: 100%;
     height: auto;
 }
-
+/* ====================== SECTION 1 ===============================*/
 .content1{
+    position: relative;
     background-color: rgb(255, 255, 255);
     background-image: url('../src/web/full_digital_performance_bg.png');
     background-size: cover;
@@ -89,46 +85,43 @@ nav a{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: 888;
+    
+}
+.content1_title{
+    width: 100%;
+    margin: 15.2rem auto auto auto;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: blue; */
+}
+.content1_subtitle{
+    width: 50%;
+    margin-top: 5%;
+    text-align: center;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: blue; */
 }
 
 .content1 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 100px;
-    text-align: center;
+    font-size: 6.5rem;
     line-height: 8.5rem;
+    text-align: center;
     text-transform: uppercase;
-    color: white;
-    margin-top: 15rem;
+    color: rgb(255, 255, 255);
 }
-.content2{
-    background-color:rgb(255, 255, 255);
-    /* border-color: rgb(0, 153, 255);
-    border-style: solid;
-    border-width: 14px; */
-    width: 100%;
-    height: 2335px;
-    overflow: hidden;
+.content1 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
 }
-.bg2{
-    background-image: url('../src/web/bg.png');
-    background-size: auto 104%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 3810px;
-    margin-top: -100vh;
-    overflow: hidden;
-    /* margin-bottom: -35vh; */
-    /* border-style: solid; */
-    /* border-width: 3px; */
 
-}
-.content2_footer{
-    background-color: yellow;
-    width: 100%;
-    height: 50px;
-}
+
+/* ====================== SECTION 3 ===============================*/
 .content3{
     border-width: 5px;
     background-color: rgb(255, 255, 255);
