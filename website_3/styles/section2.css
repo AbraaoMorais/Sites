@@ -277,14 +277,14 @@
     width: 90%;
     margin-top: 6%;
     margin-bottom: 6%;
-    padding: 10px;
+    padding: 0px 20px;
     /* border-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px; */
 }
 .container3_card_icon{
     width: 40%;
-    margin-top: 40px;
+    margin: 40px auto 10px auto;
     filter:invert(100%);
     /* border-color: rgb(255, 251, 0);
     border-style: solid;
@@ -303,7 +303,7 @@
     font-family: 'Montserrat',sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
 }
 /*------------------ CARD 1 ---------------------*/
 .container3_card1{
@@ -316,18 +316,20 @@
     background-size: auto 110%;
     background-repeat: no-repeat;
     border-radius: 2rem;
+    /* border-color: rgb(255, 251, 0);
+    border-style: solid;
+    border-width: 2px;  */
 }
 .container3_card1 article{
     padding: 0.5rem;
- 
+    
 }
 
 
 .container3_card1_text{
-    /* margin-bottom: 1rem; */
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.8rem;  
+    padding: 2.5rem;  
 }
 
 /*------------------ CARD 2 ---------------------*/
@@ -350,7 +352,7 @@
 .container3_card2_text{
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.8rem;
+    padding: 2.5rem;
     
     
 }
@@ -375,7 +377,7 @@
     /* margin-bottom: 1rem; */
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.8rem;
+    padding: 2.5rem;
     
     
 }
