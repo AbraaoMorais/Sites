@@ -2,7 +2,9 @@
     display: block;
     width: 17rem;
     padding: 20px;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    z-index: 888;
     background-color: rgb(28, 212, 233);
     border-radius: 2rem;
     font-family: 'Montserrat',sans-serif;

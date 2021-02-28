@@ -9,14 +9,14 @@ body{
 
 .header-section{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     position: fixed;
     width: 100%;
-    margin: 20px;
+    padding: 15px;
+    /* margin: 0px; */
     z-index: 999;
-    /* background: rgb(61, 61, 61);
-    border-color: rgb(35, 48, 221);
+    background: rgba(61, 61, 61, 0.9);
+     /* border-color: rgb(35, 48, 221);
     border-style: solid;
     border-width: 5px; */
     
@@ -24,17 +24,27 @@ body{
 }
 .section-nav{
     display: flex;
-    margin: 0px 10px 0px 0px;
+    justify-content: space-around;
+    /* flex-flow: row wrap; */
+    width: 80%;
+    margin: 0px ;
+    margin-right: -11%;
     align-items: center;
     /* border-color: rgb(0, 163, 163);
     border-style: solid;
     border-width: 5px; */
     
 }
+/* nav ul::before{
+    content: '';
+    width: 100px;
+    background-color: aqua;
+} */
 
 nav ul{
     display: flex;
-    width: 100%;
+    margin: 0px;
+    /* width: 100%; */
     list-style: none;
     /* border-color: rgb(128, 78, 5);
     border-width: 4px;
@@ -44,10 +54,9 @@ nav ul{
 
 }
 nav ul li{
-    display: flex;
-    margin-left: 2.2vw;
+    margin-left: 20px;
     font-family: 'Montserrat',sans-serif;
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 600;
     
     
@@ -63,20 +72,26 @@ nav a:hover{
     transition: ease-in 0.2s;
 }
 .section-logo{
-    margin: 0px 0px 0px -25px ;
+    margin: 0px;
+    /* border-color: rgb(0, 163, 163);
+    border-style: solid;
+    border-width: 5px; */
 }
 .section-logo img{
-    width: 170px; 
+    width: 155px; 
 }
 /* ====================== SECTIONS ===============================*/
 .main-content{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: auto;
+   
 }
 /* ====================== SECTION 1 ===============================*/
 .content1{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     background-image: url('../src/web/full_digital_performance_bg.png');
     background-size: cover;
@@ -86,18 +101,20 @@ nav a:hover{
     height: 100vh;
     overflow: hidden;
     z-index: 888;
-    
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: rgb(7, 189, 89); */
 }
 .content1_title{
     width: 100%;
-    margin: 15.2rem auto auto auto;
+    margin: 17rem auto auto auto;
     /* border-style: solid;
     border-width: 1px;
     border-color: blue; */
 }
 .content1_subtitle{
-    width: 50%;
-    margin-top: 5%;
+    width: 45%;
+    margin-top: 4rem;
     text-align: center;
     /* border-style: solid;
     border-width: 1px;
@@ -107,16 +124,17 @@ nav a:hover{
 .content1 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 6.5rem;
-    line-height: 8.5rem;
+    font-size: 105px;
+    line-height: 9rem;
     text-align: center;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
 }
 .content1 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.5rem;
     color: rgb(255, 255, 255);
 }
 
