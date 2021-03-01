@@ -1,9 +1,7 @@
 
 body{
-    /* font-size: 16px; */
+    font-size: 16px;
     background-color: rgb(49, 38, 38);
-    width: 100%;
-   
 } 
 /* ====================== NAV MENU ===============================*/
 
@@ -80,11 +78,17 @@ nav a:hover{
 .section-logo img{
     width: 155px; 
 }
-/* ====================== SECTIONS ===============================*/
+/* ====================== ALL SECTIONS ===============================*/
 .main-content{
-    /* position: relative; */
     width: 100%;
-    height: auto;
+    background-image: url('../src/web/bg.png');
+    background-size: cover;
+    background-position: 100% 1.5%;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    /* height: 3700px; */
+    /* margin-top: -4vh; */
+    z-index: -999;
    
 }
 /* ====================== SECTION 1 ===============================*/
@@ -92,14 +96,16 @@ nav a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
     background-color: rgb(255, 255, 255);
     background-image: url('../src/web/full_digital_performance_bg.png');
     background-size: cover;
-    background-position: 50% 0;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    margin: 0px;
+    /* overflow: hidden; */
     z-index: 888;
     /* border-style: solid;
     border-width: 2px;
@@ -140,17 +146,17 @@ nav a:hover{
 
 
 /* ====================== SECTION 3 ===============================*/
-.content3{
-    border-width: 5px;
-    background-color: rgb(255, 255, 255);
-    background-image: url('../src/web/full_digital_performance_bg.png');
-    background-size: cover;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+.ancora_ajust{
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 0px;
+    /* margin-top: 0px; */
+    /* background-color: aqua; */
+
 }
+.ancora{
+    width: 0%;
+    height: 60px;
+    /* background-color: aqua; */
 
-
+}
 

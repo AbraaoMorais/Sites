@@ -1,32 +1,31 @@
 /* ====================== SECTION 2 ===============================*/
 
-.bg2{
+/* .bg2{
     position: relative;
     background-image: url('../src/web/bg.png');
     background-size: auto 104%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 3820px;
+    height: 3820px; 
     margin-top: -92vh;
     overflow: hidden;
     z-index: -999;
-    /* margin-bottom: -35vh; */
-    /* border-style: solid; */
-    /* border-width: 3px; */
+     margin-bottom: -35vh;
+     border-style: solid; 
+     border-width: 3px; 
 
-}
+} */
 
 .content2{
-    position: relative;
-    margin-top: -400vh;
+    /* position: relative; */
+    /* margin-top: -400vh; */
     /* background-color:rgb(255, 255, 255); */
     /* border-color: rgb(55, 245, 8);
     border-style: solid;
     border-width: 14px; */
     width: 100%;
-    height: 2335px;
-    overflow: hidden;
+    /* height: 2335px; */
     z-index: 777;
 }
 .content2 h2{
@@ -36,18 +35,11 @@
     text-transform: uppercase;
     color: rgb(17, 17, 17);
 }
-.content2 h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(255, 255, 0);
-    
-}
+
 /*==========================================Ctner1==========================================*/
 .container1{
     width: 85%;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-left: 13vh;
     /* border-color: rgba(0, 153, 255, 0.17);
     border-style: solid;
@@ -75,7 +67,7 @@
 /*==========================================Ctner2==========================================*/
 .container2{
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     /* border-color: rgba(0, 153, 255, 0.17);
     border-style: solid;
     border-width: 14px; */
@@ -93,7 +85,19 @@
     border-width: 1px; */
 }
 .container2 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-left: 6.5rem;
+    text-transform: uppercase;
+    color: rgb(17, 17, 17);
+}
+.container2 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 0);   
 }
 /*------------------ CARD 1 ---------------------*/
 .container2_card1{
@@ -125,14 +129,14 @@
 .container2_card1_title{
     justify-items: center;
     color: rgb(255,255,255);
-    margin: 0px 0px 15% 0px;
+    margin: 5px 0px 15% 0px;
     /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;   */
 }
 
 .container2_card1_text{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
@@ -166,7 +170,7 @@
 
 
 .container2_card2 article{
-    position: relative;
+
     padding: 0.5rem;
     color: rgb(255,255,255);
 
@@ -181,7 +185,7 @@
 .container2_card2_title{
     justify-items: center;
     color: rgb(255,255,255);
-    margin: 5% -5% 15% -5%;
+    margin: 5px -5% 15% -5%;
     
     /* border-color: rgb(255, 251, 0);
     border-style: solid;
@@ -189,21 +193,18 @@
 }
 
 .container2_card2_text{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: rgb(255,255,255);
     padding: 1rem;
     /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 1px;   */
     
-}
-.container3 h2{
-    margin-left: 6.5rem;
 }
 
 /*------------------ CARD 3 ---------------------*/
@@ -236,19 +237,19 @@
 .container2_card3_title{
     justify-items: center;
     color: rgb(255,255,255);
-    margin: 5% -5% 15% -5%;
+    margin: 5px -5% 15% -5%;
     /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;   */
 }
 
 .container2_card3_text{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: rgb(255,255,255);
     padding: 1rem;
     /* border-color: rgb(0, 38, 255);
@@ -259,15 +260,12 @@
 
 /*==========================================Ctner3==========================================*/
 .container3{
-    
-    position: relative;
-    margin-bottom: 1rem;
-    margin-top: -48%;
-    z-index: 888;
+    width: 100%;
+    margin-top: 5%;
     /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 2px; */
-   
+    
 }
 .container3_cardS{
     display: flex;
@@ -296,6 +294,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
+    margin-left: 6.5rem;
     text-transform: uppercase;
     color: rgb(17, 17, 17);
 }
@@ -331,6 +330,7 @@
     color: rgb(255,255,255);
     padding: 2.5rem;  
 }
+
 
 /*------------------ CARD 2 ---------------------*/
 .container3_card2{
@@ -382,9 +382,9 @@
     
 }
 
-/*==========================footer=================================*/
+/*==========================footer this section2=================================*/
 .content2_footer{
     background-color: rgb(255, 255, 0);
     width: 100%;
-    height: 50px;
+    height: 65px;
 }
