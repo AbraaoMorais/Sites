@@ -1,0 +1,9 @@
+#images compression web
+-size of all images 
+    before: 3,8mb
+    after: 897kb
+#images compression mobille     
+-size of all images 
+    before: 1,2mb
+    after: 
+

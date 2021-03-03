@@ -1,0 +1,228 @@
+
+body{
+    font-size: 16px;
+    background-color: rgb(49, 38, 38);
+} 
+/* ====================== NAV MENU ===============================*/
+
+.header-section{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    /* margin: 0px; */
+    z-index: 999;
+    background: rgba(61, 61, 61, 0.9);
+     /* border-color: rgb(35, 48, 221);
+    border-style: solid;
+    border-width: 5px; */
+    
+    
+}
+.section-nav{
+    display: flex;
+    justify-content: space-around;
+    /* flex-flow: row wrap; */
+    width: 80%;
+    margin: 0px ;
+    margin-right: -11%;
+    align-items: center;
+    /* border-color: rgb(0, 163, 163);
+    border-style: solid;
+    border-width: 5px; */
+    
+}
+/* nav ul::before{
+    content: '';
+    width: 100px;
+    background-color: aqua;
+} */
+
+nav ul{
+    display: flex;
+    margin: 0px;
+    /* width: 100%; */
+    list-style: none;
+    /* border-color: rgb(128, 78, 5);
+    border-width: 4px;
+    border-style: solid; */
+    text-transform: uppercase;
+    text-align: center;
+
+}
+nav ul li{
+    margin-left: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+    
+}
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: ease-in 0.2s;
+}
+nav a:hover{
+    color:rgb(28, 212, 233);
+    transition: ease-in 0.2s;
+}
+.section-logo{
+    margin: 0px;
+    /* border-color: rgb(0, 163, 163);
+    border-style: solid;
+    border-width: 5px; */
+}
+.section-logo img{
+    width: 155px; 
+}
+/* ====================== ALL SECTIONS ===============================*/
+.main-content{
+    width: 100%;
+    background-image: url('../src/web/bg.png');
+    background-size: cover;
+    background-position: 100% 1.5%;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    /* height: 3700px; */
+    /* margin-top: -4vh; */
+    z-index: -999;
+   
+}
+/* ====================== SECTION 1 ===============================*/
+.content1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../src/web/full_digital_performance_bg.png');
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    /* overflow: hidden; */
+    z-index: 888;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: rgb(7, 189, 89); */
+}
+.content1_title{
+    width: 100%;
+    margin: 17rem auto auto auto;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: blue; */
+}
+
+.content1_subtitle{
+    width: 45%;
+    margin-top: 4rem;
+    text-align: center;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: blue; */
+}
+
+.content1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 105px;
+    line-height: 9rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.content1 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+/*---------------to device 900px or less-------------------------*/
+@media (max-width: 900px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 6rem;
+    }
+    .content1_subtitle{
+        width: 70%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+/*---------------to device 700px or less-------------------------*/
+@media (max-width: 700px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .content1_title{
+        margin: 12rem auto 20px auto;
+    }
+    .content1_subtitle{
+        width: 70%;
+        text-align: center;
+
+    }
+    .content1 h2{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+}
+/*---------------to device 500px or less-------------------------*/
+@media (max-width: 500px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .content1 h2{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+}
+/*---------------to device 400px or less-------------------------*/
+@media (max-width: 400px){
+    .content1{
+        background-image: url('../src/mobile/bg_mobile.png');
+    }
+    
+    .content1 h1{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .content1 h2{
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+}
+
+/* ====================== SECTION 3 ===============================*/
+.ancora_ajust{
+    width: 100%;
+    height: 0px;
+    /* margin-top: 0px; */
+    /* background-color: aqua; */
+
+}
+.ancora{
+    width: 0%;
+    height: 60px;
+    /* background-color: aqua; */
+
+}
+
