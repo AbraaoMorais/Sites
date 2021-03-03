@@ -118,6 +118,7 @@ nav a:hover{
     border-width: 1px;
     border-color: blue; */
 }
+
 .content1_subtitle{
     width: 45%;
     margin-top: 4rem;
@@ -143,7 +144,72 @@ nav a:hover{
     line-height: 1.5rem;
     color: rgb(255, 255, 255);
 }
+/*---------------to device 900px or less-------------------------*/
+@media (max-width: 900px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 6rem;
+    }
+    .content1_subtitle{
+        width: 70%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+/*---------------to device 700px or less-------------------------*/
+@media (max-width: 700px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .content1_title{
+        margin: 12rem auto 20px auto;
+    }
+    .content1_subtitle{
+        width: 70%;
+        text-align: center;
 
+    }
+    .content1 h2{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+}
+/*---------------to device 500px or less-------------------------*/
+@media (max-width: 500px){
+    .content1 h1{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .content1 h2{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+}
+/*---------------to device 400px or less-------------------------*/
+@media (max-width: 400px){
+    .content1{
+        background-image: url('../src/mobile/bg_mobile.png');
+    }
+    
+    .content1 h1{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .content1 h2{
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+}
 
 /* ====================== SECTION 3 ===============================*/
 .ancora_ajust{

@@ -1,22 +1,5 @@
 /* ====================== SECTION 2 ===============================*/
 
-/* .bg2{
-    position: relative;
-    background-image: url('../src/web/bg.png');
-    background-size: auto 104%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 3820px; 
-    margin-top: -92vh;
-    overflow: hidden;
-    z-index: -999;
-     margin-bottom: -35vh;
-     border-style: solid; 
-     border-width: 3px; 
-
-} */
-
 .content2{
     /* position: relative; */
     /* margin-top: -400vh; */
@@ -101,8 +84,9 @@
 }
 /*------------------ CARD 1 ---------------------*/
 .container2_card1{
-    width: 30%;
-    margin: 0px ;
+    max-width: 380px;
+    max-height: 500px;
+    margin: 10px 10px;
     padding: 1rem;
     border-radius: 2rem;
     background-image: url('../src/web/card1_bg.png');
@@ -117,7 +101,8 @@
 }
 
 .container2_card1 article{
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 10px;
     color: rgb(255,255,255);
     /* border-color: rgb(55, 245, 8);
     border-style: solid;
@@ -141,7 +126,7 @@
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     color: rgb(255,255,255);
     padding: 1rem;
     /* border-color: rgb(0, 38, 255);
@@ -152,8 +137,9 @@
 
 /*------------------ CARD 2 ---------------------*/
 .container2_card2{
-    width: 30%;
-    margin: 0px ;
+    max-width: 380px;
+    max-height: 500px;
+    margin: 10px 10px;
     padding: 1rem;
     border-radius: 2rem;
     
@@ -170,8 +156,8 @@
 
 
 .container2_card2 article{
-
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 10px;
     color: rgb(255,255,255);
 
    
@@ -198,7 +184,7 @@
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     color: rgb(255,255,255);
     padding: 1rem;
     /* border-color: rgb(0, 38, 255);
@@ -209,8 +195,9 @@
 
 /*------------------ CARD 3 ---------------------*/
 .container2_card3{
-    width: 30%;
-    margin: 0px ;
+    max-width: 380px;
+    max-height: 500px;
+    margin: 10px 10px;
     padding: 1rem;
     border-radius: 2rem;
     background-image: url('../src/web/card3_bg.png');
@@ -225,7 +212,8 @@
 }
 
 .container2_card3 article{
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 10px;
     color: rgb(255,255,255);
     /* border-color: rgb(55, 245, 8);
     border-style: solid;
@@ -249,7 +237,7 @@
     font-family: 'Montserrat',sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     color: rgb(255,255,255);
     padding: 1rem;
     /* border-color: rgb(0, 38, 255);
@@ -307,7 +295,8 @@
 /*------------------ CARD 1 ---------------------*/
 .container3_card1{
     /* position: absolute; */
-    width: 24%;
+    max-width: 300px;
+    max-height: 650px;
     padding: 10px;
     margin:  5px;
     background-image: url('../src/web/ctner3_card1.png');
@@ -328,13 +317,14 @@
 .container3_card1_text{
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.5rem;  
+    padding: 40px 2.5rem 60px 2.5rem;  
 }
 
 
 /*------------------ CARD 2 ---------------------*/
 .container3_card2{
-    width: 24%;
+    max-width: 300px;
+    max-height: 650px;
     padding: 10px;
     margin:  5px;
     background-image: url('../src/web/s4ft2.png');
@@ -352,13 +342,14 @@
 .container3_card2_text{
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.5rem;
+    padding: 40px 2.5rem 60px 2.5rem;
     
     
 }
 /*------------------ CARD 3 ---------------------*/
 .container3_card3{
-    width: 24%;
+    max-width: 300px;
+    max-height: 650px;
     padding: 10px;
     margin:  5px;
     background-image: url('../src/web/s4ft3.png');
@@ -377,7 +368,7 @@
     /* margin-bottom: 1rem; */
     text-align: center;
     color: rgb(255,255,255);
-    padding: 2.5rem;
+    padding: 40px 2.5rem 60px 2.5rem;
     
     
 }
