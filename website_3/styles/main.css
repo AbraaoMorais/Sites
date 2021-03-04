@@ -207,6 +207,10 @@ nav a:hover{
 }
 /*---------------to device 400px or less-------------------------*/
 @media (max-width: 400px){
+    .main-content{
+        background-color: #fff ;
+        background-image: none;
+    }
     .content1{
         background-image: url('../src/mobile/bg_mobile.png');
         

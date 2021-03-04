@@ -440,19 +440,18 @@
         font-size: 0.6rem;
         line-height: 1.2rem;
     }
-    /* --------------- Service area ------------------*/
-    .container2 h2{
-        margin-left: 2.5rem;
+
     }
-}
+
 /*---------------to device 400px or less-------------------------*/
+
 @media (max-width:400px) {
     .content2 h2{
         font-size: 1.5rem;
     }
 
     .container1{
-        margin: 0 auto;
+        margin: 10% auto 0px auto;
         padding-top: 20px;
     }
 
@@ -469,9 +468,9 @@
         font-size: 1.1rem;
         font-weight: 600;  
     }
-    .container2_cardS{
+    .container2_cardS {
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0px 0px 0px 2%;
     }
     /*------------ CARD 1 -----------*/
     .container2_card1{
@@ -526,7 +525,7 @@
     }
     .container3_cardS{
         flex-direction: column;
-        margin: 0 auto;
+        margin: 30px 2% 0px 3%;
     }
     /*------------ CARD 1 -----------*/
     
