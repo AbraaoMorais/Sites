@@ -31,3 +31,14 @@
         transition: ease-in 0.2s;
     box-shadow: 0px 0px 15px rgba(28, 212, 233, 0.5);
 }
+
+@media (max-width: 400px){
+    .button_contact{
+        width: 11rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 10px;
+        margin-bottom: -2rem;
+        margin-top: 10rem;
+    }
+}
