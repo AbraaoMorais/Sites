@@ -36,11 +36,11 @@ footer h6{
 
 .icons_area{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px 5px 5px 0px;
-    /* margin: 0px; */
+    padding: 5px 14% 5px 14%;
+    margin: 0px;
  /* border-color: rgb(255, 115, 0);
     border-width: 2px;
     border-style: solid; */
@@ -55,13 +55,15 @@ footer h6{
 }
 .social_net{
     display: flex;
+    justify-content: space-between;
+    width: 30%;
     margin: 0px;
     /* border-color: rgb(255, 115, 0);
     border-width: 2px;
     border-style: solid; */
 }
 .social_netOne, .social_netTwo{
-    margin-left: 40px;
+    /* margin-left: 0px; */
     width: 35px;
     filter: invert(100%); 
 }
@@ -255,7 +257,8 @@ textarea::-webkit-input-placeholder{
     }
     /*---------logo and networks area------*/
     .icons_area{
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 5px 5% 5px 5%;
     }
     .footer_Rocky_logo{
         width: 120px;
@@ -266,10 +269,13 @@ textarea::-webkit-input-placeholder{
     /*---------------contact-------------*/
     .contact_area{
         justify-content: space-between;
-        padding: 5px 5px 5px 5px;
+        padding: 5px 5% 5px 5%;
     }
     .barr{
         margin: 18px 1px 18px 1px;
+    }
+    .contact_mail{
+        margin: 15px 0px 15px 0px;
     }
     .contact_icon_mail{
         width: 18px;
@@ -302,6 +308,7 @@ textarea::-webkit-input-placeholder{
         margin: 0 auto;
     }
     .description_area{
+        min-width: 100%;
         align-items: center;
         margin: 0px;
         padding: 0px 20px 20px 20px;
