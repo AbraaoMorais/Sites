@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="styles/button.css">
         <link rel="stylesheet" type="text/css" href="styles/section2.css">
         <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/btnMenu.css">
         <script type="text/javascript" src="scripts/main.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,500,600,800,900" rel="stylesheet">
@@ -22,13 +23,18 @@
         <header>
             <section class="header-section">
                 <div class="section-logo">
-                   <a href="#">
-                       <img src="src/web/Rocky_logo.png" alt="Rocky Full Digital Performance " class="img-logo">
-                   </a>    
+                    <a href="#menu" class="btnMenu btnMenu_Open">Menu</a>
+                    <a href="#">
+                        <img src="src/web/Rocky_logo.png" alt="Rocky Full Digital Performance " class="img-logo">
+                    </a>   
                 </div>
                 <div class="section-nav">
                     <nav>
+                        <a href="#menu" class="btnMenu btnMenu_Close">Menu</a>
                         <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
                             <li>
                                 <a href="#Sobre">Sobre a Rocky</a>
                             </li>
@@ -44,7 +50,7 @@
                             <li>
                                 <a href="">Contato</a>
                             </li>
-                            <li>
+                            <li class="nav-item_blog">
                                 <a href="#">Blog</a>
                             </li>
                         </ul>
