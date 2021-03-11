@@ -27,9 +27,14 @@
         background-position: center;
         text-indent: -9999px;
         /* padding: 0px 10px 0px 10px;    */
+    }
+    .open_Menu{
+        transform: translateX(0%); 
+    }
+    /* to close the icon hamburguer menu*/
+    .btnMenu_Open_none{
+        transform:translateX(125px);
+        transition: transform 250ms linear;
     }    
 }
 
-.open_Menu{
-    transform: translateX(0%);
-}
