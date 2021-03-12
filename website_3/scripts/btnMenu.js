@@ -1,6 +1,6 @@
 
 //function read script in load of page
-window.onload = () => {
+window.addEventListener('load', () => {
 
     const $btnMenuOpen = document.querySelector(".btnMenu_Open");
     const $btnMenuClose = document.querySelector('.btnMenu_Close');
@@ -17,4 +17,4 @@ window.onload = () => {
         $nav_menu.classList.remove('open_Menu');
         $btnMenuOpen.classList.remove('btnMenu_Open_none'); 
     })
-}
+});

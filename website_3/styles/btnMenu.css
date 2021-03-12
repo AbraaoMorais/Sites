@@ -16,25 +16,24 @@
         
     }
     .btnMenu_Open{
+        display: block;
         position: absolute;
         width: 8%;
-        top: 5%;
+        top: 30%;
         left: 5%;
-        display: block;
         background-image: url('../src/mobile/menu_open.svg');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
         text-indent: -9999px;
-        /* padding: 0px 10px 0px 10px;    */
     }
     .open_Menu{
-        transform: translateX(0%); 
+        transform: translateX(-50%); 
     }
     /* to close the icon hamburguer menu*/
     .btnMenu_Open_none{
         transform:translateX(125px);
         transition: transform 250ms linear;
-    }    
+    }
 }
 
