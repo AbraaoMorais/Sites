@@ -4,7 +4,7 @@
 /*=============MEDIA QUERY===================*/
     
 /*--------- for 400px or less ------*/
-@media(max-width: 400px){
+@media(max-width: 600px){
     .btnMenu_Close{
         display: block;
         background-image: url('../src/mobile/menu_close.svg');
@@ -13,8 +13,9 @@
         background-position: 150% center;
         text-indent: -9999px;
         padding: 10px 10px 10px 10px;
-        
+        margin: 20px 20px 0px 0px;
     }
+ 
     .btnMenu_Open{
         display: block;
         position: absolute;
@@ -36,18 +37,19 @@
         transition: transform 250ms linear;
         transition-delay: 80ms;
     }
-    /* for sub-menu event click*/
+    /* ------------for sub-menu event click----------*/
     .subMenu_Close{
         display: none;   
        }
     .subMenu_Open{
-        display:block
+        display:block;
+        padding-top: 0px;
     }
     /*--- for anim icon arrow sub menu*/
     .subMenu_arrowIcon{
         display: inline-block;
         position: relative;
-        width: 5%;
+        width: 8px;
         transform: rotate(0deg);
         transition: transform 200ms linear;
     }

@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,500,600,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,800,900" rel="stylesheet">
-        <script type="text/javascript" src="scripts/main.js"></script>
+        
         <script type="text/javascript" src="scripts/btnMenu.js"></script>
         <script type="text/javascript" src="scripts/menuInScroll.js"></script>        
         <title>Rocky - Marketing Digital</title>
@@ -26,17 +26,17 @@
         <header>
             <section id="header-section" class="header-section">
                 <div class="section-logo">
-                    <a href="#menu" class="btnMenu_Open">Menu</a>
-                    <a href="#">
+                    <a href="#menu" class="btnMenu_Open">Menu Open</a>
+                    <a href="#Home">
                         <img src="src/web/Rocky_logo.png" alt="Rocky Full Digital Performance " class="img-logo">
                     </a>   
                 </div>
                 <div id="navMenu" class="section-nav">
-                    <nav>
-                        <a href="#menu" class="btnMenu_Close">Menu</a>
+                    <nav class="menu">
+                        <a href="#menu" class="btnMenu_Close">Menu Close</a>
                         <ul>
                             <li>
-                                <a href="#" class="navItem_Home">Home</a>
+                                <a href="#Home" class="navItem_Home">Home</a>
                             </li>
                             <li>
                                 <a href="#Sobre">Sobre a Rocky</a>
@@ -73,7 +73,7 @@
                                 <a href="#Trabalhe">Trabalhe conosco</a>
                             </li>
                             <li>
-                                <a href="">Contato</a>
+                                <a href="#Contato">Contato</a>
                             </li>
                             <li class="nav-item_blog">
                                 <a href="#">Blog</a>
@@ -85,7 +85,7 @@
         </header>
         <main class="main-content">
             <!--============================================ CONTENT 1 =====================================================-->
-            <section class="content1">
+            <section id="Home" class="content1">
                 <div class="content1_title">
                     <h1>
                         Full Digital  Performance  
@@ -271,8 +271,8 @@
             <div class="content2_footer"></div>
         </main>
         
-        <!---------------------------------------------------------------------------------------------------------->
-        <footer>
+        <!------------------------------------------- FOOTER ----------------------------------------------------------->
+        <footer id="Contato">
            <section class="area1">
                 <div class="icons_area">
                     <img src="src/web/Rocky_logo.png" alt="logo Rocky" class="footer_Rocky_logo">
@@ -356,5 +356,6 @@
             </section>
             <div class="content2_footer"></div> 
         </footer>
+        <script type="text/javascript" src="scripts/scrollInClick.js"></script>
     </body>
 </html>

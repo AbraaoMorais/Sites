@@ -242,7 +242,7 @@ textarea::-webkit-input-placeholder{
 
 /*==========================MEDIA QUERY================================*/
 
-@media(max-width: 400px){
+@media(max-width: 700px){
     footer {
         flex-direction: column;
         padding-top: 0px;
