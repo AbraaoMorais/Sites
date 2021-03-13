@@ -1,4 +1,4 @@
-.btnMenu_Open{
+.btnMenu_Open, .subMenu_Close, .subMenu_arrowIcon{
     display: none;
 }    
 /*=============MEDIA QUERY===================*/
@@ -28,12 +28,39 @@
         text-indent: -9999px;
     }
     .open_Menu{
-        transform: translateX(-50%); 
+        transform: translateX(-44%); 
     }
     /* to close the icon hamburguer menu*/
     .btnMenu_Open_none{
         transform:translateX(125px);
         transition: transform 250ms linear;
+        transition-delay: 80ms;
+    }
+    /* for sub-menu event click*/
+    .subMenu_Close{
+        display: none;   
+       }
+    .subMenu_Open{
+        display:block
+    }
+    /*--- for anim icon arrow sub menu*/
+    .subMenu_arrowIcon{
+        display: inline-block;
+        position: relative;
+        width: 5%;
+        transform: rotate(0deg);
+        transition: transform 200ms linear;
+    }
+    .subMenu_arrowIcon_On{
+        transform: rotate(-180deg);
+        transition: transform 200ms linear;
+    }
+    /*------------------------------*/
+    #subMenu_Serviços > li, #subMenu_Dif > li{
+        border-bottom: 0px;
+        font-size: 0.6rem;
+        font-weight: 300;
+        line-height: 1.5rem; 
     }
 }
 
