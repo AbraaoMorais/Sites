@@ -1,574 +1,551 @@
 /* ====================== SECTION 2 ===============================*/
 
-.content2{
-    width: 100%;
-    z-index: 777;
+.content2 {
+  width: 100%;
+  z-index: 777;
 }
-.content2 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgb(17, 17, 17);
+.content2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(17, 17, 17);
 }
 
 /*==========================================Ctner1==========================================*/
-.container1{
-    width: 85%;
-    margin-top: 5%;
-    margin-left: 13vh;
-   
-    /* border-color: rgba(0, 153, 255, 0.17);
+.container1 {
+  width: 85%;
+  margin-top: 5%;
+  margin-left: 13vh;
+
+  /* border-color: rgba(0, 153, 255, 0.17);
     border-style: solid;
     border-width: 14px; */
 }
 
-.container1_card{
-    display:inline-block;
-    width: 75%;
-    margin-top: 8%;
-    margin-bottom: 0%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 20px rgba(126, 126, 126, 0.7);
+.container1_card {
+  display: inline-block;
+  width: 75%;
+  margin-top: 8%;
+  margin-bottom: 0%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(126, 126, 126, 0.7);
 }
-.container1_card article{
-    padding: 2.8rem;
-    text-align: left;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    font-weight: 500;
-    /* border-color: rgb(55, 245, 8);
+.container1_card article {
+  padding: 2.8rem;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  /* border-color: rgb(55, 245, 8);
     border-style: solid;
     border-width: 5px; */
 }
 
-
 /*==========================================SERVICE AREA==========================================*/
-.container2{
-    width: 100%;
-    margin-top: 10%;
+.container2 {
+  width: 100%;
+  margin-top: 10%;
 }
 
-
-.container2_cardS{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-top: 6%;
-    /* border-color: rgb(229, 255, 0);
+.container2_cardS {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 6%;
+  /* border-color: rgb(229, 255, 0);
     border-style: solid;
     border-width: 1px; */
 }
-.container2 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-left: 6.5rem;
-    text-transform: uppercase;
-    color: rgb(17, 17, 17);
+.container2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 6.5rem;
+  text-transform: uppercase;
+  color: rgb(17, 17, 17);
 }
-.container2 h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(255, 255, 0);   
+.container2 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 0);
 }
 /*------------------ CARD 1 ---------------------*/
-.container2_card1{
-    max-width: 380px;
-    max-height: 500px;
-    margin: 10px 10px;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-image: url('../src/web/card1_bg.png');
-    background-size: auto 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* border-color: rgb(255, 0, 0);
+.container2_card1 {
+  max-width: 380px;
+  max-height: 500px;
+  margin: 10px 10px;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-image: url("../src/web/card1_bg.png");
+  background-size: auto 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* border-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px;  */
-    
 }
 
-.container2_card1 article{
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-bottom: 10px;
-    color: rgb(255,255,255);
-    /* border-color: rgb(55, 245, 8);
+.container2_card1 article {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  /* border-color: rgb(55, 245, 8);
     border-style: solid;
     border-width: 1px;  */
-    
-   
 }
 
-.container2_card1_title{
-    justify-items: center;
-    color: rgb(255,255,255);
-    margin: 5px 0px 15% 0px;
-    /* border-color: rgb(255, 251, 0);
+.container2_card1_title {
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  margin: 5px 0px 15% 0px;
+  /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;   */
 }
 
-.container2_card1_text{
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    color: rgb(255,255,255);
-    padding: 1rem;
-    /* border-color: rgb(0, 38, 255);
+.container2_card1_text {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 1px;   */
-    
 }
-
 
 /*------------------ CARD 2 ---------------------*/
-.container2_card2{
-    max-width: 380px;
-    max-height: 500px;
-    margin: 10px 10px;
-    padding: 1rem;
-    border-radius: 2rem;
-    
-    background-image: url('../src/web/card2_bg.png');
-    background-size: auto 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* border-color: rgb(255, 0, 0);
+.container2_card2 {
+  max-width: 380px;
+  max-height: 500px;
+  margin: 10px 10px;
+  padding: 1rem;
+  border-radius: 2rem;
+
+  background-image: url("../src/web/card2_bg.png");
+  background-size: auto 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px;  */
-   
-    
 }
 
+.container2_card2 article {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
 
-.container2_card2 article{
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-bottom: 10px;
-    color: rgb(255,255,255);
-
-   
-    /* border-color: rgb(55, 245, 8);
+  /* border-color: rgb(55, 245, 8);
     border-style: solid;
     border-width: 1px;  */
-    
-   
 }
 
-.container2_card2_title{
-    justify-items: center;
-    color: rgb(255,255,255);
-    margin: 5px -5% 15% -5%;
-    
-    /* border-color: rgb(255, 251, 0);
+.container2_card2_title {
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  margin: 5px -5% 15% -5%;
+
+  /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;   */
 }
 
-.container2_card2_text{
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    color: rgb(255,255,255);
-    padding: 1rem;
-    /* border-color: rgb(0, 38, 255);
+.container2_card2_text {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 1px;   */
-    
 }
 
 /*------------------ CARD 3 ---------------------*/
-.container2_card3{
-    max-width: 380px;
-    max-height: 500px;
-    margin: 10px 10px;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-image: url('../src/web/card3_bg.png');
-    background-size: auto 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* border-color: rgb(255, 0, 0);
+.container2_card3 {
+  max-width: 380px;
+  max-height: 500px;
+  margin: 10px 10px;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-image: url("../src/web/card3_bg.png");
+  background-size: auto 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* border-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px;  */
-    
 }
 
-.container2_card3 article{
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-bottom: 10px;
-    color: rgb(255,255,255);
-    /* border-color: rgb(55, 245, 8);
+.container2_card3 article {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  /* border-color: rgb(55, 245, 8);
     border-style: solid;
     border-width: 1px;  */
-    
-   
 }
 
-.container2_card3_title{
-    justify-items: center;
-    color: rgb(255,255,255);
-    margin: 5px -5% 15% -5%;
-    /* border-color: rgb(255, 251, 0);
+.container2_card3_title {
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  margin: 5px -5% 15% -5%;
+  /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;   */
 }
 
-.container2_card3_text{
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    color: rgb(255,255,255);
-    padding: 1rem;
-    /* border-color: rgb(0, 38, 255);
+.container2_card3_text {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 1px;   */
-    
 }
 
 /*==========================Ctner3========================================*/
-.container3{
-    width: 100%;
-    margin-top: 10%;
-    /* border-color: rgb(0, 38, 255);
+.container3 {
+  width: 100%;
+  margin-top: 10%;
+  /* border-color: rgb(0, 38, 255);
     border-style: solid;
     border-width: 2px; */
-    
 }
-.container3_cardS{
-    display: flex;
-    justify-content: space-between;
-    flex-direction:row;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-top: 0%;
-    margin-bottom: 6%;
-    padding: 0px 10px;
-    /* border-color: rgb(255, 0, 0);
+.container3_cardS {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 0%;
+  margin-bottom: 6%;
+  padding: 0px 10px;
+  /* border-color: rgb(255, 0, 0);
     border-style: solid;
     border-width: 1px; */
 }
-.container3_card_icon{
-    width: 40%;
-    margin: 40px auto 10px auto;
-    filter:invert(100%);
-    /* border-color: rgb(255, 251, 0);
+.container3_card_icon {
+  width: 40%;
+  margin: 40px auto 10px auto;
+  filter: invert(100%);
+  /* border-color: rgb(255, 251, 0);
     border-style: solid;
-    border-width: 2px;   */ 
+    border-width: 2px;   */
 }
-.container3 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-left: 6.5rem;
-    margin-bottom: 5%;
-    text-transform: uppercase;
-    color: rgb(17, 17, 17);
+.container3 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 6.5rem;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  color: rgb(17, 17, 17);
 }
-.container3 h4{
-    font-family: 'Montserrat',sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.4rem;
+.container3 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4rem;
 }
 /*------------------ CARD 1 ---------------------*/
-.container3_card1{
-    /* position: absolute; */
-    max-width: 300px;
-    max-height: 650px;
-    padding: 5px;
-    margin:  5px;
-    background-image: url('../src/web/ctner3_card1.png');
-    background-position: center;
-    background-size: auto 110%;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    /* border-color: rgb(255, 251, 0);
+.container3_card1 {
+  /* position: absolute; */
+  max-width: 300px;
+  max-height: 650px;
+  padding: 5px;
+  margin: 5px;
+  background-image: url("../src/web/ctner3_card1.png");
+  background-position: center;
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  /* border-color: rgb(255, 251, 0);
     border-style: solid;
     border-width: 2px;  */
 }
-.container3_card1 article{
-    padding: 0.5rem;
-    
+.container3_card1 article {
+  padding: 0.5rem;
 }
 
-
-.container3_card1_text{
-    text-align: center;
-    color: rgb(255,255,255);
-    padding: 40px 2.5rem 60px 2.5rem;  
+.container3_card1_text {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 40px 2.5rem 60px 2.5rem;
 }
-
 
 /*------------------ CARD 2 ---------------------*/
-.container3_card2{
-    max-width: 300px;
-    max-height: 650px;
-    padding: 5px;
-    margin:  5px;
-    background-image: url('../src/web/s4ft2.png');
-    background-position: center;
-    background-size: auto 110%;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
+.container3_card2 {
+  max-width: 300px;
+  max-height: 650px;
+  padding: 5px;
+  margin: 5px;
+  background-image: url("../src/web/s4ft2.png");
+  background-position: center;
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
 }
-.container3_card2 article{
-    padding: 0.5rem;
-  
+.container3_card2 article {
+  padding: 0.5rem;
 }
 
-
-.container3_card2_text{
-    text-align: center;
-    color: rgb(255,255,255);
-    padding: 40px 2.5rem 60px 2.5rem;
-    
-    
+.container3_card2_text {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 40px 2.5rem 60px 2.5rem;
 }
 /*------------------ CARD 3 ---------------------*/
-.container3_card3{
-    max-width: 300px;
-    max-height: 650px;
-    padding: 5px;
-    margin:  5px;
-    background-image: url('../src/web/s4ft3.png');
-    background-position: center;
-    background-size: auto 110%;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
+.container3_card3 {
+  max-width: 300px;
+  max-height: 650px;
+  padding: 5px;
+  margin: 5px;
+  background-image: url("../src/web/s4ft3.png");
+  background-position: center;
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
 }
-.container3_card3 article{
-    padding: 0.5rem;
-   
+.container3_card3 article {
+  padding: 0.5rem;
 }
 
-
-.container3_card3_text{
-    /* margin-bottom: 1rem; */
-    text-align: center;
-    color: rgb(255,255,255);
-    padding: 40px 2.5rem 60px 2.5rem;
-    
-    
+.container3_card3_text {
+  /* margin-bottom: 1rem; */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 40px 2.5rem 60px 2.5rem;
 }
 
 /*=================footer this section2=================================*/
-.content2_footer{
-    background-color: rgb(255, 255, 0);
-    width: 100%;
-    height: 65px;
+.content2_footer {
+  background-color: rgb(255, 255, 0);
+  width: 100%;
+  height: 65px;
 }
 
 /*================== MEDIA QUERY ==========================================*/
 /*---------------to device 1200px or less-------------------------*/
 
-@media (max-width:1200px) {
-    .container2{
-        margin-top: 10%;
-    }
-    .container2 h2{
-        margin-bottom: 5%;
-    }
-    .container2_cardS{
-        justify-content: right;
-        margin: 0% 8%;
-    }
+@media (max-width: 1200px) {
+  .container2 {
+    margin-top: 10%;
+  }
+  .container2 h2 {
+    margin-bottom: 5%;
+  }
+  .container2_cardS {
+    justify-content: right;
+    margin: 0% 8%;
+  }
 }
 
 /*---------------to device 1080px or less-------------------------*/
 
-@media (max-width:1080px) {
-    .container3 h2{
-        font-size: 2rem;
-        margin-left: 4rem;
-    }
-    .container1{
-        margin-left: 8vh;
-    }
+@media (max-width: 1080px) {
+  .container3 h2 {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+  .container1 {
+    margin-left: 8vh;
+  }
 
-    .container1_card{
-        display:inline-block;
-        width: 100%;
-    }
-    .container3_card1,.container3_card2, .container3_card3{
-        margin-bottom: 4%;   
-    }
-    /* --------------- Service area ------------------*/
-     .container2 h2{
-        font-size: 2rem;
-        margin-left: 4rem;
-    }
-    .container2 {
-        margin: 5% 0px 0px 0px;
-    }
+  .container1_card {
+    display: inline-block;
+    width: 100%;
+  }
+  .container3_card1,
+  .container3_card2,
+  .container3_card3 {
+    margin-bottom: 4%;
+  }
+  /* --------------- Service area ------------------*/
+  .container2 h2 {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+  .container2 {
+    margin: 5% 0px 0px 0px;
+  }
 }
 
 /*---------------to device 900px or less-------------------------*/
 
-@media (max-width:900px) {
-    .container1{
-        margin-left: 6vh;
-    }
+@media (max-width: 900px) {
+  .container1 {
+    margin-left: 6vh;
+  }
 
-    .container1_card article{
-        padding: 1.5rem;
-        font-size: 0.8rem;
-        line-height: 1.4rem;
-    }
+  .container1_card article {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
 }
 
 /*---------------to device 600px or less-------------------------*/
 
-@media (max-width:600px) {
-    .content2 h2{
-        font-size: 2rem;
-    }
+@media (max-width: 600px) {
+  .content2 h2 {
+    font-size: 2rem;
+  }
 
-    .container1{
-        margin: 0 auto;
-        padding-top: 20px;
-    }
+  .container1 {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 
-    .container1_card article{
-        font-size: 0.6rem;
-        line-height: 1.2rem;
-    }
+  .container1_card article {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+  }
+}
 
-    }
+/*---------------to device 460px or less-------------------------*/
 
-/*---------------to device 400px or less-------------------------*/
+@media (max-width: 460px) {
+  .content2 h2 {
+    font-size: 1.5rem;
+  }
 
-@media (max-width:400px) {
-    .content2 h2{
-        font-size: 1.5rem;
-    }
+  .container1 {
+    margin: 10% auto 0px auto;
+    padding-top: 20px;
+  }
+  .container1_card {
+    margin-bottom: 10%;
+  }
+  .container1_card article {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  /* --------------- SERVICE AREA ------------------*/
+  .container2 h2 {
+    font-size: 1.5rem;
+    margin-left: 1.8rem;
+  }
+  .container2 h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .container2_cardS {
+    flex-direction: column;
+    margin: 0px 0px 0px 2%;
+  }
+  /*------------ CARD 1 -----------*/
+  .container2_card1 {
+    width: 100%;
+    height: 250px;
+    padding: 0.5rem;
+    margin: 10px;
+    background-image: url("../src/mobile/s3ft1.png");
+    background-size: auto auto;
+  }
+  /*------------- CARD 2------------*/
+  .container2_card2 {
+    width: 100%;
+    height: 250px;
+    padding: 0.5rem;
+    margin: 10px;
+    background-image: url("../src/mobile/s3ft2.png");
+    background-size: auto auto;
+  }
+  /*------------- CARD 3------------*/
+  .container2_card3 {
+    width: 100%;
+    height: 250px;
+    padding: 0.2rem;
+    margin: 10px;
+    background-image: url("../src/mobile/s3ft3.png");
+    background-size: auto auto;
+  }
+  .container2_card1_title,
+  .container2_card2_title,
+  .container2_card3_title {
+    justify-items: center;
+    margin: 20px 0px;
+  }
+  .container2_card1_text,
+  .container2_card2_text,
+  .container2_card3_text {
+    margin-bottom: 0rem;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+    padding: 0rem;
+  }
+  /* --------------- DIFERENCIAIS AREA ------------------*/
+  .container3 h2 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  .container3 h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+  }
+  .container3_card_icon {
+    width: 30%;
+    margin: 25px auto 10px auto;
+  }
+  .container3_cardS {
+    flex-direction: column;
+    margin: 30px auto 0px auto;
+  }
+  /*------------ CARDS -----------*/
 
-    .container1{
-        margin: 10% auto 0px auto;
-        padding-top: 20px;
-    }
-    .container1_card{
-        margin-bottom: 10%; 
-    }
-    .container1_card article{
-        font-size: 0.6rem;
-        line-height: 1rem;
-    }
-    /* --------------- SERVICE AREA ------------------*/
-    .container2 h2{
-        font-size: 1.5rem;
-        margin-left: 1.8rem;
-    }
-    .container2 h3{
-        font-size: 1.1rem;
-        font-weight: 600;  
-    }
-    .container2_cardS {
-        flex-direction: column;
-        margin: 0px 0px 0px 2%;
-    }
-    /*------------ CARD 1 -----------*/
-    .container2_card1{
-        width: 100%;
-        height: 250px;
-        padding: 0.5rem;
-        margin: 10px;
-        background-image: url('../src/mobile/s3ft1.png');
-        background-size: auto auto;
-    }
-    /*------------- CARD 2------------*/
-    .container2_card2{
-        width: 100%;
-        height: 250px;
-        padding: 0.5rem;
-        margin: 10px;
-        background-image: url('../src/mobile/s3ft2.png');
-        background-size: auto auto; 
-    }
-     /*------------- CARD 3------------*/
-     .container2_card3{
-        width: 100%;
-        height: 250px;
-        padding: 0.2rem;
-        margin: 10px;
-        background-image: url('../src/mobile/s3ft3.png');
-        background-size: auto auto;    
-    }
-    .container2_card1_title, .container2_card2_title, .container2_card3_title{
-        justify-items: center;
-        margin: 20px 0px;  
-    }
-    .container2_card1_text, .container2_card2_text, .container2_card3_text{
-        margin-bottom: 0rem;
-        font-size: 0.75rem;
-        line-height: 1.1rem;
-        padding: 0rem;
-    }
-     /* --------------- DIFERENCIAIS AREA ------------------*/
-     .container3 h2{
-        font-size: 1.5rem;
-        margin-left: 2rem;
-    }
-    .container3 h4{
-        font-size: 0.75rem;
-        font-weight: 600;
-        line-height: 1.1rem;
-    }
-    .container3_card_icon{
-        width: 30%;
-        margin: 25px auto 10px auto;
-    }
-    .container3_cardS{
-        flex-direction: column;
-        margin: 30px auto 0px auto;
-    }
-    /*------------ CARDS -----------*/
-    
-    .container3_card1{
-        width: 100%;
-        height: 300px;
-        padding: 0.5rem;
-        margin-bottom: 20px;
-        background-image: url('../src/mobile/s4ft1.png');
-        background-size: auto auto;
-    }
-    .container3_card2{
-        width: 100%;
-        height: 300px;
-        padding: 0.5rem;
-        margin-bottom: 20px;
-        background-image: url('../src/mobile/s4ft2.png');
-        background-size: auto auto;
-    }
-    .container3_card3{
-        width: 100%;
-        height: 300px;
-        padding: 0.5rem;
-        margin-bottom: 20px;
-        background-image: url('../src/mobile/s4ft3.png');
-        background-size: auto auto;
-    }
-    .container3_card1_text, .container3_card2_text, .container3_card3_text{
-        margin-bottom: 0rem;
-        padding: 1rem;
-    }
-    /*-------------------footers-------------------*/
-    .content2_footer{
-        height: 20px;
-    }
+  .container3_card1 {
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    background-image: url("../src/mobile/s4ft1.png");
+    background-size: auto auto;
+  }
+  .container3_card2 {
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    background-image: url("../src/mobile/s4ft2.png");
+    background-size: auto auto;
+  }
+  .container3_card3 {
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    background-image: url("../src/mobile/s4ft3.png");
+    background-size: auto auto;
+  }
+  .container3_card1_text,
+  .container3_card2_text,
+  .container3_card3_text {
+    margin-bottom: 0rem;
+    padding: 1rem;
+  }
+  /*-------------------footers-------------------*/
+  .content2_footer {
+    height: 20px;
+  }
 }
