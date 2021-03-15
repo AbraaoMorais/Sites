@@ -6,8 +6,8 @@
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
 function getScrollTopByHref(element) {
-	const id = element.getAttribute('href');
-	return document.querySelector(id).offsetTop;
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
 }
 
 function scrollToPosition(to) {
@@ -15,13 +15,13 @@ function scrollToPosition(to) {
 }
 
 function scrollToIdOnClick(event) {
-	event.preventDefault();
-	const to = getScrollTopByHref(event.currentTarget)- 80;
-	scrollToPosition(to);
+  event.preventDefault();
+  const to = getScrollTopByHref(event.currentTarget) - 80;
+  scrollToPosition(to);
 }
 
 menuItems.forEach(item => {
-	item.addEventListener('click', scrollToIdOnClick);
+  item.addEventListener('click', scrollToIdOnClick);
 });
 
 // Bliblioteca para suporte a browsers antigos / que não suportam scroll smooth nativo

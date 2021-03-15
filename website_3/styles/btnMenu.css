@@ -1,105 +1,108 @@
-.btnMenu_Open, .subMenu_Close, .subMenu_arrowIcon{
-    display: none;
-}    
+.btnMenu_Open,
+.subMenu_Close,
+.subMenu_arrowIcon {
+  display: none;
+}
 /*=============MEDIA QUERY===================*/
-    
+
 /*--------- for 768px or less ------*/
-@media(max-width: 768px){
-    .btnMenu_Close{
-        display: block;
-        background-image: url('../src/mobile/menu_close.svg');
-        background-repeat: no-repeat;
-        background-size: 60% 60%;
-        background-position: 150% center;
-        text-indent: -9999px;
-        padding: 10px 10px 10px 10px;
-        margin: 20px 20px 0px 0px;
-    }
- 
-    .btnMenu_Open{
-        display: block;
-        position: absolute;
-        width: 5%;
-        height: 100%;
-        top: 5%;
-        left: 5%;
-        background-image: url('../src/mobile/menu_open.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        text-indent: -9999px;
-    }
-    .open_Menu{
-        transform: translateX(-44%); 
-    }
-    /* to close the icon hamburguer menu*/
-    .btnMenu_Open_none{
-        transform:translateX(225px);
-        transition: transform 200ms linear;
-        transition-delay: 20ms;
-    }
-    /* ------------for sub-menu event click----------*/
-    .subMenu_Close{
-        display: none;   
-       }
-    .subMenu_Open{
-        display:block;
-        padding-top: 0px;
-    }
-    /*--- for anim icon arrow sub menu*/
-    .subMenu_arrowIcon{
-        display: inline-block;
-        position: relative;
-        width: 15px;
-        transform: rotate(0deg);
-        transition: transform 200ms linear;
-    }
-    .subMenu_arrowIcon_On{
-        transform: rotate(-180deg);
-        transition: transform 200ms linear;
-    }
-    /*------------------------------*/
-    #subMenu_Serviços > li, #subMenu_Dif > li{
-        border-bottom: 0px;
-        font-size: 1.2rem;
-        font-weight: 300;
-        line-height: 2rem; 
-    }
+@media (max-width: 768px) {
+  .btnMenu_Close {
+    display: block;
+    background-image: url("../src/mobile/menu_close.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: 150% center;
+    text-indent: -9999px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 0px 0px;
+  }
+
+  .btnMenu_Open {
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    top: 5%;
+    left: 5%;
+    background-image: url("../src/mobile/menu_open.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-indent: -9999px;
+  }
+  .open_Menu {
+    transform: translateX(-44%);
+  }
+  /* to close the icon hamburguer menu*/
+  .btnMenu_Open_none {
+    transform: translateX(225px);
+    transition: transform 200ms linear;
+    transition-delay: 20ms;
+  }
+  /* ------------for sub-menu event click----------*/
+  .subMenu_Close {
+    display: none;
+  }
+  .subMenu_Open {
+    display: block;
+    padding-top: 0px;
+  }
+  /*--- for anim icon arrow sub menu*/
+  .subMenu_arrowIcon {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    transform: rotate(0deg);
+    transition: transform 200ms linear;
+  }
+  .subMenu_arrowIcon_On {
+    transform: rotate(-180deg);
+    transition: transform 200ms linear;
+  }
+  /*------------------------------*/
+  #subMenu_Serviços > li,
+  #subMenu_Dif > li {
+    border-bottom: 0px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
 }
 
 /*--------- for 600px or less ------*/
-@media(max-width: 600px){
-   
-    .btnMenu_Open{
-        display: block;
-        position: absolute;
-        width: 8%;
-        top: 5%;
-        left: 5%;
-        background-image: url('../src/mobile/menu_open.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        text-indent: -9999px;
-    }
-    /* to close the icon hamburguer menu*/
-    .btnMenu_Open_none{
-        transform:translateX(150px);
-        transition: transform 250ms linear;
-        transition-delay: 80ms;
-    }
-     /*------------------------------*/
-     .subMenu_arrowIcon{
-        display: inline-block;
-        position: relative;
-        width: 8px;
-        transform: rotate(0deg);
-        transition: transform 200ms linear;
-    }
-     #subMenu_Serviços > li, #subMenu_Dif > li{
-        border-bottom: 0px;
-        font-size: 0.6rem;
-        font-weight: 300;
-        line-height: 1.5rem; 
-    }
+@media (max-width: 600px) {
+  .btnMenu_Open {
+    display: block;
+    position: absolute;
+    width: 8%;
+    top: 5%;
+    left: 5%;
+    background-image: url("../src/mobile/menu_open.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-indent: -9999px;
+  }
+  /* to close the icon hamburguer menu*/
+  .btnMenu_Open_none {
+    transform: translateX(150px);
+    transition: transform 250ms linear;
+    transition-delay: 80ms;
+  }
+  /*------------------------------*/
+  .subMenu_arrowIcon {
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    transform: rotate(0deg);
+    transition: transform 200ms linear;
+  }
+  #subMenu_Serviços > li,
+  #subMenu_Dif > li {
+    border-bottom: 0px;
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
 }
