@@ -14,5 +14,8 @@ Technologies used in this production:
 * [Vercel] - Server to deploy
 ### Test
 [![N](https://i.imgur.com/gE67ovB.png?1)](https://sites-phi.vercel.app/)
-
+### Time Production
+To view my time of production and details in this project
+[CLICK HERE TO VIEW](https://wakatime.com/@morais11/projects/blkzlcixet?start=2021-03-01&end=2021-03-15)
+###
 ![N](https://i.imgur.com/cIQssNV.png)
