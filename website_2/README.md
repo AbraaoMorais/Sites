@@ -36,6 +36,7 @@ img temporary
 | 08-02-2021 | screen design page 4 and 5 added  |
 | 09-02-2021 | screen design page 6 and 7 added |
 | 10-02-2021 | Prototype design completed! |
+| 10-02-2021 | Reinicialized the project |
 | UNDEFINED | New Final date for deploy of the website on the network. |
 
 License
