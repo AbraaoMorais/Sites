@@ -144,3 +144,9 @@ ul li a{
     text-decoration: none;
     color: grey;
 }
+
+#language-select{
+    border-style: none;
+    color: grey;
+    cursor: pointer;
+}
