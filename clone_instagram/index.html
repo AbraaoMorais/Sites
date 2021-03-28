@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/slider.css">
+    <title>Instagram Clone</title>
 </head>
 <body>
-    
+    <main class="instagram-container">
+        <section class="presentation-section">
+            <img src="src/phone.png" alt="phone image" class="phone">
+        </section>
+        <section class="login-section">
+            <div class="group">
+                <!-- area for re-enter in logged acount--->
+                <div class="account-relogin">
+                    <img src="src/logo-instagram.png" class="instagram-logo" alt="logo instagram">
+                    <img src="src/perfil-picture.jpg" class="perfil-picture" alt="Perfil picture">
+                    <button class="relogin-button" onclick="alert('logado!')">Continue como abraao_morais1</button>
+                    <a href="#" style="color: rgb(0,149,246); margin: 10px 0px 10px 0px; text-align: center;"><strong>Remover Conta</strong></a>
+                </div>            
+            </div>
+            <!-- area for sign or siwtch account -->
+            <div class="group">
+                <p style="font-size: 12px; font-weight: 600; color: rgb(143, 143, 143);">Não é abraao_morais1?</p>
+                <p style="color: rgb(143, 143, 143); line-height: 2rem;"><a href="#" style="color:rgb(0,149,246);"><strong>Trocar de Conta</strong></a> ou <a href="#" style="color: rgb(0,149,246);"><strong>Cadastra-se</strong></a></p>
+            </div>
+            <!----------- get the app ---------->
+            <footer class="login-section-footer">
+                <div>
+                    <p style="color: rgb(53, 53, 53); font-size: 12px; font-weight: 600;">Obtenha o aplicativo.</p>
+                </div>
+                <div class="login-footer-buttons">
+                    <a href="#" onclick="alert('abriu a AppStore')"><img src="src/appstore-button.png" class="appstore-button" alt="botão da App Store"></a>
+                    <a href="#" onclick="alert('abriu a PlayStore')"><img src="src/googleplay-button.png" class="googleplay-button" alt="botão do Google Play"></a>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <footer class="main-footer">
+
+    </footer>
+    <script src="script/slider.js"></script>
 </body>
 </html>
