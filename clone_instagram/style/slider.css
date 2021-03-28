@@ -1,0 +1,23 @@
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 35vw;
+    position: relative;
+}
+
+.slider-container img{
+    position: absolute;
+    width: 59%;
+    top: 6%;
+    right: 10%;
+    border: 1px solid;
+    opacity: 0;
+    transition: opacity linear 2000ms;
+}
+
+.slider-container img.slider-img-on{
+    opacity: 1;
+    transition: opacity linear 2000ms;
+}
