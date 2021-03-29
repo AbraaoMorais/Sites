@@ -16,8 +16,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
-  height: 90vh;
+  width: 890px;
+  height: 86vh;
 }
 .presentation-section {
   width: 500px;
@@ -28,7 +28,7 @@ body {
 }
 .phone {
   width: 100%;
-  max-width: 480px;
+  max-width: 460px;
   position: absolute;
 }
 .login-section {
@@ -37,8 +37,9 @@ body {
   align-items: center;
   justify-content: start;
   width: 40%;
-  /* margin-top: 5%; */
-  margin-right: 8%;
+  position: relative;
+  right: 6%;
+  /* margin-left: -8%; */
 }
 .group {
   display: flex;
@@ -79,9 +80,13 @@ body {
   box-shadow: none;
   background-color: rgb(0, 149, 246);
   cursor: pointer;
+  outline-style: none;
   text-align: center;
   font-weight: 600;
   color: #ffff;
+}
+.relogin-button:active{
+    background-color:  rgb(53, 174, 255);;
 }
 
 .login-section-footer {
@@ -142,7 +147,7 @@ ul li a {
 }
 
 /* ======================media query ===================*/
-@media screen and (max-device-width: 860px) {
+@media screen and (max-device-width: 860px){
   .presentation-section,
   .phone,
   .slider-container {
@@ -156,7 +161,8 @@ ul li a {
   .login-section {
     width: 90%;
     height: 100vh;
-    margin: 0;
+    right: 0;
+    margin: 0 auto;
     padding-top: 5%;
   }
   .relogin-button {
@@ -172,9 +178,27 @@ ul li a {
     margin: 0 auto;
   }
 }
-@media screen and (max-device-height: 600px) {
-  .main-footer {
-    margin-top: 25%;
-    height: 30vh;
+
+/* --- iphone 6/7/8 --- */
+@media screen and (max-device-width: 375px) and (max-device-height: 667px){
+    .main-footer {
+        margin-top: 0%;
+        height: 25vh;
+      }
+}
+
+/* --- iphone 6/7/8 plus --- */
+@media screen and (min-device-width: 414px) and (max-device-height: 736px){
+    .main-footer {
+        margin-top: -20%;
+        height: 25vh;
+      }
+}
+
+/* --- Galaxy Series --- */
+@media screen and (min-device-width: 360px) and (max-device-height: 640px) {
+    .main-footer {
+    margin-top: 5%;
+    height: 25vh;
   }
 }
