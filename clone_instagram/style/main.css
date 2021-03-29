@@ -169,8 +169,8 @@ ul li a {
     width: 60%;
   }
   .main-footer {
-    height: 30vh;
-    margin-top: 10%;
+    height: 5vh;
+    margin-top: 0%;
   }
   .footer-links {
     flex-wrap: wrap;
@@ -195,10 +195,3 @@ ul li a {
       }
 }
 
-/* --- Galaxy Series --- */
-@media screen and (min-device-width: 360px) and (max-device-height: 640px) {
-    .main-footer {
-    margin-top: 5%;
-    height: 25vh;
-  }
-}
