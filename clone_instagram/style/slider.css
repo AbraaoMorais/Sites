@@ -2,16 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 35vw;
+    width: 430px;
+    min-height: 600px;
     position: relative;
 }
 
 .slider-container img{
     position: absolute;
-    width: 59%;
-    top: 6.5%;
-    right: 10%;
+    width: 60%;
+    top: 12.5%;
+    right: 9.2%;
     border: 1px solid;
     opacity: 0;
     transition: opacity linear 2000ms;
