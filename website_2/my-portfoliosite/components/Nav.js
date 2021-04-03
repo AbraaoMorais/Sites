@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import styles from '../styles/nav.module.css'
 
 
 const Nav = () => {
     return(
         <div>
-            <ul>
+            <ul className={styles.ul}>
                 <li>
                     <Link href="/" replace>
                         <a>item 1</a>
@@ -25,7 +26,7 @@ const Nav = () => {
                 </li>
             </ul>
         </div>
-    )
+    );
 }
 
 export default Nav
