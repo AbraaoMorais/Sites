@@ -1,11 +1,30 @@
-.ul {
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 19px;
+}
+.main ul {
     display:flex;
     flex-direction: column;
+    width: 15%;
     list-style: none;
-    margin: 1px;
-    padding: 1px;
+    margin: 0;
+    padding: 0px;
     border: solid blue;
 }
-.ul li{
-    margin: 10px;
+.main ul li{
+    text-align: center;
+    height: 30px;
+    margin: 5px;
+    padding: 1px;
+    background-color: rgb(51, 33, 80);
+    border-radius: 30px;
+    
+}
+.main a{
+    
+    text-decoration: none;
+    color: rgba(165, 200, 251, 1);
 }

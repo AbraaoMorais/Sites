@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/index.module.css'
-import Nav from '../components/Nav'
+import SideLeft from '../components/SideLeft'
 
 
 
@@ -16,13 +16,20 @@ export default function Home ({data}) {
                 </title>
                 <meta name='keywords' content='web developer, programmer, react, nextjs, javascript'/>
             </Head>
+            
             <main className = {styles.main}>
-                <div className = {styles.side_left_container}>
-                    <Nav/>
-                </div>
-                <div className= {styles.side_right_container}>
-                    <Nav/>
-                </div>
+
+    {/*----------this is area of main menu--------------- */}
+
+                <section className = {styles.sectionLeft}>          
+                    <SideLeft/>
+                </section>     
+
+    {/*----------this is area of content--------------- */}
+    
+                <section className= {styles.side_right_container}>
+                    
+                </section>
             </main>
             
         </body>

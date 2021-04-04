@@ -1,5 +1,5 @@
 import react from 'react'
-import styles from '../styles/layout.module.css'
+import styles from '../styles/index.module.css'
 //import Link from 'next/link'
 
 const formation = () => {
