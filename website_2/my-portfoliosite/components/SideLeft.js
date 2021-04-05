@@ -19,9 +19,11 @@ const SideLeft = () => {
             <h1>minha foto</h1>
             <h1>minha foto</h1>
         </div>
+        <hr className = {styles.line_horizontal}></hr>
         <div className = {styles.menuNav}>
             <Nav/>
-        </div>        
+        </div>
+        <hr className = {styles.line_horizontal}></hr>        
     </section>
     );
 }

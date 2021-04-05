@@ -24,8 +24,8 @@
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    background-color: brown;
-    
+    background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
+    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
 }
 
 /* .footer{

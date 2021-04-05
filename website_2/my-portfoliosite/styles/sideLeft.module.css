@@ -39,4 +39,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px
+}
+.line_horizontal{
+    width: 90%;
+    border: solid 1px;
+    color: #314665;
 }
