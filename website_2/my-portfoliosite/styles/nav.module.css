@@ -25,16 +25,48 @@
     font-weight: 500;
     line-height: 1em;
     background-color: #0D2958; /*for browsers that do not support gradients*/
-    background-image: linear-gradient(to right, rgba(13, 82, 151, 1),#0D2958, rgba(9, 16, 36, 0)) ;
+    background: -moz-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
+    background: -webkit-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
+    background-image: linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
     border-radius: 30px;
+    /* --- animation --- */
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    background-position: right center;
+    background-size: 120% auto; 
     
 }
+
+.main li:hover{
+    background-size: 200%;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    transition: 0.5s ease-out;
+    background-position: -200%;
+    background-color: rgb(13, 82, 151);
+    background: -webkit-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
+    background: -moz-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
+    background-image: linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
+    
+}
+.main li:focus-within{
+    background-color: rgb(96, 30, 145); 
+    background-image: linear-gradient(to left,rgb(33, 71, 197), rgb(96, 30, 145));
+}
+
 .main a{
     display: flex;
     flex-direction: row;
     padding: 0px;
     text-decoration: none;
     color: rgba(165, 200, 251, 1);
+}
+.main a:focus{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    text-decoration: none;
 }
 .icons_position{
     /* position: absolute;

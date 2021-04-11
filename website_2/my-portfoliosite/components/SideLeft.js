@@ -11,16 +11,16 @@ const SideLeft = () => {
                 src = "/src/imgPerfil.jpg"
                 alt = "imagem perfil abraão morais"
                 layout = "responsive"  
-                width = {400}
-                height = {400}
+                width = {450}
+                height = {450}
                 className = {styles.imgPerfil}
               />
             </div>
-            <h1>minha foto</h1>
-            <h1>minha foto</h1>
+            <h1>Abraão Morais</h1>
+            <h2>Front-End Developer || UX/UI Designer</h2>
         </div>
         <hr className = {styles.line_horizontal}></hr>
-        <div className = {styles.menuNav}>
+        <div className = {styles.container_Nav}>
             <Nav/>
         </div>
         <hr className = {styles.line_horizontal}></hr>        

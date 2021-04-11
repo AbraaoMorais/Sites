@@ -42,7 +42,7 @@ export async function getServerSideProps (){
     //passa data para a home via props
     return {
         props: {
-            // data
+            
         }
     }
 }
