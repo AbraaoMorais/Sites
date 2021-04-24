@@ -1,0 +1,20 @@
+.footer h1{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif, arial, helvetica;
+    text-align: center;
+    color: rgb(140, 152, 181);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 5vh;
+    position: relative;
+    top: 22vh;
+    margin: 0 auto;
+    background-color: rgb(9, 16, 36);
+    opacity: 50%;
+}
