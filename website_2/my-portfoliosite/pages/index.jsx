@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 
 export default function Home ({data}) {
     return(
+        
         <body className = {styles.body}>  
             <Head>
                 <title>
@@ -135,8 +136,8 @@ export default function Home ({data}) {
                         alt = "minha imagem de fundo"
                     />
                     <Footer></Footer>
-                    {/* TEM UM ERRO DE RESPONSIVIDADE AQUI NO FOOTER */}
                 </section>
+
             </main>
             
         </body>

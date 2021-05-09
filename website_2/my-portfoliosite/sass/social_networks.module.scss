@@ -1,0 +1,58 @@
+.social_networks_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    width: 90%;
+    height: auto;
+    font-size: 40px;
+    padding: 5px;
+    /* border: 1px solid burlywood; */
+}
+
+.icon_network{
+    display: flex; 
+    width: 0.6em;
+    height: auto;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    padding: 0px;
+    path{
+        fill: default;
+        -webkit-transition: fill 700ms ease-out;
+        -moz-transition: fill 700ms ease-out;
+        transition: fill 700ms ease-out;
+    }
+   
+}
+
+.icon_network_instagram{
+    width: 28px;
+    height: auto;
+    path{
+        fill: default;
+        -webkit-transition: fill 700ms ease-out;
+        -moz-transition: fill 700ms ease-out;
+        transition: fill 700ms ease-out;
+    }
+}
+.icon_network:hover{
+    
+    path{
+        fill: rgb(57, 122, 217);
+        -webkit-transition: fill 200ms ease-in;
+        -moz-transition: fill 200ms ease-in;
+        transition: fill 200ms ease-in;
+    }
+    
+}
+.icon_network_instagram:hover{
+    path{
+        fill: rgb(57, 122, 217);
+        -webkit-transition: fill 200ms ease-in;
+        -moz-transition: fill 200ms ease-in;
+        transition: fill 200ms ease-in;
+    }
+}

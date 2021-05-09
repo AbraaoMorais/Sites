@@ -18,3 +18,9 @@
     background-color: rgb(9, 16, 36);
     opacity: 50%;
 }
+
+@media screen and (max-device-height: 768px) {
+    .footer{
+        top: 17vh;
+    }
+}

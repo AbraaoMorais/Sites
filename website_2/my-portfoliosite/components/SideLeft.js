@@ -1,5 +1,6 @@
 import styles from '../styles/sideLeft.module.css'
 import Nav from '../components/Nav'
+import Social_networks from '../components/Social_networks'
 import Image from 'next/image'
 
 const SideLeft = () => {
@@ -23,7 +24,8 @@ const SideLeft = () => {
         <div className = {styles.container_Nav}>
             <Nav/>
         </div>
-        <hr className = {styles.line_horizontal}></hr>        
+        <hr className = {styles.line_horizontal}></hr>
+        <Social_networks/>       
     </section>
     );
 }
