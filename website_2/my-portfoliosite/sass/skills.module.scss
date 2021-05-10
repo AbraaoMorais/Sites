@@ -10,10 +10,13 @@
 }
 .body{
     display: flex;
+    //position necessario pro overflow funcionar na animação de escala 
+    position: absolute; 
     width: 100vw;
     max-height: 100vh;
-    background-color: rgb(122, 20, 238);
-    
+    background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
+    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
+    overflow: hidden; 
 }
 
 .sectionLeft{
@@ -21,6 +24,7 @@
     width: 20%;
     max-height: 100vh;
     background-color: rgb(255, 230, 0);
+    z-index: 999;
 }
 
 .side_right_container {
@@ -33,7 +37,6 @@
     font-size: 10px;
     background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
     background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
-    
 }
 .wrap_title{
     display: flex;
@@ -51,6 +54,43 @@
     color: #314665;
 }
 
+.page{
+    animation: pageTransition 3s both;
+}
+.pageTrade{
+    animation: pageTransitionTwo 1s both;
+}
+
+@keyframes pageTransition{
+    0%{
+        opacity: 0; 
+        left: 15%;
+        // transform: scale(1.5);
+        position: absolute;
+        
+    }
+    100%{
+        position: absolute;
+        opacity: 1; 
+        left: 20%;
+        // transform: scale(1);
+    }
+}
+@keyframes pageTransitionTwo{
+    0%{
+        opacity: 0.7; 
+        right: 0%;
+        // transform: scale(1.5);
+        position: absolute;
+        
+    }
+    100%{
+        position: absolute;
+        opacity: 1; 
+        right: -100%;
+        // transform: scale(1);
+    }
+}
 // .footer{
 //     display: flex;
 //     // justify-content: center;

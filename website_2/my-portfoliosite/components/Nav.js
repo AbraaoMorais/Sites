@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/nav.module.css'
 import Image from 'next/image'
+import React from 'react';
 
 
 const Nav = () => {
@@ -21,9 +22,10 @@ const Nav = () => {
                 </li>
                 <li>
                     <Link href="/skills" replace>
-                        <a> 
+                        <a>
+                
                             <div  className = {styles.icons_position}>
-                                <Image
+                                <Image 
                                     src = "/icons/iconSkills.svg"
                                     alt = "icone menu skill"
                                     width = {22}
@@ -86,5 +88,17 @@ const Nav = () => {
         </div>
     );
 }
+
+  /////////// FUNÇÃO PARA ADCIONAR E REMOVER CLASSE///////////////
+//  add isso aqui no botao ---> onClick = {pageTrade}
+//   function pageTrade(){
+//     const Trade = document.getElementById("skills");
+//     // e.preventDefault();
+//     element.addEventListener('click', trocar = () => {
+//         Trade.classList.add('pageTrade')
+//     })
+
+// }
+
 
 export default Nav

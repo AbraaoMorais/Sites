@@ -5,10 +5,12 @@ import Head from 'next/head'
 import styles from '../sass/skills.module.scss'
 import Footer from '../components/Footer'
 import SideLeft from '../components/SideLeft'
-import { Fragment } from 'react'
+
+
 const skills = () => {
     return(
-        <main className = {styles.body}>     
+        
+        <main  className = {styles.body}>     
             <Head> 
                 <title>
                     WebPortfolio: Abraão Morais
@@ -18,7 +20,7 @@ const skills = () => {
             <section className = {styles.sectionLeft}>
                 <SideLeft/>
             </section>
-            <section className = {styles.side_right_container}>
+            <section id="skills" className = {styles.side_right_container +  ' ' + styles.pageTrade}>
             
             {/* -----------TITULO E SUBTILO ---------------*/}
                 <div className = {styles.wrap_title}>
@@ -40,4 +42,12 @@ const skills = () => {
         </main>  
     );
 }
+
+// export async function getServerSideProps() {
+//     await new Promise((resolve)=>{
+//         setTimeout(resolve, 2000)
+//     })
+//     return { props:{}}
+// }
+
 export default skills
