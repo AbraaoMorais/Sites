@@ -13,14 +13,14 @@
     width: 90%;
     height: 5vh;
     position: relative;
-    top: 22vh;
+    top: calc(100% - 600px);
     margin: 0 auto;
     background-color: rgb(9, 16, 36);
-    opacity: 50%;
+    opacity: 40%;
 }
 
 @media screen and (max-device-height: 768px) {
     .footer{
-        top: 17vh;
+        top: calc(100% - 500px);
     }
 }
