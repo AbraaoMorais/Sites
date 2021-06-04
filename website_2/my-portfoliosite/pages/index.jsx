@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/index.module.css'
-import SideLeft from '../components/SideLeft'
+import SideLeft from '../components/SideLeft.js'
 import Footer from '../components/Footer'
 
 

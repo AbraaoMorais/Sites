@@ -7,17 +7,15 @@
     top: 15px;
     width: 90%;
     height: auto;
-    font-size: 40px;
-    padding: 5px;
-    /* border: 1px solid burlywood; */
+    padding: 2px;
 }
 
 .icon_network{
     display: flex; 
-    width: 0.6em;
+    width: 1.2em;
     height: auto;
     position: relative;
-    margin: 0px 5px 0px 5px;
+    margin: 0px auto 0px auto;
     padding: 0px;
     path{
         fill: default;
@@ -25,12 +23,13 @@
         -moz-transition: fill 700ms ease-out;
         transition: fill 700ms ease-out;
     }
-   
 }
 
-.icon_network_instagram{
-    width: 28px;
+.icon_network_resize{
+    width: 1.4em;
     height: auto;
+    margin: 4px 0px 0px 0px;
+    padding: 0px;
     path{
         fill: default;
         -webkit-transition: fill 700ms ease-out;
@@ -38,8 +37,9 @@
         transition: fill 700ms ease-out;
     }
 }
+
 .icon_network:hover{
-    
+    transform: scale(1.4);
     path{
         fill: rgb(57, 122, 217);
         -webkit-transition: fill 200ms ease-in;
@@ -48,7 +48,8 @@
     }
     
 }
-.icon_network_instagram:hover{
+.icon_network_resize:hover{
+    transform: scale(1.4);
     path{
         fill: rgb(57, 122, 217);
         -webkit-transition: fill 200ms ease-in;
