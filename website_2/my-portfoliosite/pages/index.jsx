@@ -131,10 +131,15 @@ export default function Home ({data}) {
                             </div>
                         </div>
                     </div>
-                    <img className = {styles.imgBg}
-                        src ="/src/imgBg.png"
-                        alt = "minha imagem de fundo"
-                    />
+                    <div  className = {styles.container__imgBg}>
+                        <Image 
+                            layout = "fill"
+                            objectFit = "contain"
+                            objectPosition = "100% 45%"
+                            src ="/src/imgBg.png"
+                            alt = "imagem de fundo abraão projetando este website"
+                        />
+                    </div>
                     <Footer></Footer>
                 </section>
 

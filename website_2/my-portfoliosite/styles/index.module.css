@@ -124,18 +124,19 @@
     text-transform: uppercase;
     margin-top: 5px;
 }
-.imgBg{
+.container__imgBg{
     position: fixed;
-    width: 33vw;
-    height: 105vh;
-    left: 67%;
+    width: 30vw;
+    height: 110vh;
+    left: 70%;
     top: -30px;
-    opacity:  40%;
+    opacity:  35%;
     filter: saturate(0.5) hue-rotate(220deg);;
     -webkit-animation: fadein 9s linear;
     -moz-animation: fadein 9s linear;
     animation: fadein 9s linear;
 }
+
 /* ------------------------ ANIMATION AREA -------------------------- */
 @keyframes fadein{
     from { opacity: 0; }
