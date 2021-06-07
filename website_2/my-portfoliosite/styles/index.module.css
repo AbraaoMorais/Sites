@@ -140,19 +140,19 @@
 /* ------------------------ ANIMATION AREA -------------------------- */
 @keyframes fadein{
     from { opacity: 0; }
-    to { opacity: 0.4; }
+    to { opacity: 0.35; }
 }
 @-webkit-keyframes fadein{
     from { opacity: 0; }
-    to { opacity: 0.4; }
+    to { opacity: 0.35; }
 }
 @-moz-keyframes fadein{
     from { opacity: 0; }
-    to { opacity: 0.4; }
+    to { opacity: 0.35; }
 }
 @-o-keyframes fadein{
     from { opacity: 0; }
-    to { opacity: 0.4; }
+    to { opacity: 0.35; }
 }
 
 /* =============== MEDIA QUERY FOR 768PX HEIGHT DISPLAYS =============== */

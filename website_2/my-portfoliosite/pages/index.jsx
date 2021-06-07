@@ -8,10 +8,12 @@ import Footer from '../components/Footer'
 
 
 
+
 export default function Home ({data}) {
     return(
         
         <body className = {styles.body}>  
+               
             <Head>
                 <title>
                     WebPortfolio: Abraão Morais
@@ -135,16 +137,16 @@ export default function Home ({data}) {
                         <Image 
                             layout = "fill"
                             objectFit = "contain"
-                            objectPosition = "100% 45%"
+                            objectPosition = "100% 60%"
                             src ="/src/imgBg.png"
                             alt = "imagem de fundo abraão projetando este website"
                         />
                     </div>
-                    <Footer></Footer>
+                    <Footer/>
                 </section>
-
+                
             </main>
-            
+          
         </body>
     );
 

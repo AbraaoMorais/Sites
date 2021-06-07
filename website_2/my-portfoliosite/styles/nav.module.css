@@ -24,8 +24,8 @@
     font-family: 'Abel', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     background-color: #0D2958; /*for browsers that do not support gradients*/
-    background: -moz-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
-    background: -webkit-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
+    background-image: -moz-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
+    background-image: -webkit-linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
     background-image: linear-gradient(to right, rgba(13, 82, 151, 30%) 5%, rgba(9, 16, 36, 0.8) 65%, rgb(9, 16, 36) 100%) ;
     border-radius: 30px;
     /* --- animation --- */
@@ -44,8 +44,8 @@
     transition: 0.5s ease-out;
     background-position: -200%;
     background-color: rgb(13, 82, 151);
-    background: -webkit-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
-    background: -moz-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
+    background-image: -webkit-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
+    background-image: -moz-linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
     background-image: linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97));
     
 }
@@ -68,8 +68,6 @@
     text-decoration: none;
 }
 .icons_position{
-    /* position: absolute;
-    left: 4%; */
     display: flex;
     justify-content: initial;
     margin-left: 10px;
