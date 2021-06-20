@@ -1,11 +1,11 @@
-import React from 'react-dom'
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../sass/skills.module.scss'
 import Footer from '../components/Footer'
-import SideLeft from '../components/SideLeft'
-
+import SideLeft from '../communs_components/SideLeft'
+import SwithPage from '../components/SwithPage.js'
 
 const skills = () => {
     return(
@@ -20,7 +20,7 @@ const skills = () => {
             <section className = {styles.sectionLeft}>
                 <SideLeft/>
             </section>
-            <section id="skills" className = {styles.side_right_container +  ' ' + styles.pageTrade}>
+            <section id="skills" className = {styles.side_right_container +  ' ' + styles.pageIn}>
             
             {/* -----------TITULO E SUBTILO ---------------*/}
                 <div className = {styles.wrap_title}>
@@ -28,7 +28,7 @@ const skills = () => {
                     <h1  className = {styles.title}>
                         Soft Skills
                     </h1>
-                    
+                    <SwithPage/>
                     <span className = {styles.line_horizontal}></span>
                     
                     <h2 className = {styles.subtitle}>

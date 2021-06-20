@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/index.module.css'
-import SideLeft from '../components/SideLeft.js'
+import SideLeft from '../communs_components/SideLeft.js'
 import Footer from '../components/Footer'
 
 
@@ -52,12 +52,12 @@ export default function Home ({data}) {
                     <div className= {styles.container_description}>
                         <h1>What i do</h1>
                         <p>
-                        Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. 
-                        Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum. 
-                        Etiam elementum euismod commodo. Proin eleifend eget quam ut efficitur. 
-                        Mauris a accumsan mauris. Phasellus egestas et risus sit amet hendrerit. 
-                        Nulla facilisi. Cras urna sem, vulputate sed condimentum a, posuere vel enim. 
-                        Integer at faucibus urna. 
+                            Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. 
+                            Curabitur elementum nunc a leo imperdiet, nec elementum diam elementum. 
+                            Etiam elementum euismod commodo. Proin eleifend eget quam ut efficitur. 
+                            Mauris a accumsan mauris. Phasellus egestas et risus sit amet hendrerit. 
+                            Nulla facilisi. Cras urna sem, vulputate sed condimentum a, posuere vel enim. 
+                            Integer at faucibus urna. 
                         </p>
                     </div>
                     <div className={styles.container_tech}>

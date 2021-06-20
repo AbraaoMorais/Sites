@@ -1,6 +1,6 @@
 import styles from '../styles/sideLeft.module.css'
-import Nav from './Nav'
-import Social_networks from './Social_networks'
+import Nav from '../components/Nav'
+import Social_networks from '../components/Social_networks'
 import Image from 'next/image'
 
 const SideLeft = () => {

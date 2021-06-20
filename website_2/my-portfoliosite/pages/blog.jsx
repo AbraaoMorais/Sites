@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../sass/skills.module.scss'
 import Footer from '../components/Footer'
-import SideLeft from '../components/SideLeft'
+import SideLeft from '../communs_components/SideLeft'
 
 
 const skills = () => {
@@ -20,7 +20,7 @@ const skills = () => {
             <section className = {styles.sectionLeft}>
                 <SideLeft/>
             </section>
-            <section className = {styles.side_right_container +  ' ' + styles.page}>
+            <section className = {styles.side_right_container +  ' ' + styles.pageOut}>
             
             {/* -----------TITULO E SUBTILO ---------------*/}
                 <div className = {styles.wrap_title}>

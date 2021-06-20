@@ -16,7 +16,7 @@
     top: calc(100% - 600px);
     margin: 0 auto;
     background-color: rgb(9, 16, 36);
-    opacity: 40%;
+    opacity: 50%;
 }
 
 @media screen and (max-device-height: 768px) {
