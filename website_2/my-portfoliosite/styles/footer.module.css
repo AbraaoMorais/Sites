@@ -1,4 +1,4 @@
-.footer h1{
+.footer h3{
     font-size: 14px;
     font-weight: 500;
     font-family: 'Quicksand', sans-serif, arial, helvetica;
@@ -10,17 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 76%;
     height: 5vh;
-    position: relative;
-    top: calc(100% - 600px);
+    position: absolute;
+    bottom: 9px;
+    right: 26px;
+    /* top: calc(100% - 200px); */
     margin: 0 auto;
     background-color: rgb(9, 16, 36);
     opacity: 50%;
 }
 
-@media screen and (max-device-height: 768px) {
-    .footer{
-        top: calc(100% - 490px);
-    }
-}

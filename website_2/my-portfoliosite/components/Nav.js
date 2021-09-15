@@ -1,23 +1,13 @@
+import { useState, useEffect, useMemo, useContext} from 'react';
 import Link from 'next/link'
 import styles from '../styles/nav.module.css'
 import Image from 'next/image'
-import React, { useState } from 'react';
-import { Component } from 'react';
-
-
-const btnPageActive = () => {
-    const [pagina, setPagina] = React.useState(true);
-    const [cor, setCor] = React.useState('linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97))')
-        
-        React.useEffect(()=>{
-            setCor((state)=> pagina ? 'linear-gradient(to left,rgb(33, 71, 197), rgb(96, 30, 145))' : 'linear-gradient(to left,rgb(13, 82, 151), rgb(22, 29, 97))')
-        },[pagina])
-    }
+// import btnState from '../context/PageState';
 
 const Nav = () => {
-    
+
     return (
-        
+
         <div className={styles.main}>
             <ul className={styles.ul}>
                 <li>
@@ -25,7 +15,7 @@ const Nav = () => {
                         <a rel="noreferrer noopener">
                             <svg className={styles.icons_position} xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
                                 <g id="person-lines-fill">
-                                    <path id="Caminho_16" data-name="Caminho 16" d="M1.375,21.5A1.36,1.36,0,0,1,0,20.083c0-1.417,1.375-5.667,8.25-5.667s8.25,4.25,8.25,5.667A1.36,1.36,0,0,1,15.125,21.5ZM8.25,13a4.189,4.189,0,0,0,4.125-4.25A4.189,4.189,0,0,0,8.25,4.5,4.189,4.189,0,0,0,4.125,8.75,4.189,4.189,0,0,0,8.25,13Zm9.625,2.125a.7.7,0,0,1,.688-.708h2.75a.709.709,0,0,1,0,1.417h-2.75A.7.7,0,0,1,17.875,15.125Zm-2.75-4.25a.7.7,0,0,1,.688-.708h5.5a.709.709,0,0,1,0,1.417h-5.5A.7.7,0,0,1,15.125,10.875Zm0-4.25a.7.7,0,0,1,.688-.708h5.5a.709.709,0,0,1,0,1.417h-5.5A.7.7,0,0,1,15.125,6.625Zm2.75,12.75a.7.7,0,0,1,.688-.708h2.75a.709.709,0,0,1,0,1.417h-2.75A.7.7,0,0,1,17.875,19.375Z" transform="translate(1 -2.5)" fill="#a5c8fb" fill-rule="evenodd" />
+                                    <path id="Caminho_16" data-name="Caminho 16" d="M1.375,21.5A1.36,1.36,0,0,1,0,20.083c0-1.417,1.375-5.667,8.25-5.667s8.25,4.25,8.25,5.667A1.36,1.36,0,0,1,15.125,21.5ZM8.25,13a4.189,4.189,0,0,0,4.125-4.25A4.189,4.189,0,0,0,8.25,4.5,4.189,4.189,0,0,0,4.125,8.75,4.189,4.189,0,0,0,8.25,13Zm9.625,2.125a.7.7,0,0,1,.688-.708h2.75a.709.709,0,0,1,0,1.417h-2.75A.7.7,0,0,1,17.875,15.125Zm-2.75-4.25a.7.7,0,0,1,.688-.708h5.5a.709.709,0,0,1,0,1.417h-5.5A.7.7,0,0,1,15.125,10.875Zm0-4.25a.7.7,0,0,1,.688-.708h5.5a.709.709,0,0,1,0,1.417h-5.5A.7.7,0,0,1,15.125,6.625Zm2.75,12.75a.7.7,0,0,1,.688-.708h2.75a.709.709,0,0,1,0,1.417h-2.75A.7.7,0,0,1,17.875,19.375Z" transform="translate(1 -2.5)" fill="#a5c8fb"/>
                                 </g>
                             </svg>
                             About Me
@@ -67,7 +57,7 @@ const Nav = () => {
                                 <g id="Portfolio" transform="translate(-37 -547.965)">
                                     <path id="Icon_ionic-ios-laptop" data-name="Icon ionic-ios-laptop" d="M20.914,21.1V8.76a.849.849,0,0,0-.788-.885H4.11a.845.845,0,0,0-.788.885V21.1h-2.2a1.473,1.473,0,0,0,.866,1.175,5.484,5.484,0,0,0,2.254.507H20a5.461,5.461,0,0,0,2.213-.456,1.529,1.529,0,0,0,.907-1.227h-2.2Zm-8.8-12.813a.209.209,0,1,1-.183.207A.2.2,0,0,1,12.118,8.289Zm-7.972.839H20.09a.1.1,0,0,1,.092.1V20.17a.1.1,0,0,1-.092.1H4.146a.1.1,0,0,1-.092-.1V9.231A.1.1,0,0,1,4.146,9.128Zm9.91,12.388H10.18a.567.567,0,0,1-.444-.388H14.5A.476.476,0,0,1,14.056,21.516Z" transform="translate(35.882 540.09)" fill="#a5c8fb" />
                                     <g id="code" transform="translate(40.627 543.002)">
-                                        <path id="Caminho_25" data-name="Caminho 25" d="M6.22,9.1a.341.341,0,0,1,0,.474L4.163,11.678l2.058,2.107a.341.341,0,0,1,0,.474.322.322,0,0,1-.463,0L3.47,11.915a.341.341,0,0,1,0-.474L5.758,9.1a.321.321,0,0,1,.463,0Zm2.806,0a.341.341,0,0,0,0,.474l2.058,2.107L9.026,13.785a.341.341,0,0,0,0,.474.322.322,0,0,0,.463,0l2.288-2.344a.341.341,0,0,0,0-.474L9.489,9.1a.321.321,0,0,0-.463,0Z" fill="#a5c8fb" fill-rule="evenodd" />
+                                        <path id="Caminho_25" data-name="Caminho 25" d="M6.22,9.1a.341.341,0,0,1,0,.474L4.163,11.678l2.058,2.107a.341.341,0,0,1,0,.474.322.322,0,0,1-.463,0L3.47,11.915a.341.341,0,0,1,0-.474L5.758,9.1a.321.321,0,0,1,.463,0Zm2.806,0a.341.341,0,0,0,0,.474l2.058,2.107L9.026,13.785a.341.341,0,0,0,0,.474.322.322,0,0,0,.463,0l2.288-2.344a.341.341,0,0,0,0-.474L9.489,9.1a.321.321,0,0,0-.463,0Z" fill="#a5c8fb"/>
                                     </g>
                                 </g>
                             </svg>
@@ -86,7 +76,7 @@ const Nav = () => {
                     </Link>
                 </li>
                 
-                <li onClick={e => useState(state => !state)}>
+                <li>
                     <Link href="/blog" replace>
                         <a rel="noreferrer noopener">
                             <svg className={styles.icons_position} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
@@ -99,9 +89,9 @@ const Nav = () => {
                 </li>
             </ul>
         </div>
-        
-    );    
-    }
+
+    );   
+}
     // btnAtivo(){
     //     var btn = document.querySelector('ul').children[4];
     //     btn.style.backgroundImage = "linear-gradient(to left,rgb(33, 71, 197), rgb(96, 30, 145))"

@@ -9,7 +9,7 @@ const SideLeft = () => {
        <div className= {styles.perfil}>
             <div className = {styles.container_imgPerfil}>
               <Image
-                src = "/src/imgPerfil.jpg"
+                src = "/src/imgProfile.jpg"
                 alt = "imagem perfil abraão morais"
                 layout = "responsive"  
                 width = {450}
