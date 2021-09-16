@@ -29,20 +29,6 @@
     background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
 }
 ////////////////////////////////////////////////FIM COMMUNS STYLE////////////////////////////////
-
-
-.title{ 
-    color: #0CB4FF;
-    font-weight: bold;
-}
-
-.subtitle{
-    color: #A5C8FB;
-    font-weight: lighter;
-    font-family:  'Bungee Hairline', cursive;
-    letter-spacing: 5px;
-}
-
 .wrap_title{
     display: flex;
     flex-direction: column;
@@ -52,51 +38,64 @@
     margin-top: 2em;
     // border:rgb(255, 230, 0) solid 2px;
 }
+
+.title{ 
+    color: #0CB4FF;
+    font-weight: bold;
+    animation: title_transtion 1.5s both;
+    opacity: 0;
+}
+
+.subtitle{
+    color: #A5C8FB;
+    font-weight: lighter;
+    font-family:  'Bungee Hairline', cursive;
+    letter-spacing: 5px;
+    animation: title_transtion 1.5s 0.6s both;
+    opacity: 0;
+}
+
 .line_horizontal{
     width: 100%;
     border-style: solid;
     border-width: 1px 0px 0px 0px;
     color: #314665;
+    animation: line_horizontal_transtion 1.5s 0.2s both; 
 }
 
-.pageOut{
-    animation: pageTransitionOut 1.5s forwards;
+@keyframes line_horizontal_transtion{
+    0%{
+        // -webkit-transform: translateX(-100%);
+        transform: scale3d(0,1,1);
+        transform-origin: -100%;
+        position: relative;
+           
+    }
+    100%{
+        position: relative;
+        // -webkit-transform: translateX(0%);
+        transform: scale3d(1,1,1);
+    }
 }
-.pageIn{
-    animation: pageTransitionIn 1.5s both;
-}
-
-@keyframes pageTransitionOut{
+@keyframes title_transtion{
     0%{
         opacity: 0; 
-        left: 15%;
-        // transform: scale(1.5);
-        position: absolute;
-        display: none;
-        
+        // right: -100%;
+        // -webkit-transform: translateX(-100%);
+        transform: translateX(-30%);
+        transform-origin: -100%;
+        position: relative;
+           
     }
     100%{
-        position: absolute;
+        position: relative;
         opacity: 1; 
-        left: 100%;
-        // transform: scale(1);
+        // right: 0%;
+        // -webkit-transform: translateX(0%);
+        transform: translateX(0%)
     }
 }
-@keyframes pageTransitionIn{
-    0%{
-        opacity: 0.7; 
-        left: 100%;
-        // transform: scale(1.5);
-        position: absolute;
-        
-    }
-    100%{
-        position: absolute;
-        opacity: 1; 
-        left: 20%;
-        // transform: scale(1);
-    }
-}
+
 // .footer{
 //     display: flex;
 //     // justify-content: center;

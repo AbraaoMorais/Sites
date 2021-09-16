@@ -21,7 +21,7 @@ const skills = () => {
                 <section className = {styles.sectionLeft}>
                     <SideLeft/>
                 </section>
-                <section id="skills" className = {styles.side_right_container +  ' ' + styles.pageIn}>
+                <section id="skills" className = {styles.side_right_container}>
                 
                 {/* -----------TITULO E SUBTILO ---------------*/}
                     <div className = {styles.wrap_title}>

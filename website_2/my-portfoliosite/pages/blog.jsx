@@ -2,7 +2,7 @@ import React from 'react-dom'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
-import styles from '../sass/skills.module.scss'
+import styles from '../sass/pages.module.scss'
 import Footer from '../components/Footer'
 import SideLeft from '../communs_components/SideLeft'
 
