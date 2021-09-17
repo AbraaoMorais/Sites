@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../sass/pages.module.scss'
-import Footer from '../components/Footer'
-import SideLeft from '../communs_components/SideLeft'
+import TitleSubtitle from '../components/TitleSubtitle'
+
 
 // import SwithPage from '../components/SwithPage.js'
 
@@ -25,18 +25,7 @@ const skills = () => {
                 <section id="skills" className = {styles.side_right_container}>
                 
                 {/* -----------TITULO E SUBTILO ---------------*/}
-                    <div className = {styles.wrap_title}>
-                        
-                        <h1  className = {styles.title}>
-                            Soft Skills
-                        </h1>
-                        
-                        <span className = {styles.line_horizontal}></span>
-                        
-                        <h2 className = {styles.subtitle}>
-                            My personality and behavior
-                        </h2>
-                    </div> 
+                    <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
                 {/* -----------SOFT SKILLS AREA ---------------*/}
                     
                 </section>

@@ -24,7 +24,7 @@ const skills = () => {
                 <div className = {styles.wrap_title}>
                     
                     <h1  className = {styles.title}>
-                        Soft Skills
+                        Blog
                     </h1>
                     
                     <span className = {styles.line_horizontal}></span>
