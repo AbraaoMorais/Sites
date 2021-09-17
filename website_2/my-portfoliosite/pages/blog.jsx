@@ -17,9 +17,7 @@ const skills = () => {
                 </title>
                 <meta name='keywords' content='web developer, programmer, react, nextjs, javascript'/>
             </Head>
-            <section className = {styles.sectionLeft}>
-                <SideLeft/>
-            </section>
+
             <section className = {styles.side_right_container +  ' ' + styles.pageOut}>
             
             {/* -----------TITULO E SUBTILO ---------------*/}
@@ -36,7 +34,7 @@ const skills = () => {
                     </h2>
                 </div> 
             {/* -----------SOFT SKILLS AREA ---------------*/}    
-                <Footer/>
+            
             </section>
                 
         </main>  

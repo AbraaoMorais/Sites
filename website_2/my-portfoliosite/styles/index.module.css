@@ -12,16 +12,18 @@
     width: 100%;
     height: auto;
 }
-.sectionLeft{
+/* .sectionLeft{
     position: relative;
     width: 20%;
     max-height: 100vh;
     background-color: rgb(255, 230, 0);
-}
+} */
 
 .side_right_container {
     width: 80%;
     min-height: 100vh;
+    position: relative;
+    left: 20%;
     margin: 0px;
     justify-content: center;
     align-items: center;

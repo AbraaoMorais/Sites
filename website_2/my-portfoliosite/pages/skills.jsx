@@ -5,7 +5,10 @@ import Head from 'next/head'
 import styles from '../sass/pages.module.scss'
 import Footer from '../components/Footer'
 import SideLeft from '../communs_components/SideLeft'
+
 // import SwithPage from '../components/SwithPage.js'
+
+
 
 const skills = () => {
     return(
@@ -15,12 +18,10 @@ const skills = () => {
                     WebPortfolio: Abraão Morais
                 </title>
                 <meta name='keywords' content='web developer, programmer, react, nextjs, javascript'/>
+                
             </Head>
             <main  className = {styles.body}>     
-                
-                <section className = {styles.sectionLeft}>
-                    <SideLeft/>
-                </section>
+
                 <section id="skills" className = {styles.side_right_container}>
                 
                 {/* -----------TITULO E SUBTILO ---------------*/}
@@ -36,12 +37,11 @@ const skills = () => {
                             My personality and behavior
                         </h2>
                     </div> 
-                {/* -----------SOFT SKILLS AREA ---------------*/}    
+                {/* -----------SOFT SKILLS AREA ---------------*/}
                     
                 </section>
                     
             </main>
-            <Footer/>
         </Fragment>      
     );
 }

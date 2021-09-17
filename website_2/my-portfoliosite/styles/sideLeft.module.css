@@ -5,12 +5,16 @@
     flex-direction: column;
     justify-content: initial;
     align-items: center;
-    width: 100%;
+    width: 20%;
     height: 100vh;
     margin: 0 auto;
     font-size: 10px;
     background-color: rgba(9,16,36,1);
     /* border: yellow 2px solid; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
 }
 
 .perfil {

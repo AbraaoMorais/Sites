@@ -24,12 +24,6 @@ export default function Home ({data}) {
             <main className = {styles.body}>  
                 <div className = {styles.main}>
 
-        {/*----------this is area of main menu--------------- */}
-
-                    <section className = {styles.sectionLeft}>          
-                        <SideLeft/>
-                    </section>     
-
         {/*----------this is area of content--------------- */}
         
                     <section className= {styles.side_right_container}>
@@ -143,7 +137,6 @@ export default function Home ({data}) {
                                 alt = "imagem de fundo abraão projetando este website"
                             />
                         </div>
-                        <Footer/>
                     </section>
                     
                 </div>
