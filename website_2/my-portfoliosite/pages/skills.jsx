@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../sass/pages.module.scss'
+import PSstyle from '../sass/page_skill.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
 
 
@@ -22,13 +23,85 @@ const skills = () => {
             </Head>
             <main  className = {styles.body}>     
 
-                <section id="skills" className = {styles.side_right_container}>
+                <div id="skills" className = {styles.side_right_container}>
                 
-                {/* -----------TITULO E SUBTILO ---------------*/}
+                {/* -----------Component title e subtitle ---------------*/}
                     <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
+                
                 {/* -----------SOFT SKILLS AREA ---------------*/}
-                    
-                </section>
+                    <section className={PSstyle.softSkills_Section}>
+                        
+                        {/* --- Card Skill 1 --- */}
+                        <article className ={PSstyle.skill_Wrapp}>
+                            <header>
+                                <h3>
+                                   Resilience
+                                </h3>
+                            </header>
+                            <div className = {PSstyle.skill_Container}>
+                                <figure>
+                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                </figure>
+                            </div>
+                        </article>
+
+                        {/* --- Card Skill 2 --- */}
+                        <article className ={PSstyle.skill_Wrapp}>
+                            <header>
+                                <h3>
+                                   Resilience
+                                </h3>
+                            </header>
+                            <div className = {PSstyle.skill_Container}>
+                                <figure>
+                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                </figure>
+                            </div>
+                        </article>
+
+                        {/* --- Card Skill 3--- */}
+                        <article className ={PSstyle.skill_Wrapp}>
+                            <header>
+                                <h3>
+                                   Resilience
+                                </h3>
+                            </header>
+                            <div className = {PSstyle.skill_Container}>
+                                <figure>
+                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                </figure>
+                            </div>
+                        </article>
+
+                        {/* --- Card Skill 4--- */}
+                        <article className ={PSstyle.skill_Wrapp}>
+                            <header>
+                                <h3>
+                                   Resilience
+                                </h3>
+                            </header>
+                            <div className = {PSstyle.skill_Container}>
+                                <figure>
+                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                </figure>
+                            </div>
+                        </article>
+
+                        {/* --- Card Skill 5--- */}
+                        <article className ={PSstyle.skill_Wrapp}>
+                            <header>
+                                <h3>
+                                   Resilience
+                                </h3>
+                            </header>
+                            <div className = {PSstyle.skill_Container}>
+                                <figure>
+                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                </figure>
+                            </div>
+                        </article>
+                    </section>
+                </div>
                     
             </main>
         </Fragment>      

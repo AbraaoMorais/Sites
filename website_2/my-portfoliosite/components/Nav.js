@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
 
-        <div className={styles.main}>
+        <nav className={styles.main}>
             <ul className={styles.ul}>
                 <li>
                     <Link href="/" replace>
@@ -88,7 +88,7 @@ const Nav = () => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     );   
 }
