@@ -25,11 +25,12 @@ const skills = () => {
 
                 <div id="skills" className = {styles.side_right_container}>
                 
-                {/* -----------Component title e subtitle ---------------*/}
-                    <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
+                
                 
                 {/* -----------SOFT SKILLS AREA ---------------*/}
                     <section className={PSstyle.softSkills_Section}>
+                        {/* -----------Component title e subtitle ---------------*/}
+                        <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
                         
                         {/* --- Card Skill 1 --- */}
                         <article className ={PSstyle.skill_Wrapp}>
@@ -101,6 +102,9 @@ const skills = () => {
                             </div>
                         </article>
                     </section>
+
+                    {/* -----------Component title e subtitle ---------------*/}
+                    <TitleSubtitle title="Hard Skills" subtitle= "My main techinical skill set"/>
                 </div>
                     
             </main>

@@ -1,13 +1,19 @@
+
+
 .softSkills_Section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     height: auto;
     position: relative;
+    top: 0px;
+    left: 36px;
+    margin-bottom: 60px;
     // border: 1px rgb(126, 243, 126) solid;
-    overflow-Y: scroll;
+    // overflow-y: auto;
+    // overflow-x: hidden;
 
     .skill_Wrapp {
         display: flex;
@@ -18,8 +24,7 @@
         min-width: 156px;
         height: 166px;
         // border: 1px rgb(126, 243, 126) solid;
-        color: aquamarine;
-        margin: 30px 16px;
+        margin: 6px 13px;
         
         header{
             display: flex;
