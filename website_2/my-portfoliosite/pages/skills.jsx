@@ -5,13 +5,13 @@ import Head from 'next/head'
 import styles from '../sass/pages.module.scss'
 import PSstyle from '../sass/page_skill.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
-// import Popup_Infor from '../components/Popup_Infor'
+import Popup_details from '../components/Popup_details'
 
 // import SwithPage from '../components/SwithPage.js'
 
 const skills = () => {
 
-    // const [popup, setPopup] = useState(false);   
+    const [popup, setPopup] = useState(false);   
 
     return(
         <Fragment>
@@ -35,7 +35,19 @@ const skills = () => {
                         
                         
                         {/* --- Card Skill 1 --- */}
-                        <article className ={PSstyle.skill_Wrapp}>
+                        
+                        {/* popup component com ternario operator */}
+                        {popup ? ( 
+                                <Popup_details>
+                                    <header>
+                                        <h3>
+                                            Meu popup component
+                                        </h3>
+                                    </header>
+                                </Popup_details>
+                            ) : null }
+
+                        <article onMouseOver={()=> setPopup(true)} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
                        
                             <header>
                                 <h3>
