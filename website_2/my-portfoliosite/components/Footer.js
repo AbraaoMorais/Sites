@@ -5,6 +5,7 @@ const footer = () =>{
         <footer className = {styles.footer}>
             <h5>Coperight © 2021 - Abraão Morais</h5>
             <p>&emsp;|&emsp; Developed in Next.js</p>
+            <p>&emsp;|&emsp; Status: under development..</p>
         </footer>
     )
 }

@@ -4,28 +4,22 @@
     position: absolute; 
     width: 100%;
     max-height: 100vh;
-    background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
-    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
+    // background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
+    // background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
     overflow: hidden; 
 }
 ////////////////////////////////////////////////COMMUNS STYLE////////////////////////////////
-// .sectionLeft{
-//     position: relative;
-//     width: 20%;
-//     min-height: 100vh;
-//     background-color: rgb(255, 230, 0);
-//     z-index: 999;
-// }
 
 .side_right_container {
 
     left: 20%;
     width: 80%;
+    height: 80vh;
     margin: 0px;
     display: flex;
     font-size: 10px;
     overflow-y: auto;
-    min-height: 100vh;
+    min-height: 93vh;
     position: relative;
     overflow-x: hidden; 
     align-items: center;
@@ -37,8 +31,7 @@
     scrollbar-color: #5a41e7 #40075a;
     scrollbar-width: thin;
 
-    background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
-    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
+    
 }
 // for chrome
 .side_right_container::-webkit-scrollbar-track {
