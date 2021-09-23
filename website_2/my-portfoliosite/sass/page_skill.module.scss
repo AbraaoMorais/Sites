@@ -107,10 +107,10 @@
 }
 
 .popup_container{
-    position: absolute;
+    position: fixed;
     top: 70vh;
-    left: -10px;
-    width: 95%;
+    right: 36px;
+    width: 75%;
     height: 30vh;
     z-index: 99;
     background:  yellow;
