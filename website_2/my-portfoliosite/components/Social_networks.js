@@ -41,9 +41,9 @@ const social_networks = () =>{
                 <a target="_blank" rel="noreferrer noopener" title="Instagram">
                     <svg className = {styles.icon_network_resize} xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 27.303 27.303">
                         <g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1.5 1.5)">
-                            <path id="Caminho_10" data-name="Caminho 10" d="M9.076,3H21.227A6.076,6.076,0,0,1,27.3,9.076V21.227A6.076,6.076,0,0,1,21.227,27.3H9.076A6.076,6.076,0,0,1,3,21.227V9.076A6.076,6.076,0,0,1,9.076,3Z" transform="translate(-3 -3)" fill="#314665" stroke="#091024" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                            <path id="Caminho_11" data-name="Caminho 11" d="M21.734,16.083a4.861,4.861,0,1,1-4.1-4.1,4.861,4.861,0,0,1,4.1,4.1Z" transform="translate(-4.721 -4.697)" fill="#314665" stroke="#091024" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                            <path id="Caminho_12" data-name="Caminho 12" d="M26.25,9.75h0" transform="translate(-7.415 -4.282)" fill="#314665" stroke="#091024" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Caminho_10" data-name="Caminho 10" d="M9.076,3H21.227A6.076,6.076,0,0,1,27.3,9.076V21.227A6.076,6.076,0,0,1,21.227,27.3H9.076A6.076,6.076,0,0,1,3,21.227V9.076A6.076,6.076,0,0,1,9.076,3Z" transform="translate(-3 -3)" fill="#314665" stroke="#091024"/>
+                            <path id="Caminho_11" data-name="Caminho 11" d="M21.734,16.083a4.861,4.861,0,1,1-4.1-4.1,4.861,4.861,0,0,1,4.1,4.1Z" transform="translate(-4.721 -4.697)" fill="#314665" stroke="#091024"/>
+                            <path id="Caminho_12" data-name="Caminho 12" d="M26.25,9.75h0" transform="translate(-7.415 -4.282)" fill="#314665" stroke="#091024"  />
                         </g>
                     </svg>
 

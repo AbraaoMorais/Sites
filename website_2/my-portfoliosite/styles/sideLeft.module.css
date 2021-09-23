@@ -5,12 +5,16 @@
     flex-direction: column;
     justify-content: initial;
     align-items: center;
-    width: 100%;
+    width: 20%;
     height: 100vh;
     margin: 0 auto;
     font-size: 10px;
     background-color: rgba(9,16,36,1);
     /* border: yellow 2px solid; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
 }
 
 .perfil {
@@ -24,7 +28,7 @@
 }
 
 .perfil h1{
-    font-size: 28px;
+    font-size: 26px;
     font-family: 'Montserrat Alternat', Abel, sans-serif, roboto, arial;
     font-weight: 600;
     color: rgb(140, 152, 181);
@@ -50,6 +54,8 @@
 }
 .imgPerfil{
     border-radius: 50%;
+    position: absolute;
+    margin-left: 410px;
 }
 .container_Nav{
     display: flex;
@@ -68,9 +74,9 @@
     color: #314665;
 }
 /* =================== MEDIA QUERY FOR 720PX HEIGHT DISPLAYS ===================== */
-@media only screen and (max-device-height:720px){
+@media only screen and (max-device-height:768px){
     .perfil h1{
-        font-size: 24px;
+        font-size: 18px;
     }
     .perfil h2{
         font-size: 9px;

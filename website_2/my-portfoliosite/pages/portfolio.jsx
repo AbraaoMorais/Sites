@@ -1,13 +1,19 @@
 import React from 'react'
+import styles from '../sass/pages.module.scss'
+import TitleSubtitle from '../components/TitleSubtitle'
 
-const portfolio = ({props}) => {
+const portfolio = () => {
     return (
+        <main  className = {styles.body}>
+
+        <section id="contact" className = {styles.side_right_container}>
+            
+            {/* -----------TITULO E SUBTILO ---------------*/}
+            <TitleSubtitle title="Projects" subtitle= "some of my projects developed today"/>
         
-        <div>
-           <h1>portfolio</h1>
-           <h2>subtitle</h2>
-        </div>
+            {/* -----------CONTENT AREA ---------------*/}
+        </section>    
+    </main>
     );
-    {props.portfolio}
 }
 export default portfolio
