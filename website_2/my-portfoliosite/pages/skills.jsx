@@ -2,8 +2,8 @@ import React, {Fragment, useRef, useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
-import styles from '../sass/pages.module.scss'
-import PSstyle from '../sass/page_skill.module.scss'
+import styles from '../scss/pages.module.scss'
+import PSstyle from '../scss/page_skill.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
 import Popup_details from '../components/Popup_details'
 
@@ -38,13 +38,14 @@ const skills = () => {
                         
                         {/* popup component com ternario operator */}
                         {popup ? ( 
-                                <Popup_details>
-                                    <header>
-                                        <h3>
-                                            Meu popup component
-                                        </h3>
-                                    </header>
-                                </Popup_details>
+                                <Popup_details
+                                    title="what is resilience?" 
+                                    description = "Resilience is a concept originating in physics and means
+                                    the ability of some materials to return to their original state without deformation
+                                    after being subjected to pressure. In human science, it is defined as
+                                    the individuals ability to overcome adversities without being 
+                                    negatively and permanently affected by them."
+                                    imagePostUrl="/src/Resilient-post.jpg"/> 
                             ) : null }
 
                         <article onMouseOver={()=> setPopup(true)} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>

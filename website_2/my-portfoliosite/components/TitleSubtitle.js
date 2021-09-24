@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../sass/pages.module.scss'
+import styles from '../scss/pages.module.scss'
 
 const TitleSubtitle = (props) => {
     return (
