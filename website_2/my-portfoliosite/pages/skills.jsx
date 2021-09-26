@@ -2,16 +2,25 @@ import React, {Fragment, useRef, useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
-import styles from '../sass/pages.module.scss'
-import PSstyle from '../sass/page_skill.module.scss'
+import styles from '../scss/pages.module.scss'
+import PSstyle from '../scss/page_skill.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
 import Popup_details from '../components/Popup_details'
 
 // import SwithPage from '../components/SwithPage.js'
 
 const skills = () => {
-
+    
+    //estados
     const [popup, setPopup] = useState(false);   
+    const [cardId,setCardId] = useState(null) 
+
+    //seta id do componente para chamar popup correto
+    const activePopup = (e) =>{
+        setPopup(true);
+        setCardId(e.currentTarget.id)
+    }
+  
 
     return(
         <Fragment>
@@ -34,20 +43,18 @@ const skills = () => {
                         <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
                         
                         
-                        {/* --- Card Skill 1 --- */}
-                        
-                        {/* popup component com ternario operator */}
-                        {popup ? ( 
-                                <Popup_details>
-                                    <header>
-                                        <h3>
-                                            Meu popup component
-                                        </h3>
-                                    </header>
-                                </Popup_details>
+                    {/* --- Card Skill 1 --- */}  
+                        {popup && cardId == "ss-resilience" ? ( 
+                                <Popup_details 
+                                title="what is resilience?"
+                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                imagePostUrl="/src/Resilient-post.jpg"
+                                >
+                                    
+                                </Popup_details> 
                             ) : null }
-
-                        <article onMouseOver={()=> setPopup(true)} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
+    
+                        <article id ="ss-resilience" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
                        
                             <header>
                                 <h3>
@@ -61,8 +68,18 @@ const skills = () => {
                             </div>
                         </article>
                         
-                        {/* --- Card Skill 2 --- */}
-                        <article className ={PSstyle.skill_Wrapp}>
+                    {/* --- Card Skill 2 --- */}
+                        {popup && cardId == "ss-self-taught" ? ( 
+                                <Popup_details 
+                                title="what is self-taught?"
+                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                imagePostUrl="/src/Resilient-post.jpg"
+                                >
+                                    
+                                </Popup_details> 
+                            ) : null }
+
+                        <article id = "ss-self-taught" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
                             <header>
                                 <h3>
                                     self-taught
@@ -75,8 +92,19 @@ const skills = () => {
                             </div>
                         </article>
 
-                        {/* --- Card Skill 3--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
+                    {/* --- Card Skill 3--- */}
+
+                        {popup && cardId == "ss-organization" ? ( 
+                                <Popup_details 
+                                title="what is organization?"
+                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                imagePostUrl="/src/Resilient-post.jpg"
+                                >
+                                    
+                                </Popup_details> 
+                            ) : null }
+
+                        <article id = "ss-organization" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)}  className ={PSstyle.skill_Wrapp}>
                             <header>
                                 <h3>
                                    Organization
@@ -89,8 +117,19 @@ const skills = () => {
                             </div>
                         </article>
 
-                        {/* --- Card Skill 4--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
+                    {/* --- Card Skill 4--- */}
+
+                        {popup && cardId == "ss-team-work" ? ( 
+                                <Popup_details 
+                                title="what is team work?"
+                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                imagePostUrl="/src/Resilient-post.jpg"
+                                >
+                                    
+                                </Popup_details> 
+                            ) : null }
+
+                        <article id = "ss-team-work" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
                             <header>
                                 <h3>
                                    Team Work
@@ -103,8 +142,19 @@ const skills = () => {
                             </div>
                         </article>
 
-                        {/* --- Card Skill 5--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
+                    {/* --- Card Skill 5--- */}
+
+                        {popup && cardId == "ss-criativity" ? ( 
+                                <Popup_details 
+                                title="what is criativity?"
+                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                imagePostUrl="/src/Resilient-post.jpg"
+                                >
+                                    
+                                </Popup_details> 
+                            ) : null }   
+
+                        <article id = "ss-criativity" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
                             <header>
                                 <h3>
                                    Criativity

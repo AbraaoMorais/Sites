@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../sass/social_networks.module.scss'
+import styles from '../scss/social_networks.module.scss'
 
 const social_networks = () =>{
     return(

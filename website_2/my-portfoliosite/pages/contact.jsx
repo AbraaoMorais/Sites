@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import styles from '../sass/pages.module.scss'
+import styles from '../scss/pages.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
 import Head from 'next/head'
 

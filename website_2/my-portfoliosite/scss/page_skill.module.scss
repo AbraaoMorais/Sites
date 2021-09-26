@@ -88,7 +88,7 @@
             border-radius: 0px 0px 39px 39px;
             background-color: #090d35;
             background-image: unset;
-
+                
             figure{
                 display: flex;
                 justify-content: center;
@@ -106,29 +106,4 @@
     
 }
 
-.popup_container{
-    position: fixed;
-    top: 70vh;
-    right: 36px;
-    width: 75%;
-    height: 30vh;
-    z-index: 99;
-    background:  yellow;
-    -webkit-animation: popuptop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: popuptop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-    
-}
-
-@keyframes popuptop {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-   
-      
-    }
-  }
+@import "partials/popup_page_skills";

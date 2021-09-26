@@ -1,7 +1,7 @@
-import styles from '../styles/global.css'
+import styles from '../styles/global.css';
 import NextNProgress from 'nextjs-progressbar';
-import React from 'react'
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 import SideLeft from '../communs_components/SideLeft';
 import Footer from '../components/Footer';
 
