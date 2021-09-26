@@ -1,8 +1,14 @@
 import React, {useRef} from 'react';
+import PropTypes from 'prop-types'
 import Styles from '../scss/page_skill.module.scss'
 
 
-const popup_Infor = (props) => {
+const popup_Infor = ({
+    title, 
+    description, 
+    imagePostUrl,
+}) => {
+    
 
     return (
         
@@ -11,18 +17,25 @@ const popup_Infor = (props) => {
                 <div className={Styles.content_wrapp}>
                     <header>
                         <h3>
-                            {props.title}
+                            {title}
                         </h3>
                     </header>
                     <h4>
-                        {props.description}
+                        {description}
                     </h4>
                 </div>
-                <img src={props.imagePostUrl}/>    
+                <img src={imagePostUrl}/>    
             </div>    
         </div>
     );
     
+}
+
+popup_Infor.PropTypes = {
+    
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    imagePostUrl: PropTypes.string.isRequired,
 }
 
 export default popup_Infor;
