@@ -16,11 +16,13 @@ h2, h3, h4, h5{
 }
 
 body{
-    background-color: rgb(21, 23, 83); /*for browsers that do not support gradients*/
-    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58));  
+    background-color: rgb(21, 23, 83); 
+    background-image: linear-gradient(320deg, rgb(21, 23, 83),rgb(42, 45, 122), rgb(35, 37, 93), rgb(23, 23, 58)); 
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: 130% 100%;
+    
 }
 
 /*---------------- fonts -----------------------------------------*/
