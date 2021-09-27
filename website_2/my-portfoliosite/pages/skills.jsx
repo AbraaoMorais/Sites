@@ -72,10 +72,9 @@ const skills = () => {
                         {popup && cardId == "ss-self-taught" ? ( 
                                 <Popup_details 
                                 title="what is self-taught?"
-                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
-                                imagePostUrl="/src/Resilient-post.jpg"
-                                >
-                                    
+                                description = "Self-taught people are marked by their willpower and persistence in learning something, be it a new programming language, a musical instrument, among other things. Without the help of a teacher who can instruct the first steps. The self-taught learning process includes intense research on the subject you want to master, in addition to continuous exercise, based on the &quot; hit and miss &quot; technique."
+                                imagePostUrl="/src/Self-taught.jpg"
+                                >        
                                 </Popup_details> 
                             ) : null }
 
@@ -98,7 +97,7 @@ const skills = () => {
                                 <Popup_details 
                                 title="what is organization?"
                                 description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
-                                imagePostUrl="/src/Resilient-post.jpg"
+                                imagePostUrl="/src/Organization.jpg"
                                 >
                                     
                                 </Popup_details> 
@@ -123,7 +122,7 @@ const skills = () => {
                                 <Popup_details 
                                 title="what is team work?"
                                 description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
-                                imagePostUrl="/src/Resilient-post.jpg"
+                                imagePostUrl="/src/Team-work.jpg"
                                 >
                                     
                                 </Popup_details> 
@@ -148,7 +147,7 @@ const skills = () => {
                                 <Popup_details 
                                 title="what is criativity?"
                                 description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
-                                imagePostUrl="/src/Resilient-post.jpg"
+                                imagePostUrl="/src/Criativity.jpg"
                                 >
                                     
                                 </Popup_details> 
