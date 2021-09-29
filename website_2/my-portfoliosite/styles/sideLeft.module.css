@@ -27,7 +27,7 @@
     padding: 10px;
 }
 
-.perfil h1{
+.perfil span{
     font-size: 26px;
     font-family: 'Montserrat Alternat', Abel, sans-serif, roboto, arial;
     font-weight: 600;
@@ -36,7 +36,7 @@
     line-height: 2rem;
     text-transform: uppercase;
 }
-.perfil h2{
+.perfil p{
     font-size: 10px;
     font-family: 'Quicksand', sans-serif, Roboto, Arial;
     font-weight: 300;

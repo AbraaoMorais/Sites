@@ -17,8 +17,8 @@ const SideLeft = () => {
                 className = {styles.imgPerfil}
               />
             </div>
-            <h1>Abraão Morais</h1>
-            <h2>Front-End Developer || UX/UI Designer</h2>
+            <span>Abraão Morais</span>
+            <p>Front-End Developer || UX/UI Designer</p>
         </div>
         <hr className = {styles.line_horizontal}></hr>
         <div className = {styles.container_Nav}>
