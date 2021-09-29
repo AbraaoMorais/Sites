@@ -60,10 +60,14 @@
             // border: 1px rgb(223, 6, 6) solid;   
             
             figure{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: relative;
+                margin-top: -9px;
                 img{
-                    width: 90px;
-                    height: 90px;
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }
