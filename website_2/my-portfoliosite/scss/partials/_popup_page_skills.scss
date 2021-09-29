@@ -44,8 +44,8 @@
    
     img{
       position: relative;
-      min-width: 250px;
-      height: 170px;
+      min-width: 26vw;
+      height: 29.9vh;
       padding: 2px 2px;
       -moz-box-shadow:  0px 3px 49px #020c36;
       -webkit-box-shadow: 0px 3px 49px #020c36;
@@ -68,6 +68,12 @@
     top: 66vh;
     width: 80%;
     height: 38vh;
+    .popup_content{
+      img{
+          min-width: 22vw;
+          height: 29.9vh;
+      }
+    }
   }
 }
 @media screen and (min-width: 1440px){
@@ -86,12 +92,12 @@
         }
       }
       img{
-        width: 333px;
-        height: 229px;
+          min-width: 25vw;
+          height: 30vh;
       }
       h4{
         font-size: 16px;
-        height: 25vh;
+        height: 24vh;
       }
     }
   }

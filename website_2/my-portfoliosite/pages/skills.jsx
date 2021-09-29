@@ -96,7 +96,7 @@ const skills = () => {
                         {popup && cardId == "ss-organization" ? ( 
                                 <Popup_details 
                                 title="what is organization?"
-                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                description = "The organization of the work environment positively impacts our development and daily productivity. Therefore, organizing the workplace is essential and brings greater ease of concentration, more productive execution, thus giving a feeling of quality at work."
                                 imagePostUrl="/src/Organization.jpg"
                                 >
                                     
@@ -121,7 +121,7 @@ const skills = () => {
                         {popup && cardId == "ss-team-work" ? ( 
                                 <Popup_details 
                                 title="what is team work?"
-                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                description = "Teamwork skills are the qualities and skills that allow us to work well with other people during conversations, projects, meetings, and more. This kind of skill depends on our ability to communicate well, actively listen, and be responsible and honest with everyone on the team."
                                 imagePostUrl="/src/Team-work.jpg"
                                 >
                                     
@@ -146,7 +146,7 @@ const skills = () => {
                         {popup && cardId == "ss-criativity" ? ( 
                                 <Popup_details 
                                 title="what is criativity?"
-                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                description = "Creativity is the act of transforming what already exists through new and imaginative ideas, producing something unprecedented. It can be characterized as the ability to perceive the world around us in order to find unexplored points of view, make connections between seemingly unrelated issues and generate solutions."
                                 imagePostUrl="/src/Criativity.jpg"
                                 >
                                     
