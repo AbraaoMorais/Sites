@@ -12,10 +12,17 @@
     top: 0px;
     left: 36px;
     margin-bottom: 60px;
-    // border: 1px rgb(126, 243, 126) solid;
-    // overflow-y: auto;
-    // overflow-x: hidden;
-    
+
+    .softs_skills_Wrapp,
+    .hard_skills_Wrapp{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: -23px;
+        margin-top: 9px;
+    }
     .skill_Wrapp {
         display: flex;
         flex-direction: column;
@@ -25,9 +32,9 @@
         top: 30px;
         min-width: 156px;
         height: 166px;
-        // border: 1px rgb(126, 243, 126) solid;
         margin: 6px 33px 6px 3px;
-        
+        cursor: help;
+    
         header{
            
             display: flex;
@@ -46,8 +53,7 @@
             }
         
         }
-
-       
+  
         .skill_Container{
             display: flex;
             justify-content: center;
@@ -67,6 +73,7 @@
                 align-items: center;
                 position: relative;
                 margin-top: -9px;
+                  
                 img{
                     padding: 6px;
                     width: 80px;
@@ -74,34 +81,34 @@
                 }
             }
         }
-        
+          
     }
     
-    //hover effect area animations and transitions
+    ///hover effect area animations and transitions///
+        
     .skill_Wrapp:hover{
         header{
             box-shadow: rgba(0, 195, 255, 0.158) 0px -1px 3px;
             border-radius:  0 0 13px 13px;
         }
         .skill_Container{
-               
             figure{
                 
                 img{ 
                     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                 }
-                
             }
         }
         
     }    
 }
 
-
 .hardSkills_Section{
+    // margin-top: 1vh;
     .skill_Wrapp {
         margin: 6px 16px 6px 3px;
+        
         header{
             border-radius:  0 0 13px 13px;
             background-color: #090d35;
@@ -130,10 +137,31 @@
             }
         }
     }
-    
-    
 }
 
+
+   // animation controllers for skils itens
+   .anin1{
+    -webkit-animation: slide-in-elliptic-left-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-elliptic-left-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .anin2{
+        -webkit-animation: slide-in-elliptic-left-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-elliptic-left-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .anin3{
+        -webkit-animation: slide-in-elliptic-left-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-elliptic-left-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .anin4{
+        -webkit-animation: slide-in-elliptic-left-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-elliptic-left-fwd 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .anin5{
+        -webkit-animation: slide-in-elliptic-left-fwd 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-elliptic-left-fwd 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
 /**
  * ----------------------------------------
  * animation shadow-drop-2-center
@@ -171,5 +199,29 @@
     100% {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
+    }
+  }
+
+  /**
+ * ----------------------------------------
+ * @animation slide-in-elliptic-left-fwd 
+    -webkit-animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ * ----------------------------------------
+ */
+@keyframes slide-in-elliptic-left-fwd {
+    0% {
+      -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+              transform: translateX(-800px) rotateY(30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: 1800px 50%;
+              transform-origin: 1800px 50%;
+      opacity: 1;
     }
   }

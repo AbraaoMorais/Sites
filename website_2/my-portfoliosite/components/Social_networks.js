@@ -21,7 +21,7 @@ const social_networks = () =>{
                 </a>
             </Link>
             {/* -------- linkedin ---------*/}
-            <Link  href='https://www.linkedin.com/in/amtec/' passHref >
+            <Link  href='https://www.linkedin.com/in/abraaodev/' passHref >
                 <a target="_blank" rel="noreferrer noopener" title="Linkedin">
                     <svg className = {styles.icon_network} id="Icon_awesome-linkedin" data-name="Icon awesome-linkedin" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 23.207 23.207">
                         <path id="Icon_awesome-linkedin-2" data-name="Icon awesome-linkedin" d="M21.549,2.25H1.652A1.665,1.665,0,0,0,0,3.923V23.784a1.665,1.665,0,0,0,1.652,1.673h19.9a1.669,1.669,0,0,0,1.658-1.673V3.923A1.669,1.669,0,0,0,21.549,2.25ZM7.014,22.142H3.574V11.067H7.019V22.142ZM5.294,9.554A1.994,1.994,0,1,1,7.288,7.56,2,2,0,0,1,5.294,9.554ZM19.907,22.142h-3.44V16.754c0-1.285-.026-2.937-1.787-2.937-1.792,0-2.067,1.4-2.067,2.844v5.481H9.174V11.067h3.3v1.513h.047a3.623,3.623,0,0,1,3.258-1.787c3.481,0,4.129,2.295,4.129,5.279Z" transform="translate(0 -2.25)" fill="#314665"/>
