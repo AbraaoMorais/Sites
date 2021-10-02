@@ -42,129 +42,131 @@ const skills = () => {
                         {/* -----------Component title e subtitle ---------------*/}
                         <TitleSubtitle title="Soft Skills" subtitle= "My pesonality and behavior"/>
                         
+                        <div className={PSstyle.softs_skills_Wrapp}>
+                            {/* --- Card Skill 1 --- */}  
+                            {popup && cardId == "ss-resilience" ? ( 
+                                    <Popup_details 
+                                    title="what is resilience?"
+                                    description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
+                                    imagePostUrl="/src/Resilient-post.jpg"
+                                    >
+                                        
+                                    </Popup_details> 
+                                ) : null }
+        
+                            <article id ="ss-resilience" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp +' ' + PSstyle.anin1}>
                         
-                    {/* --- Card Skill 1 --- */}  
-                        {popup && cardId == "ss-resilience" ? ( 
-                                <Popup_details 
-                                title="what is resilience?"
-                                description = "Resilience is a concept originating in physics and means the ability of some materials to return to their original state without deformation after being subjected to pressure. In human science, it is defined as the individuals ability to overcome adversities without being negatively and permanently affected by them."
-                                imagePostUrl="/src/Resilient-post.jpg"
-                                >
-                                    
-                                </Popup_details> 
-                            ) : null }
-    
-                        <article id ="ss-resilience" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
-                       
-                            <header>
-                                <h3>
-                                   Resilience
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
-                        
-                    {/* --- Card Skill 2 --- */}
-                        {popup && cardId == "ss-self-taught" ? ( 
-                                <Popup_details 
-                                title="what is self-taught?"
-                                description = "Self-taught people are marked by their willpower and persistence in learning something, be it a new programming language, a musical instrument, among other things. Without the help of a teacher who can instruct the first steps. The self-taught learning process includes intense research on the subject you want to master, in addition to continuous exercise, based on the &quot; hit and miss &quot; technique."
-                                imagePostUrl="/src/Self-taught.jpg"
-                                >        
-                                </Popup_details> 
-                            ) : null }
+                                <header>
+                                    <h3>
+                                    Resilience
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure>
+                                        <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    </figure>
+                                </div>
+                            </article>
+                            
+                        {/* --- Card Skill 2 --- */}
+                            {popup && cardId == "ss-self-taught" ? ( 
+                                    <Popup_details 
+                                    title="what is self-taught?"
+                                    description = "Self-taught people are marked by their willpower and persistence in learning something, be it a new programming language, a musical instrument, among other things. Without the help of a teacher who can instruct the first steps. The self-taught learning process includes intense research on the subject you want to master, in addition to continuous exercise, based on the &quot; hit and miss &quot; technique."
+                                    imagePostUrl="/src/Self-taught.jpg"
+                                    >        
+                                    </Popup_details> 
+                                ) : null }
 
-                        <article id = "ss-self-taught" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                    self-taught
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-self-taugh.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            <article id = "ss-self-taught" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp +' ' + PSstyle.anin2}>
+                                <header>
+                                    <h3>
+                                        self-taught
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure>
+                                        <img src="/src/svg/skill-self-taugh.svg" alt="self-taugh icon" />
+                                    </figure>
+                                </div>
+                            </article>
 
-                    {/* --- Card Skill 3--- */}
+                        {/* --- Card Skill 3--- */}
 
-                        {popup && cardId == "ss-organization" ? ( 
-                                <Popup_details 
-                                title="what is organization?"
-                                description = "The organization of the work environment positively impacts our development and daily productivity. Therefore, organizing the workplace is essential and brings greater ease of concentration, more productive execution, thus giving a feeling of quality at work."
-                                imagePostUrl="/src/Organization.jpg"
-                                >
-                                    
-                                </Popup_details> 
-                            ) : null }
+                            {popup && cardId == "ss-organization" ? ( 
+                                    <Popup_details 
+                                    title="what is organization?"
+                                    description = "The organization of the work environment positively impacts our development and daily productivity. Therefore, organizing the workplace is essential and brings greater ease of concentration, more productive execution, thus giving a feeling of quality at work."
+                                    imagePostUrl="/src/Organization.jpg"
+                                    >
+                                        
+                                    </Popup_details> 
+                                ) : null }
 
-                        <article id = "ss-organization" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)}  className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Organization
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-organization.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            <article id = "ss-organization" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)}  className ={PSstyle.skill_Wrapp +' ' + PSstyle.anin3}>
+                                <header>
+                                    <h3>
+                                    Organization
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure>
+                                        <img src="/src/svg/skill-organization.svg" alt="organization icon" />
+                                    </figure>
+                                </div>
+                            </article>
 
-                    {/* --- Card Skill 4--- */}
+                        {/* --- Card Skill 4--- */}
 
-                        {popup && cardId == "ss-team-work" ? ( 
-                                <Popup_details 
-                                title="what is team work?"
-                                description = "Teamwork skills are the qualities and skills that allow us to work well with other people during conversations, projects, meetings, and more. This kind of skill depends on our ability to communicate well, actively listen, and be responsible and honest with everyone on the team."
-                                imagePostUrl="/src/Team-work.jpg"
-                                >
-                                    
-                                </Popup_details> 
-                            ) : null }
+                            {popup && cardId == "ss-team-work" ? ( 
+                                    <Popup_details 
+                                    title="what is team work?"
+                                    description = "Teamwork skills are the qualities and skills that allow us to work well with other people during conversations, projects, meetings, and more. This kind of skill depends on our ability to communicate well, actively listen, and be responsible and honest with everyone on the team."
+                                    imagePostUrl="/src/Team-work.jpg"
+                                    >
+                                        
+                                    </Popup_details> 
+                                ) : null }
 
-                        <article id = "ss-team-work" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Team Work
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-teamwork.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            <article id = "ss-team-work" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp +' ' + PSstyle.anin4}>
+                                <header>
+                                    <h3>
+                                    Team Work
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure>
+                                        <img src="/src/svg/skill-teamwork.svg" alt="teamwork icon" />
+                                    </figure>
+                                </div>
+                            </article>
 
-                    {/* --- Card Skill 5--- */}
+                        {/* --- Card Skill 5--- */}
 
-                        {popup && cardId == "ss-criativity" ? ( 
-                                <Popup_details 
-                                title="what is criativity?"
-                                description = "Creativity is the act of transforming what already exists through new and imaginative ideas, producing something unprecedented. It can be characterized as the ability to perceive the world around us in order to find unexplored points of view, make connections between seemingly unrelated issues and generate solutions."
-                                imagePostUrl="/src/Criativity.jpg"
-                                >
-                                    
-                                </Popup_details> 
-                            ) : null }   
+                            {popup && cardId == "ss-criativity" ? ( 
+                                    <Popup_details 
+                                    title="what is criativity?"
+                                    description = "Creativity is the act of transforming what already exists through new and imaginative ideas, producing something unprecedented. It can be characterized as the ability to perceive the world around us in order to find unexplored points of view, make connections between seemingly unrelated issues and generate solutions."
+                                    imagePostUrl="/src/Criativity.jpg"
+                                    >
+                                        
+                                    </Popup_details> 
+                                ) : null }   
 
-                        <article id = "ss-criativity" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Criativity
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-criativity.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            <article id = "ss-criativity" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp  +' ' + PSstyle.anin5}>
+                                <header>
+                                    <h3>
+                                    Criativity
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure>
+                                        <img src="/src/svg/skill-criativity.svg" alt="criativity icon" />
+                                    </figure>
+                                </div>
+                            </article>
+                        </div>     
+                    
                     </section>
                     
                     {/* -----------HARD SKILLS AREA ---------------*/}
@@ -172,69 +174,86 @@ const skills = () => {
                     
                         {/* -----------Component title e subtitle ---------------*/}
                         <TitleSubtitle title="Hard Skills" subtitle= "My main techinical skill set"/>
-                    
-                        {/* --- Card Skill 1--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Front-End
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                                
-                            </div>
-                        </article>
+                        <div className={PSstyle.hard_skills_Wrapp}>
+                            {/* --- Card Skill 1--- */}
+                            <article className ={PSstyle.skill_Wrapp + ' ' + PSstyle.anin1}>
+                                <header>
+                                    <h3>
+                                    Front-End
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure title="Hyper Text Markup Language">
+                                        <img src="/icons/html-icon.svg" alt="html icon" />
+                                    </figure>
+                                    <figure title="Cascading Style Sheet">
+                                        <img src="/icons/css-icon.svg" alt="css icon" />
+                                    </figure>
+                                    <figure title="JavaScript">
+                                        <img src="/icons/javascript-icon.svg" alt="javascript icon" />
+                                    </figure>
+                                    
+                                </div>
+                            </article>
 
-                        {/* --- Card Skill 2--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Back-End
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            {/* --- Card Skill 2--- */}
+                            <article className ={PSstyle.skill_Wrapp + ' ' + PSstyle.anin2}>
+                                <header>
+                                    <h3>
+                                    Back-End
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure title="Next.js">
+                                        <img src="/icons/nextjs-icon.svg" alt="next.js icon" />
+                                    </figure>
+                                    
+                                    <figure title="Node.js">
+                                        <img src="/icons/nodejs-icon.svg" alt="node.js icon" />
+                                    </figure>
+                                    
+                                    <figure title="MongoDb">
+                                        <img src="/icons/mongodb-icon.svg" alt="mongo db icon" />
+                                    </figure>
+                                </div>
+                            </article>
 
-                        {/* --- Card Skill 3--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Code Control
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                            {/* --- Card Skill 3--- */}
+                            <article className ={PSstyle.skill_Wrapp + ' ' + PSstyle.anin3}>
+                                <header>
+                                    <h3>
+                                    Code Control
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure title="Git">
+                                        <img src="/icons/git-icon.svg" alt="git icon" />
+                                    </figure>
 
-                        {/* --- Card Skill 4--- */}
-                        <article className ={PSstyle.skill_Wrapp}>
-                            <header>
-                                <h3>
-                                   Design
-                                </h3>
-                            </header>
-                            <div className = {PSstyle.skill_Container}>
-                                <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
-                                </figure>
-                            </div>
-                        </article>
+                                    <figure title="Github">
+                                        <img src="/icons/github-icon.svg" alt="github icon" />
+                                    </figure>  
+                                </div>
+                            </article>
+
+                            {/* --- Card Skill 4--- */}
+                            <article className ={PSstyle.skill_Wrapp + ' ' + PSstyle.anin4}>
+                                <header>
+                                    <h3>
+                                    Design
+                                    </h3>
+                                </header>
+                                <div className = {PSstyle.skill_Container}>
+                                    <figure title="Adobe XD">
+                                        <img src="/icons/xd-icon.svg" alt="adobe xd icon" />
+                                    </figure>
+                                    <figure title="Adobe Photoshop">
+                                        <img src="/icons/photoshop-icon.svg" alt="photoshop icon" />
+                                    </figure>
+                                    
+                                </div>
+                            </article>
+                        </div>    
                     </section>
                 </div>
                     
