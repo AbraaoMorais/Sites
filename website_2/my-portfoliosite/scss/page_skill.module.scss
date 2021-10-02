@@ -29,6 +29,7 @@
         margin: 6px 33px 6px 3px;
         
         header{
+           
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,6 +46,7 @@
             }
         
         }
+
        
         .skill_Container{
             display: flex;
@@ -72,8 +74,17 @@
                 }
             }
         }
-        .skill_Container:hover{
-            
+        
+    }
+    
+    //hover effect area animations and transitions
+    .skill_Wrapp:hover{
+        header{
+            box-shadow: rgba(0, 195, 255, 0.158) 0px -1px 3px;
+            border-radius:  0 0 13px 13px;
+        }
+        .skill_Container{
+               
             figure{
                 
                 img{ 
@@ -83,6 +94,7 @@
                 
             }
         }
+        
     }    
 }
 
@@ -91,7 +103,7 @@
     .skill_Wrapp {
         margin: 6px 16px 6px 3px;
         header{
-            border-radius: 20px 20px 0 0 ;
+            border-radius:  0 0 13px 13px;
             background-color: #090d35;
         }
         .skill_Container{
@@ -157,7 +169,7 @@
               transform: scale(1);
     }
     100% {
-      -webkit-transform: scale(1.3);
-              transform: scale(1.3);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
     }
   }

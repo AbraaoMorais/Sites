@@ -86,7 +86,7 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-self-taugh.svg" alt="resilience icon" />
+                                    <img src="/src/svg/skill-self-taugh.svg" alt="self-taugh icon" />
                                 </figure>
                             </div>
                         </article>
@@ -111,7 +111,7 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-organization.svg" alt="resilience icon" />
+                                    <img src="/src/svg/skill-organization.svg" alt="organization icon" />
                                 </figure>
                             </div>
                         </article>
@@ -136,7 +136,7 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-teamwork.svg" alt="resilience icon" />
+                                    <img src="/src/svg/skill-teamwork.svg" alt="teamwork icon" />
                                 </figure>
                             </div>
                         </article>
@@ -161,7 +161,7 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-criativity.svg" alt="resilience icon" />
+                                    <img src="/src/svg/skill-criativity.svg" alt="criativity icon" />
                                 </figure>
                             </div>
                         </article>
@@ -182,13 +182,13 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/html-icon.svg" alt="html icon" />
                                 </figure>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/css-icon.svg" alt="css icon" />
                                 </figure>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/javascript-icon.svg" alt="javascript icon" />
                                 </figure>
                                 
                             </div>
@@ -203,7 +203,15 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/nextjs-icon.svg" alt="next.js icon" />
+                                </figure>
+                                
+                                <figure>
+                                    <img src="/icons/nodejs-icon.svg" alt="node.js icon" />
+                                </figure>
+                                
+                                <figure>
+                                    <img src="/icons/mongodb-icon.svg" alt="mongo db icon" />
                                 </figure>
                             </div>
                         </article>
@@ -217,8 +225,12 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/git-icon.svg" alt="git icon" />
                                 </figure>
+
+                                <figure>
+                                    <img src="/icons/github-icon.svg" alt="github icon" />
+                                </figure>  
                             </div>
                         </article>
 
@@ -231,8 +243,12 @@ const skills = () => {
                             </header>
                             <div className = {PSstyle.skill_Container}>
                                 <figure>
-                                    <img src="/src/svg/skill-resilience.svg" alt="resilience icon" />
+                                    <img src="/icons/xd-icon.svg" alt="adobe xd icon" />
                                 </figure>
+                                <figure>
+                                    <img src="/icons/photoshop-icon.svg" alt="photoshop icon" />
+                                </figure>
+                                
                             </div>
                         </article>
                     </section>
