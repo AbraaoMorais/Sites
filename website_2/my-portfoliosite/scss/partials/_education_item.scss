@@ -1,0 +1,20 @@
+.education_item_wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .education_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 50px;
+        padding: 6px;
+        margin: 6px;
+        background-color: rgba(3, 3, 22, 0.33);
+        
+        h4{
+            color: rgb(128, 164, 185);
+        }
+    }
+}
