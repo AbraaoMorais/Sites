@@ -4,7 +4,7 @@ import PFstyle from "../scss/page_formation.module.scss"
 const EducationComponent = () => {
     return(
         <>
-            <div className={PFstyle.education_items_container}>
+            <ul className={PFstyle.education_items_container}>
                 
                 <header>
                     
@@ -37,14 +37,25 @@ const EducationComponent = () => {
                     </div>
                 </header>
                 <EducationItem
-                    curse="ola dada"
-                    level = "ola mundo"
-                    status="ola mundo"
+                    instituition = "C.E.P.E.P Technical School"
+                    curse="Technical in Eletrotecnichal"
+                    level = "Technichal"
+                    status="Complete"
                 />
-                 <EducationItem/>
-                <EducationItem/>
+                <EducationItem
+                    instituition = "IMD/UFRN"
+                    curse="Digital Games Programmer"
+                    level = "Complementary Technichal"
+                    status="Complete"
+                />
+                <EducationItem
+                instituition = "Universidade Cruzeiro do Sul"
+                curse="Analysis and Systems Development"
+                level = "Superior of Technology"
+                status="Studying"
+                />
             
-            </div>
+            </ul>
         </>
     )
 }
