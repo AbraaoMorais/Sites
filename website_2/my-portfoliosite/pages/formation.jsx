@@ -1,6 +1,7 @@
 import react, { Fragment } from 'react'
 import styles from '../scss/pages.module.scss'
 import TitleSubtitle from '../components/TitleSubtitle'
+import EducationComponent from '../communs_components/Education-component'
 //import Link from 'next/link'
 
 const formation = () => {
@@ -13,7 +14,12 @@ const formation = () => {
                 {/* -----------TITULO E SUBTILO ---------------*/}
                 <TitleSubtitle title="Education" subtitle= "My academic education"/>
             
-                {/* -----------CONTENT AREA ---------------*/}
+                {/* -----------CONTENT EDUCATION ---------------*/}
+                
+                <EducationComponent/>
+
+                {/* -----------CONTENT COURSES ---------------*/}
+
             </section>    
         </main>
 
