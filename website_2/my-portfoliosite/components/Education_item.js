@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const EducationItem = (props) => {
     return (
         <Fragment>
-            <li className={style.education_item_wrapp}>
+            <div className={style.education_item_wrapp}>
                 <div className= {style.education_item}>
                     <h4>
                         {props.instituition}
@@ -26,7 +26,7 @@ const EducationItem = (props) => {
                         {props.status}
                     </h4>
                 </div>
-            </li>
+            </div>
             
         </Fragment>
     )
