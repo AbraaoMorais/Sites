@@ -1,0 +1,47 @@
+
+.course_frame{
+    width: 21vw;
+    height: 139px;
+    position: relative;
+    margin: 10px 10px;
+    background: rgb(4, 6, 41);
+    border: rgb(216, 169, 40) solid 2px;
+    box-shadow: rgb(34, 96, 230) 1px 6px 76px;
+    
+    // .img{
+    //     width: 350px;
+    //     height: 290px;
+    // }
+    .course_title_wrapp{
+        width: 100%;
+        position: absolute;
+        bottom: 9px;
+        background-color: rgba(7, 8, 65, 0.89);
+        opacity: 0.333;
+    }
+    
+    h3{
+        padding: 3px;
+        text-align: center;
+        color: rgb(194, 168, 97);
+        text-transform: capitalize;
+    }   
+} 
+.course_frame:hover{
+    box-shadow: rgb(209, 171, 46) 1px 6px 36px;
+    animation: scale-up 0.6s both;
+    cursor: pointer;
+    .course_title_wrapp{
+        opacity: 1;
+    }
+   
+}  
+
+@keyframes scale-up {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
