@@ -1,8 +1,6 @@
 import { Fragment } from "react";
 import CourseFrame from "../components/Course-frame";
 import styles from '../scss/page_formation.module.scss';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 
 const CourseComponent = () =>{
     const responsive = {
