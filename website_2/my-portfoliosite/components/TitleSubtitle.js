@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import styles from '../scss/pages.module.scss'
 
 const TitleSubtitle = (props) => {
@@ -19,8 +19,8 @@ const TitleSubtitle = (props) => {
     );
 }
 
-TitleSubtitle.PropTypes = {
-    title: PropTypes.string,
-    subtitle: PropTypes.string
-}
+// TitleSubtitle.PropTypes = {
+//     title: PropTypes.string.isRequired,
+//     subtitle: PropTypes.string.isRequired
+// }
 export default TitleSubtitle;

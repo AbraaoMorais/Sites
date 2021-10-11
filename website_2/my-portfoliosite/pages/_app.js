@@ -4,7 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import SideLeft from '../communs_components/SideLeft';
 import Footer from '../components/Footer';
-
+import "../scss/Alice-carousel/alice-carousel.scss";
 
 
 

@@ -2,6 +2,8 @@
 ##PropTypes
 ##Sass
 
-React Carousel: (https://github.com/AbraaoMorais/react-responsive-carousel)
+react alice carrousel(https://github.com/maxmarinich/react-alice-carousel)
 
-react-simply-carousel: (https://github.com/vadymshymko/react-simply-carousel)
+
+
+dimenções da imagem certificado do curso: 239px x 139px
