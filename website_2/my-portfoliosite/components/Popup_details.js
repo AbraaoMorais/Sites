@@ -12,7 +12,7 @@ const popup_Infor = ({
 
     return (
         
-        <div className={Styles.popup_container}>
+        <div className={Styles.popup_container + " " + Styles.backdrop_blur }>
             <div className={Styles.popup_content}>
                 <div className={Styles.content_wrapp}>
                     <header>

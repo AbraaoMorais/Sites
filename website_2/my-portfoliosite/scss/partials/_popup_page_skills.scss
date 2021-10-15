@@ -13,7 +13,7 @@
   backdrop-filter: blur(15px);
   -webkit-animation: popuptop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: popuptop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;   
-
+  
   .popup_content{
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@
       width: 99%;
       height: 23vh;
       color: rgb(100, 140, 192);
-      background-color: #be2f2f18;
+      background-color: #380a4d77;
       padding: 13px;
       margin-top: 6px;
       font-size: 14px;
@@ -63,6 +63,14 @@
     }
   }      
 }
+//for recurses not suportable in firefox
+@supports (-moz-appearance:none) {
+    
+  .popup_container{
+    background-color: rgba(21, 23, 83, 0.96);
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .popup_container{
     top: 66vh;
