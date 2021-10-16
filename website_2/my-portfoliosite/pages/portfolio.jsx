@@ -102,8 +102,16 @@ const portfolio = () => {
                     </li>
                 </ul>
             </div>
-            <footer>
-
+            <footer className={PPstyles.footer}>
+                <p>
+                    For more projects access my <a href="https://github.com/AbraaoMorais">
+                        <strong>Github</strong>
+                        </a> and my  
+                        <a href="https://www.behance.net/abraaomorais">
+                            &nbsp;<strong>Behance</strong>
+                        </a> account
+                </p>
+                
             </footer>
         </section>    
     </main>
