@@ -63,6 +63,10 @@ $play-btn-size: 32px !default;
     cursor: -moz-grab;
     cursor: -webkit-grab;
 
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
     line-height: 0;
     * {
       line-height: initial;
@@ -118,8 +122,10 @@ $play-btn-size: 32px !default;
   font-size: 60px;
   // background-color: rgba(0, 204, 255, 0);
   overflow: none;
-  user-select: none;
   -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  
 }
 .alice-carousel__prev-btn > span{
   left: -36px;
