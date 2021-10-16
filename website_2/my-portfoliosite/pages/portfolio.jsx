@@ -18,7 +18,7 @@ const portfolio = () => {
                 <ul>
                     <li>
                         
-                        <Link href="projects/web" replace>
+                        <Link href="portfolio/web" replace>
 
                                 <a>
                                     <figure>
@@ -32,7 +32,7 @@ const portfolio = () => {
 
                     <li className={PPstyles.projects_item}>
                         
-                        <Link href="projects/web" replace>
+                        <Link href="portfolio/games" replace>
 
                                 <a>
                                     <figure>
