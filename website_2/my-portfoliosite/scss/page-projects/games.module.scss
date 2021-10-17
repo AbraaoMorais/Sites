@@ -1,0 +1,9 @@
+.games_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;   
+    padding: 9px
+}
+
+@import '../partials/game_item';

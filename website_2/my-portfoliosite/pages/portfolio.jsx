@@ -95,7 +95,7 @@ const portfolio = () => {
                                         <img src="/src/bloquear.png" alt="web icon" />
                                     </figure>
                                     <p>Coming soon...
-</p>
+                                    </p>
                                 </a>
                          
                         </Link>
@@ -111,7 +111,7 @@ const portfolio = () => {
                             &nbsp;<strong>Behance</strong>
                         </a> account
                 </p>
-                
+
             </footer>
         </section>    
     </main>

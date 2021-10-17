@@ -1,0 +1,70 @@
+.cover_wrapper{
+    cursor: pointer;
+    perspective: 396px;
+    figure{
+        
+        user-select: none;
+        margin: 9px 16px;
+        box-shadow:  0px 13px 19px 0px rgb(24, 1, 37);
+
+    //    transform: rotate3d(0.033, 0.66, 0, 30deg);
+        
+        
+        .game_item{
+            width: 240px;
+            height: 309px;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    }
+    
+}
+.cover_wrapper:hover{
+    z-index: 3;
+    animation: cover-move 1s 0s both;
+
+    figure{
+        animation: cover-rotate 1s 0s both;
+        .game_item{
+            animation: cover-zoom 1s 0s both;
+            // transform: scale(1.2);
+
+        }
+    }
+   
+}
+
+
+@keyframes cover-rotate {
+    0%{
+        transform: rotate3d(0, 0, 0, 0deg);
+        
+    }
+    100%{
+        
+        transform: rotate3d(0.033, 0.66, 0, 30deg);
+    }
+}
+
+@keyframes cover-zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2); 
+    }
+}
+
+@keyframes cover-move {
+    0%{
+        position: relative;
+    }
+    100%{
+        position: absolute; 
+        top: 23vh;
+        left: 3vw;
+    }
+}
