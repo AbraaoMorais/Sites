@@ -56,13 +56,6 @@
     background-image: linear-gradient(to left,rgb(33, 71, 197), rgb(96, 30, 145));
 }
 
-/* .btnActive{
-    display: none;
-    height: 1220px;
-    background-color: rgb(96, 30, 145); 
-    background-image: linear-gradient(to left,rgb(33, 71, 197), rgb(96, 30, 145));
-} */
-
 .main a{
     display: flex;
     flex-direction: row;

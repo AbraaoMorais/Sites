@@ -1,14 +1,21 @@
 import Proptypes from 'prop-types';
+import { useState } from 'react';
 import styles from '../scss//page-projects/games.module.scss'
 
 const GameItem = (props) => {
+
     return(
-        <>
-            <div className={styles.cover_wrapper}>
+        <>   
+            
+            <div tabindex="-1" onClick={props.onOpen} className={styles.cover_wrapper}>
+               
                 <figure>
-                    <img className={styles.game_item} src={props.gameCoverUrl} />
+                    <img src={props.gameCoverUrl} />
+                    
                 </figure>
+                <button>Play now</button>          
             </div>
+            
         </>
     );
 }
