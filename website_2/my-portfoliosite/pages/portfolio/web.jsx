@@ -5,7 +5,10 @@ const Web = () => {
     return (
         <main  className = {styles.body}>
             <section id="contact" className = {styles.side_right_container}>
-                <TitleSubtitle title="ola mundo" subtitle="aaaaaaaaaaadaadadada"/>
+                <TitleSubtitle 
+                    title="Web" 
+                    subtitle="Some of my web projects developed to today"
+                />
            </section>
         </main>
     );
