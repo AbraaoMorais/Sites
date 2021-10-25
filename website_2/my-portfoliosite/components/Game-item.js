@@ -13,9 +13,15 @@ const GameItem = (props) => {
                     <img src={props.gameCoverUrl} />
                     
                 </figure>
-                <button>Play now</button>          
+                <div className={styles.cover_content}>
+                    <h3>{props.gameTitle}</h3>
+                    <p>{props.gameDescription}</p>
+                    
+                    <button>Play now</button>       
+                </div>
+                   
             </div>
-            
+            <input className={styles.close_cover} type="button" value="╳" alt="close button" title="close"/>
         </>
     );
 }
