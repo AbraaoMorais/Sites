@@ -30,6 +30,8 @@ const Web = () => {
                         gameGenero="Platform game"
                         gameDescription= {<>Developed in the practical class of the javascript course ES6 offered by the D.I.O (Digital Innovation One). The same is a recreation of the famous chrome dinosaur game, available when internet connection is interrupted in chrome browser.
                             </>}
+                        alt="dio dino game capa"
+                        title="dio dino game"
                             
                         gameURL="https://abraaomorais.github.io/games/dio-dino-game"
                         gameCoverURL = "/src/covergames/dio-dino-cover.png"
