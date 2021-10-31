@@ -2,6 +2,7 @@ import Proptypes from 'prop-types';
 import { useState } from 'react';
 import styles from '../scss//page-projects/games.module.scss'
 import AvaliateSystem from './systems/AvaliationSystem';
+import Image from 'next/image'
 
 const GameItem = (props) => {
 
@@ -11,7 +12,17 @@ const GameItem = (props) => {
             <div tabindex="-1" onClick={props.onOpen} className={styles.cover_wrapper}>
                
                 <figure>
-                    <img src={props.gameCoverURL} alt={props.alt} title={props.title}/>
+                    <Image
+                    // blurDataURL=""
+                    // placeholder="blur"
+                    
+                    className={styles.img} 
+                    src={props.gameCoverURL} 
+                    alt={props.alt} 
+                    title={props.title}
+                    width={230}
+                    height={270}
+                    />
                     
                 </figure>
                 <div className={styles.cover_content}>
@@ -28,7 +39,7 @@ const GameItem = (props) => {
                     
                     <p>{props.gameDescription}</p>
                       
-                    <a href={props.gameURL} target="_blank">
+                    <a href={props.gameURL} rel="noopener" rel="noreferrer" target="_blank">
                         
                         <button> Play now </button>  
                     </a> 
