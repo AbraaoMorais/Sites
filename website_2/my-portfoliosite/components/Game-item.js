@@ -9,7 +9,7 @@ const GameItem = (props) => {
     return(
         <>   
             
-            <div tabindex="-1" onClick={props.onOpen} className={styles.cover_wrapper}>
+            <div tabIndex="-1" onClick={props.onOpen} className={styles.cover_wrapper}>
                
                 <figure>
                     <Image
