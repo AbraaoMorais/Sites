@@ -1,0 +1,1 @@
+## Permite consumo de api por outras aplicações  (publico)

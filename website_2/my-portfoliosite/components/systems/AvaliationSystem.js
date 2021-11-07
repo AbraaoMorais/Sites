@@ -3,10 +3,10 @@ const AvaliateSystem = (props) => {
     
     // cria arrays
     let avaliation = ["nota1","nota2","nota3","nota4","nota5"]
-    let newAvaliation, notAvalible = [];
+    let newAvaliation, notAvalible, finalAvaliation = [];
     
 
-    //avaliação do usuario, props -> game-item.js -> games.jsx
+    //avaliação do usuario, propsTrack: game-item.js -> games.jsx
     let userAvaliation = props.avaliation;
 
     //logica
@@ -29,34 +29,17 @@ const AvaliateSystem = (props) => {
         notAvalible.length = 5 - userAvaliation; 
         newAvaliation.length = userAvaliation;
 
-        //array renderizado com estrelas concatenadas
-        newAvaliation = newAvaliation.concat(notAvalible)
-        console.table(newAvaliation);
+        //monta newArray com valores dos oldArrays
+        finalAvaliation = [...newAvaliation, ...notAvalible]
+        console.table(finalAvaliation);
            
     }
-    // if (userAvaliation != null && userAvaliation != undefined || userAvaliation <= 5){
-
-    //     for(let i = 0; i < userAvaliation; i++){
-    //         //adciona estrela
-    //         avaliation.unshift(starOn);
-    //         key = i;
-    //         console.table(key)
-
-    //         //remove estrela vazia
-    //         let numItemsRemove = 0;
-    //         avaliation.splice(starOff, numItemsRemove);
-    //         numItemsRemove +=1;
-
-    //     }
-    //     //mesmo se o if falhar apenas 5 items do array será     exibido
-    //     avaliation.length = 5;
-    // }
-
+    
 
     return(
         <>
             <span> 
-                {newAvaliation} 
+                {finalAvaliation} 
             </span>
         </>
  )   

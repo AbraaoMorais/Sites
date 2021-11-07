@@ -70,24 +70,21 @@
 
 .cover_wrapper:focus-within{
    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // width: 50%;
-        // height: 100vh;
-        background-color: rgba(0, 4, 53, 0.637);
-        backdrop-filter: blur(16px);
-
-        // border:rgb(99, 1, 155) 1px solid;
-        outline: 0;
-        margin-top: 0;
-        padding: 9px;
-        // border-radius: 0 50px;
-        z-index: 33;
-
-        animation: cover-move 0s 0s both;
-
-        cursor: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(0, 4, 53, 0.637);
+    backdrop-filter: blur(16px);
+    //for recurses not suportable in firefox
+    // border:rgb(99, 1, 155) 1px solid;
+    outline: 0;
+    margin-top: 0;
+    padding: 9px;
+    // border-radius: 0 50px;
+    z-index: 33;
+    animation: cover-move 0s 0s both;
+    cursor: unset;
         
         figure{
             animation: cover-rotate 1s 0s both;
@@ -199,12 +196,19 @@
         }
             
         
-        + .close_cover{
-            display: block;
-            position: fixed;
-        }  
-    } 
-   
+    + .close_cover{
+        display: block;
+        position: fixed;
+    }  
+} 
+
+//para suporte ao blur filter no mozila
+@supports (-moz-appearance:none) {
+    
+    .cover_wrapper:focus-within{
+      background-color: rgba(21, 23, 83, 0.96);
+    }
+}
 
 
 @keyframes cover-rotate {
