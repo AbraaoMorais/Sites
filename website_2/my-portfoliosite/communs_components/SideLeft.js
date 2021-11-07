@@ -9,7 +9,7 @@ const SideLeft = () => {
        <div className= {styles.perfil}>
             <div className = {styles.container_imgPerfil}>
               <Image
-                src = "/src/imgProfile.jpg"
+                src = "/src/imgProfile.webp"
                 alt = "imagem perfil abraão morais"
                 layout = "responsive"  
                 width = {450}

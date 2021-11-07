@@ -69,13 +69,15 @@
 
 
 .cover_wrapper:focus-within{
-   
+
     display: flex;
     justify-content: center;
     align-items: center;
     
     background-color: rgba(0, 4, 53, 0.637);
     backdrop-filter: blur(16px);
+    
+  
     //for recurses not suportable in firefox
     // border:rgb(99, 1, 155) 1px solid;
     outline: 0;

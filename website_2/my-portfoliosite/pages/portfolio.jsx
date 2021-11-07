@@ -22,7 +22,7 @@ const portfolio = () => {
 
                                 <a>
                                     <figure>
-                                        <img src="/icons/png/web-icon.png" alt="web icon" />
+                                        <img src="/icons/png/web-icon.webp" alt="web icon" />
                                     </figure>
                                     <h3>Web</h3>
                                 </a>
@@ -36,7 +36,7 @@ const portfolio = () => {
 
                                 <a>
                                     <figure>
-                                        <img src="/icons/png/joystick.png" alt="Games projects icon" />
+                                        <img src="/icons/png/joystick.webp" alt="Games projects icon" />
                                     </figure>
                                     <h3>Games</h3>
                                 </a>

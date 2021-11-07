@@ -2,7 +2,7 @@ import styles from "../styles/footer.module.css"
 
 //formatar data com date api
 let coperightDate = new Date() 
-coperightDate= new Intl.DateTimeFormat('pt-BR',{year: 'numeric'}).format();
+coperightDate = new Intl.DateTimeFormat('pt-BR',{year: 'numeric'}).format();
 
 const footer = () =>{
     return(

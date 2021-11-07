@@ -145,7 +145,7 @@ export default function Home ({data}) {
                                 layout = "fill"
                                 objectFit = "contain"
                                 objectPosition = "100% 60%"
-                                src ="/src/imgBg.png"
+                                src ="/src/imgBg.webp"
                                 alt = "imagem de fundo abraão projetando este website"
                             />
                         </div>
