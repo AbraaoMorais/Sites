@@ -35,18 +35,18 @@ const Web = () => {
                         title="dio dino game"
                             
                         gameURL="https://abraaomorais.github.io/games/dio-dino-game"
-                        gameCoverURL = "/src/covergames/dio-dino-cover.png"
+                        gameCoverURL = "/src/covergames/dio-dino-cover.webp"
                     />
                      <GameItem 
                         gameTitle="other game title"
                         gameGenero="undefined"
                         avaliation={3}
                         gameDescription="Lorem Ipsum is simply dummy text of the printing and     typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s, when an unknown     printer took a galley of type and scrambled it to make a    type specimen book."
-                        gameCoverURL = "/src/covergames/dio-dino-cover.png"
+                        gameCoverURL = "/src/covergames/dio-dino-cover.webp"
                     />
                      <GameItem 
 
-                        gameCoverURL = "/src/covergames/dio-dino-cover.png"
+                        gameCoverURL = "/src/covergames/dio-dino-cover.webp"
                     />
                     
                 </section>
@@ -69,11 +69,11 @@ const Web = () => {
                         gameGenero="undefined"
                         avaliation={3}
                         gameDescription="Lorem Ipsum is simply dummy text of the printing and     typesetting industry. Lorem Ipsum has been the industry's   standard dummy text ever since the 1500s, when an unknown     printer took a galley of type and scrambled it to make a    type specimen book."
-                        gameCoverURL = "/src/covergames/dio-dino-cover.png"
+                        gameCoverURL = "/src/covergames/dio-dino-cover.webp"
                     />
                      <GameItem 
 
-                        gameCoverURL = "/src/covergames/dio-dino-cover.png"
+                        gameCoverURL = "/src/covergames/dio-dino-cover.webp"
                     />
                 </section>
                 <prateleira className={games.games_prateleira}>select a game</prateleira>
