@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 
+//reefs só funcionam em componentes de classe
 
 const popup_Infor = () => {
     // const [popup, setPopup] = useState(1);

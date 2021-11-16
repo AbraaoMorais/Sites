@@ -78,7 +78,7 @@ const skills = () => {
                                     </Popup_details> 
                                 ) : null }
 
-                            <article id = "ss-self-taught" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp +' ' + PSstyle.anin2}>
+                            <article id = "ss-self-taught" onMouseOver={activePopup} onMouseLeave={()=>setPopup(false)} className ={PSstyle.skill_Wrapp + ' ' + PSstyle.anin2}>
                                 <header>
                                     <h3>
                                         self-taught
