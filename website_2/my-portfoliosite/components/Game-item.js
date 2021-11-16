@@ -1,6 +1,6 @@
 import Proptypes from 'prop-types';
 import { useState } from 'react';
-import styles from '../scss//page-projects/games.module.scss'
+import styles from '../scss/page-projects/games.module.scss'
 import AvaliateSystem from './systems/AvaliationSystem';
 import Image from 'next/image'
 
@@ -9,7 +9,7 @@ const GameItem = (props) => {
     return(
         <>   
             
-            <div tabIndex="-1" onClick={props.onOpen} className={styles.cover_wrapper}>
+            <div id={"game_" + props.gameID} tabIndex="-1" className={styles.cover_wrapper}>
                
                 <figure>
                     <Image
@@ -32,9 +32,10 @@ const GameItem = (props) => {
                     <p><gamegenre>Genre: </gamegenre>{props.gameGenero}</p>
                     
                     <div>
-                        <AvaliateSystem
-                       avaliation = {props.avaliation}
-                    />
+                        <AvaliateSystem 
+                        avaliation = {props.avaliation}
+                        onClick={props.onOpen}
+                        />
                     </div>
                     
                     <p>{props.gameDescription}</p>
@@ -55,7 +56,7 @@ const GameItem = (props) => {
 }
 
 GameItem.Proptypes = {
-    
+    gameID: Proptypes.string.isRequired,
     gameTitle: Proptypes.string.isRequired,
     gameGenero: Proptypes.string.isRequired,
     avaliation: Proptypes.number.isRequired,

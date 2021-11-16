@@ -8,7 +8,7 @@ import GameItem from '../../components/Game-item';
 
 const Web = () => {
 
-
+let newUserAvaliation = 1
     return (
        
         <main  className = {styles.body}>
@@ -26,7 +26,8 @@ const Web = () => {
                 <section className={games.games_wrapper}>
                     <GameItem 
                         // onOpen={()=> setOverflow("hidden")}
-                        avaliation = {3}
+                        gameID="dioDino"
+                        avaliation = {newUserAvaliation}
                         gameTitle="dio dino: the game"
                         gameGenero="Platform game"
                         gameDescription= {<>Developed in the practical class of the javascript course ES6 offered by the D.I.O (Digital Innovation One). The same is a recreation of the famous chrome dinosaur game, available when internet connection is interrupted in chrome browser.
