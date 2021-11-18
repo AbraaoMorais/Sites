@@ -104,10 +104,10 @@ const portfolio = () => {
             </div>
             <footer className={PPstyles.footer}>
                 <p>
-                    For more projects access my <a href="https://github.com/AbraaoMorais">
+                    For more projects access my <a rel="dofollow noopener" href="https://github.com/AbraaoMorais" target="_blank">
                         <strong>Github</strong>
                         </a> and my  
-                        <a href="https://www.behance.net/abraaomorais">
+                        <a rel="dofollow noopener" href="https://www.behance.net/abraaomorais" target="_blank">
                             &nbsp;<strong>Behance</strong>
                         </a> account
                 </p>
