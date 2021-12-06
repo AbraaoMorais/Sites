@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avaliados",
+  "info": {
+    "name": "avaliado"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "avaliations": {
+      "type": "float"
+    }
+  }
+}

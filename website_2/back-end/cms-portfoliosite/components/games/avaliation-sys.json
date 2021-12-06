@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_games_avaliation_sys",
+  "info": {
+    "name": "avaliationSys",
+    "icon": "star-half-alt"
+  },
+  "options": {},
+  "attributes": {
+    "userAvaliation": {
+      "type": "float"
+    }
+  }
+}

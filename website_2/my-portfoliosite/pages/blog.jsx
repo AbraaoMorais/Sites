@@ -1,14 +1,19 @@
-import React from 'react-dom'
-import Link from 'next/link'
-import Image from 'next/image'
-import Head from 'next/head'
-import styles from '../scss/pages.module.scss'
-import Footer from '../components/Footer'
-import SideLeft from '../communs_components/SideLeft'
-import { Fragment } from 'react'
+import React from 'react-dom';
+import Link from 'next/link';
+import Image from 'next/image';
+import Head, { defaultHead } from 'next/head';
+import styles from '../scss/pages.module.scss';
+import Footer from '../components/Footer';
+import SideLeft from '../communs_components/SideLeft';
+import { Fragment } from 'react';
+
+import axios from 'axios';
 
 
-const skills = () => {
+
+
+const skills = ({dados}) => {
+    
     return(
        <Fragment> 
             <Head> 
@@ -26,7 +31,10 @@ const skills = () => {
                     <div className = {styles.wrap_title}>
                         
                         <h1  className = {styles.title}>
-                            Blog
+                            {/* alguma coisa */}
+                            {console.log(dados)}
+                            {dados[1].titulo}
+                            <p>meu id: {dados[1]._id}</p>
                         </h1>
                         
                         <span className = {styles.line_horizontal}></span>
@@ -42,6 +50,11 @@ const skills = () => {
             </main>
         </Fragment>      
     );
+}
+
+skills.getInitialProps = async () => {
+    const res = await axios.get('http://localhost:1337/testes')
+    return {dados : res.data}
 }
 
 // export async function getServerSideProps() {

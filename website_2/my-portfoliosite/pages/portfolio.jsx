@@ -97,7 +97,6 @@ const portfolio = () => {
                                     <p>Coming soon...
                                     </p>
                                 </a>
-                         
                         </Link>
                     </li>
                 </ul>
