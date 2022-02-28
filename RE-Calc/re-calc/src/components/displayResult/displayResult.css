@@ -1,0 +1,32 @@
+.display-wrapper{
+    width: 80%;
+    height: 19vmax;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3AD8E2;
+    border: 6px solid #135fa5;
+}
+
+.display-value{
+    font-size: 6rem;
+}
+
+.display-result-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-details-type{
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+}
+.result-details-symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.3rem;
+    line-height: 0.8em;
+}
