@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Digital;
+    src: local('helvetica neue');
+    src: url(../../styles/fonts/Digital.woff) format("woff");
+  }  
 .display-wrapper{
     width: 80%;
     height: 19vmax;
@@ -9,7 +14,12 @@
 }
 
 .display-value{
-    font-size: 6rem;
+    font-family: Digital,Helvetica, Arial, sans-serif;
+    font-size: 18vmax;
+    font-stretch:wider;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 19px rgb(0, 106, 206);
+  
 }
 
 .display-result-details{
@@ -20,13 +30,31 @@
 }
 
 .result-details-type{
-    font-size: 1.6rem;
+    font-size: 3vmax;
     line-height: 1.3rem;
 }
 .result-details-symbol{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5.3rem;
+    font-size: 13vmax;
     line-height: 0.8em;
+}
+
+.resistence-D-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 1vh;
+}
+.resistence-D-spacer{
+    min-width: 4vmax;
+    height: 1.6vmin;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }

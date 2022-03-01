@@ -1,11 +1,15 @@
 
 import React from 'react';
+import ResistenceDisplay from './resistenceDisplay'
 import './displayResult.css'
 
 interface DisplayResult {
     resistenceValue: number;
     resultType: string;
 }
+
+const isMobile = window.innerWidth < 1024 ? true : false
+
 const DisplayResult = (props: DisplayResult) => {
     return(
         <div className='display-wrapper'>
@@ -16,9 +20,11 @@ const DisplayResult = (props: DisplayResult) => {
                 <span className='result-details-type'>
                     M{props.resultType}
                 </span>
-                <span className='result-details-symbol'>
+                {
+                    isMobile ? <ResistenceDisplay/> : <span className='result-details-symbol'>
                     &Omega;
                 </span>
+                }
                 <span className='result-details-name'>
                     ohm
                 </span>
