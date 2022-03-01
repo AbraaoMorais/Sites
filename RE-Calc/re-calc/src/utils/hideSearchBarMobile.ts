@@ -5,7 +5,7 @@ const hideSearchMobile = () => {
 	    setTimeout ( function ( ) { 
 		    // Oculta o endereço bar!
 		    window.scrollTo( 0 ,  1 ) ;
-	    },0 ) ;
+	    },100 ) ;
     })
 }
 
