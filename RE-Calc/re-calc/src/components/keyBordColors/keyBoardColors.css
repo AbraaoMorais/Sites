@@ -1,0 +1,83 @@
+.key-board-colors-wrapper{
+   margin: 0 auto;
+}
+.color-select-step{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: x-large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.keys-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    gap: 9px;
+    width: 80%;
+    padding: 9px;
+    margin: 0 auto;
+}
+.col-1,
+.col-2,
+.col-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: flex-start;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-black,
+.key-brown,
+.key-red,
+.key-orange,
+.key-yellow,
+.key-green,
+.key-blue,
+.key-violet,
+.key-grey,
+.key-white{
+    max-width: 30vw;
+    width: 26vw;
+    min-width: 79px;
+    height: 9vmax;
+}
+
+.key-black{
+    background-color: black;
+}
+.key-brown{
+    background-color: #583412;
+}
+.key-red{
+    background-color: rgb(255, 0, 0);
+}
+.key-orange{
+    background-color: #FF6B00;
+}
+.key-yellow{
+    background-color: rgb(255, 208, 0);
+}
+.key-green{
+    background-color: #0DE309;
+}
+.key-blue{
+    background-color: #0984E3;
+}
+.key-violet{
+    background-color: #DC0EE0;
+}
+.key-grey{
+    background-color: #8C9195;
+}
+.key-white{
+    background-color: #fff;
+}

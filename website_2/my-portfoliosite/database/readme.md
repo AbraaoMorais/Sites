@@ -1,1 +1,0 @@
-## Permite consumo de api somente pela aplicação (somente interno)
