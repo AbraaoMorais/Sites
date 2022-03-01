@@ -16,21 +16,21 @@ h1{
 }
 h2{
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 0.6rem;
     font-weight: 300;
     margin: 2rem 0 0 0;
     font-family: Roboto,'Helvetica Neue', BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
 }
 h3{
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: Roboto,'Helvetica Neue', BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     margin: 0;
 }
 .App-logo {
-    width: 9vmax;
-    height: 10vmax;
+    width: 6vmax;
+    height: 7vmax;
     margin:0 -3vw;
     pointer-events: none;
   }
