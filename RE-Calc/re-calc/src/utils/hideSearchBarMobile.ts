@@ -4,7 +4,7 @@ const hideSearchMobile = () => {
 	    // Define um tempo limite...
 	    setTimeout ( function ( ) { 
 		    // Oculta o endereço bar!
-            console.log('rodo!')
+            // console.log('rodo!')
 		    window.scrollTo(
                 {
                     top: 0,
