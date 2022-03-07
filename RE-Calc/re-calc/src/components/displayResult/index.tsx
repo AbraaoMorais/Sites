@@ -4,18 +4,23 @@ import ResistenceDisplay from './resistenceDisplay'
 import './displayResult.css'
 
 interface DisplayResult {
-    resistenceValue: number;
-    resultType: string;
+    resistenceValue: number,
+    resultType: string,
 }
 
 const isMobile = window.innerWidth < 1024 ? true : false
 
 const DisplayResult = (props: DisplayResult) => {
+
+    // console.log("valor é :"+teste)
+    
     return(
+         
         <div className='display-wrapper'>
             <div className='display-value'>
-                4.2{props.resistenceValue}
+                {props.resistenceValue}
             </div>
+            
             <div className='display-result-details'>
                 <span className='result-details-type'>
                     M{props.resultType}
@@ -29,7 +34,9 @@ const DisplayResult = (props: DisplayResult) => {
                     ohm
                 </span>
             </div>
+          
         </div>
+        
     )
 }
 
