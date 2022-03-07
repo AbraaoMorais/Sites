@@ -18,7 +18,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
     return(
         <>
             <span className='color-select-step'>
-                Cor 1
+                Cor 3
             </span>
             <div className='keys-wrapper'>
                 <div className='col-1'>
