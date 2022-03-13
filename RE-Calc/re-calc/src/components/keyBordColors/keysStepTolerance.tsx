@@ -21,7 +21,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
    
      //contexto
      const {colorValue, setColorValue, colorFor, setColorFor, step, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
-    
+
     return(
         <>
             <span className='color-select-step'>
@@ -128,10 +128,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                     className='recalc-btn'
                     colorValue={4}
                     onClickBtn={
-                        ()=>{
-                            props.getValue();
-                            setColorValue(4);
-                        }
+                        ()=>{window.location.reload();}
                     }
                 /> : null
                 }            
