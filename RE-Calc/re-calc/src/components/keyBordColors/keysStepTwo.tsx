@@ -24,7 +24,7 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
     return(
         <>
             <span className='color-select-step'>
-                Cor 2
+                Segundo Anel
             </span>
             <div className='keys-wrapper'>
                 <div className='col-1'>
