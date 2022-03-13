@@ -7,13 +7,15 @@ import KeysStepTolerance from './keysStepTolerance';
 import KeyColorValueContext from '../../context/keyColorValueContext'
 
 interface KeyBoardColors {
-    colorValue : number
+    colorValue : number,
+    nameColor: boolean,
+    setNameColor: Function,
 }
 
 const KeyBoardColors = (props : KeyBoardColors) =>{
    
     //context
-    const {colorValue} = useContext(KeyColorValueContext)
+    const {nameColor,colorValue} = useContext(KeyColorValueContext)
     
     //set values e states for each keyboard
     const [firstColorValue, setFirstColorValue] = useState({value: props.colorValue ,isClicked: false});
@@ -36,12 +38,13 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
        
         // set keybord to each step
        const setKeyboard = () => {
-        
+        console.log('COLORnAME: '+nameColor)
             //keyboard to first color value
             if(firstColorValue.isClicked === false){
                
                 setRenderKeyboard( 
                     <KeysStepOne
+                        nameColor
                         colorValue={undefined}
                         colorOne={undefined}
                         setColorValue={()=>{}}
@@ -62,6 +65,7 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
         
                 setRenderKeyboard( 
                     <KeysStepTwo
+                        nameColor
                         colorValue={undefined}
                         colorTwo={undefined}
                         setColorValue={()=>{}}
@@ -81,6 +85,7 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
             if(secondColorValue.isClicked === true){
                 setRenderKeyboard( 
                     <KeysStepTree
+                        nameColor
                         colorValue={undefined}
                         colorTree={undefined}
                         setColorValue={()=>{}}
@@ -96,13 +101,14 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
             
                 setRenderKeyboard( 
                     <KeysStepTolerance
-                    colorValue={undefined}
-                    colorFor={undefined}
-                    setColorValue={()=>{}}
-                    setColorFor={()=>{}}
-                    step={3}
-                    setStep={()=>{}}
-                    getValue = {()=>setThirdColorValue({value: props.colorValue, isClicked: true})}
+                        nameColor
+                        colorValue={undefined}
+                        colorFor={undefined}
+                        setColorValue={()=>{}}
+                        setColorFor={()=>{}}
+                        step={3}
+                        setStep={()=>{}}
+                        getValue = {()=>setThirdColorValue({value: props.colorValue, isClicked: true})}
                     />
                 )
             }

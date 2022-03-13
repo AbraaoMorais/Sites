@@ -28,13 +28,13 @@ const ResistenceDisplay = () =>{
              {/* header resistence designer */}
              <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>
 
-            <span className={step === 3 ?corInSelection : selectedColorFor}></span>
-
-            <span className={step === 2 ?corInSelection : selectedColorTree}></span>
+            <span className={step === 0 ?corInSelection : selectedColorOne}></span>
 
             <span className={step === 1 ?corInSelection : selectedColorTwo}></span>
 
-            <span className={step === 0 ? corInSelection : selectedColorOne}></span>
+            <span className={step === 2 ?corInSelection : selectedColorTree}></span>
+
+            <span className={step === 3 ? corInSelection : selectedColorFor}></span>
 
              {/* footer resistence designer */}
             <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>

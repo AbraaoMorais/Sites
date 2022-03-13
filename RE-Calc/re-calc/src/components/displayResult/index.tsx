@@ -31,7 +31,7 @@ const DisplayResult = (props: DisplayResult) => {
                 </span>
                 }
                 <span className='result-details-name'>
-                    ohm
+                    ohms
                 </span>
             </div>
           
