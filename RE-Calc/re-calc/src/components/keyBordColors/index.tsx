@@ -39,8 +39,16 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                 setRenderKeyboard( 
                     <KeysStepOne
                         colorValue={undefined}
+                        colorOne={undefined}
                         setColorValue={()=>{}}
-                        getValue = {()=>setFirstColorValue({value: props.colorValue, isClicked: true})}
+                        setColorOne={()=>{}}
+                        setStep={()=>{}}
+                        getValue = {
+                            ()=>setFirstColorValue(
+                                {
+                                    value: props.colorValue, isClicked: true
+                                }
+                            )}
                     />
                 )
             }
@@ -51,8 +59,16 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                 setRenderKeyboard( 
                     <KeysStepTwo
                         colorValue={undefined}
+                        colorTwo={undefined}
                         setColorValue={()=>{}}
-                        getValue = {()=>setSecondColorValue({value: props.colorValue, isClicked: true})}
+                        setColorTwo={()=>{}}
+                        setStep={()=>{}}
+                        getValue = {
+                            ()=>setSecondColorValue(
+                                {
+                                    value: props.colorValue, isClicked: true
+                                }
+                            )}
                     />
                 )
             }
@@ -62,7 +78,10 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                 setRenderKeyboard( 
                     <KeysStepTree
                         colorValue={undefined}
+                        colorTree={undefined}
                         setColorValue={()=>{}}
+                        setColorTree={()=>{}}
+                        setStep={()=>{}}
                         getValue = {()=>setThirdColorValue({value: props.colorValue, isClicked: true})}
                     />
                 )
@@ -73,9 +92,13 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
             
                 setRenderKeyboard( 
                     <KeysStepTolerance
-                        colorValue={undefined}
-                        setColorValue={()=>{}}
-                        getValue = {()=>setToleranceColor({value: 4, isClicked: true})}
+                    colorValue={undefined}
+                    colorFor={undefined}
+                    setColorValue={()=>{}}
+                    setColorFor={()=>{}}
+                    step={3}
+                    setStep={()=>{}}
+                    getValue = {()=>setThirdColorValue({value: props.colorValue, isClicked: true})}
                     />
                 )
             }
@@ -88,13 +111,6 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
    
     return(
        <>
-            {/* <header className="App-header">
-                <DisplayResult 
-                    resistenceValue={firstColorValue.value} 
-                    resultType={''}
-                />
-            </header> */}
-             
             <div className='key-board-colors-wrapper'>
             
             {

@@ -58,3 +58,62 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+
+.inSelection{
+    -webkit-animation: pulse 1s ease-in-out infinite;
+    -moz-animation: pulse 1s ease-in-out infinite;
+    -ms-animation: pulse 1s ease-in-out infinite;
+    -o-animation: pulse 1s ease-in-out infinite;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+
+/*------------- animations------------- */
+
+ /*Botão Pulsa*/
+@-webkit-keyframes pulse {
+    0% {
+      opacity: 0%;  
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+  }
+  @-ms-keyframes pulse {
+    0% {
+        opacity: 0%;  
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+  }
+  @-o-keyframes pulse {
+    
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;} 
+  }
+  @keyframes pulse { 
+    0% { opacity: 0%;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;}
+  }
+  /*Botão Pulsa*/

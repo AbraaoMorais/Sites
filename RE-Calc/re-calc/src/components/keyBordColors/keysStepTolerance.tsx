@@ -6,81 +6,136 @@ import KeyColorValueContext from '../../context/keyColorValueContext.js'
 interface KeysStepOneInterface {
     getValue: Function,
     colorValue: number | undefined,
-    setColorValue: Function
+    colorFor: object | undefined,
+    step: number,
+    setColorValue: Function,
+    setColorFor: Function,
+    setStep: Function,
 }
 
+interface colorInterface{
+    color: string,
+}
 
 const KeysStepOne = (props: KeysStepOneInterface) =>{
    
-    //contexto
-    const {colorValue, setColorValue} = useContext<KeysStepOneInterface>(KeyColorValueContext)
+     //contexto
+     const {colorValue, setColorValue, colorFor, setColorFor, step, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
     
     return(
         <>
             <span className='color-select-step'>
-               Tolerância
+                Tolerância
             </span>
             <div className='keys-wrapper'>
                 <div className='col-1'>
 
-                    <Input    
-                        className='key-black' 
+                    <Input 
+                        value='Prata'    
+                        className='key-silver silver' 
                         colorValue= {colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(0)}}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(0);
+                                setColorFor({ color: 'silver',}) as colorInterface;
+                                setStep(4);
+                            }
+                        }
                      />
-                    <Input 
-                        className='key-brown' 
+                     <Input 
+                        value='' 
+                        className='key-red red'
                         colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(1)}}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(9);
+                                setColorFor({color:'red',});
+                                setStep(4);
+                            }
+                        }
                     />
-                    <Input 
-                        className='key-red' 
-                        colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(2)}}
-                    />
-                    <Input 
-                        className='key-white'
-                        colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(9)}}
-                    />
+                    
 
                 </div>
                 <div className='col-2'>
+
                     <Input 
-                        className='key-orange' 
-                        colorValue={3}
-                        onClickBtn={()=>{props.getValue();setColorValue(3)}}
-                    />
-                    <Input 
-                        className='key-yellow'
-                        colorValue={4}
-                        onClickBtn={()=>{props.getValue();setColorValue(4)}}
-                    />
-                    <Input 
-                        className='key-green' 
+                        value='Ouro' 
+                        className='key-gold gold' 
                         colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(5)}}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(1);
+                                setColorFor({color:'gold',});
+                                setStep(4);
+                            }
+                        }
+                    />
+                    <Input 
+                        value='' 
+                        className='key-orange orange' 
+                        colorValue={3}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(3);
+                                setColorFor({color:'orange',});
+                                setStep(4);
+                            }
+                        }
                     />
 
                 </div>
                 <div className='col-3'>
-                    <Input 
-                        className='key-blue' 
+                <Input 
+                        value='' 
+                        className='key-brown brown' 
                         colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(6)}}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(2);
+                                setColorFor({color:'brown',});
+                                setStep(4);
+                            }
+                        }
                     />
-                    <Input
-                        className='key-violet' 
-                        colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(7)}}
-                    />
                     <Input 
-                        className='key-grey'
-                        colorValue={colorValue}
-                        onClickBtn={()=>{props.getValue();setColorValue(8)}}
+                        value='' 
+                        className='key-yellow yellow'
+                        colorValue={4}
+                        onClickBtn={
+                            ()=>{
+                                props.getValue();
+                                setColorValue(4);
+                                setColorFor({color:'yellow',});
+                                setStep(4);
+                            }
+                        }
                     />
                 </div>
+               
             </div>
+            <div style={{height: '9vmax'}}>
+                      
+                {
+                    step === 4 ? 
+                    <Input 
+                    value='Recalc' 
+                    className='recalc-btn'
+                    colorValue={4}
+                    onClickBtn={
+                        ()=>{
+                            props.getValue();
+                            setColorValue(4);
+                        }
+                    }
+                /> : null
+                }            
+            </div>  
         </>
     )
 }
