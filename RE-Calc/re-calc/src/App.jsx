@@ -17,22 +17,27 @@ function App(props) {
   const [colorTree, setColorTree] = useState({color: 'white',});
   const [colorFor, setColorFor] = useState({color: 'white',});
   const [step,setStep] = useState(0)
+  
+  //Recursos de acessibilidade
+  const [nameColor, setNameColor] = useState(false)
 
   return (
     <>
       <KeyColorValueContext.Provider value={
         {
-          colorValue,
-          step,   
-          colorOne, 
-          colorTwo, 
-          colorTree, 
+          step,
+          colorOne,
+          colorTwo,
           colorFor,
-          setColorValue, 
-          setColorOne, 
-          setColorTwo, 
-          setColorTree, 
+          nameColor, 
+          colorTree, 
+          colorValue,
+          setColorValue,
+          setColorTree,
+          setNameColor,
           setColorFor,
+          setColorTwo, 
+          setColorOne, 
           setStep
         }}>
         

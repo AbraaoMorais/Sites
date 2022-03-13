@@ -1,15 +1,20 @@
 import React from "react"
 import { useState,useContext } from "react"
 import Input from './Input'
+import StepAndAcessibility from './stepAndAcessibility'
 import KeyColorValueContext from '../../context/keyColorValueContext.js'
 
+
 interface KeysStepOneInterface {
-    getValue: Function,
+    
     colorValue: number | undefined,
     colorOne: object | undefined,
+    nameColor: boolean,
     setColorValue: Function,
     setColorOne: Function,
     setStep: Function,
+    getValue: Function,
+    
 }
 
 interface colorInterface{
@@ -19,18 +24,19 @@ interface colorInterface{
 const KeysStepOne = (props: KeysStepOneInterface) =>{
    
     //contexto
-    const {colorValue, setColorValue, colorOne, setColorOne, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
+    const {colorValue, setColorValue, nameColor, setColorOne, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
 
     return(
         <>
-            <span className='color-select-step'>
-                Primeiro Anel
-            </span>
+            <StepAndAcessibility
+                step="Primeiro Anel"
+            />
+            
             <div className='keys-wrapper'>
                 <div className='col-1'>
 
                     <Input
-                        value=''    
+                        value= {nameColor === true ? 'Preto' : ' '}    
                         className='key-black black' 
                         colorValue= {colorValue}
                         onClickBtn={
@@ -43,7 +49,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                      />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Marron' : ' '}
                         className='key-brown brown' 
                         colorValue={colorValue}
                         onClickBtn={
@@ -56,7 +62,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Vermelho' : ' '}
                         className='key-red red' 
                         colorValue={colorValue}
                         onClickBtn={
@@ -69,7 +75,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Branco' : ' '}
                         className='key-white white'
                         colorValue={colorValue}
                         onClickBtn={
@@ -85,7 +91,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                 </div>
                 <div className='col-2'>
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Laranja' : ' '}
                         className='key-orange orange' 
                         colorValue={3}
                         onClickBtn={
@@ -98,7 +104,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Amarelo' : ' '}
                         className='key-yellow yellow'
                         colorValue={4}
                         onClickBtn={
@@ -111,7 +117,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Verde' : ' '} 
                         className='key-green green' 
                         colorValue={colorValue}
                         onClickBtn={
@@ -127,7 +133,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                 </div>
                 <div className='col-3'>
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Azul' : ' '} 
                         className='key-blue blue' 
                         colorValue={colorValue}
                         onClickBtn={
@@ -140,7 +146,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value=''
+                        value={nameColor === true ? 'Violeta' : ' '}
                         className='key-violet violet' 
                         colorValue={colorValue}
                         onClickBtn={
@@ -153,7 +159,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                         }
                     />
                     <Input
-                        value='' 
+                        value={nameColor === true ? 'Cinza' : ' '}
                         className='key-grey grey'
                         colorValue={colorValue}
                         onClickBtn={

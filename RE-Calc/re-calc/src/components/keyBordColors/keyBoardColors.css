@@ -1,17 +1,60 @@
+.keys-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
 .key-board-colors-wrapper{
    margin: 0 auto;
 }
 .color-select-step{
-    width: 80%;
+    width: 73%;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 0 auto;
     color: #fff;
-    font-size: x-large;
+    font-size: medium;
     font-weight: 600;
     text-transform: uppercase;
 }
+.button-siwtch{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+}
+.button-siwtch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.button-acessibility{
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    background-image: url(../../images/olhos-desabilitado.png);
+    background-repeat: no-repeat;
+    opacity: 100%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+input:checked + .button-acessibility{
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    opacity: 100%;
+    background-image: url(../../images/olho-icone.png);
+    background-repeat: no-repeat;
+}
+
+
 .keys-wrapper{
     display: flex;
     flex-direction: row;
@@ -80,10 +123,11 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    
 }
 
-.black{
-background-color: black;
+.black{ 
+    background-color: black;  
 }
 .brown{
     background-color: #583412;
@@ -111,6 +155,7 @@ background-color: black;
 }
 .white{
     background-color: #ffff;
+    color: #8C9195;
 }
 .gold{
     background-color: #987807;
