@@ -20,13 +20,29 @@ function App(props) {
 
   return (
     <>
-      <KeyColorValueContext.Provider value={{colorValue, setColorValue, colorOne, colorTwo, colorTree, colorFor, setColorOne, setColorTwo, setColorTree, setColorFor, step, setStep}}>
+      <KeyColorValueContext.Provider value={
+        {
+          colorValue,
+          step,   
+          colorOne, 
+          colorTwo, 
+          colorTree, 
+          colorFor,
+          setColorValue, 
+          setColorOne, 
+          setColorTwo, 
+          setColorTree, 
+          setColorFor,
+          setStep
+        }}>
+        
         <main className="App">
           <header className="App-header">
             <DisplayResult
-              resistenceValue={colorValue}
+              resistenceValue={step > 3 ? colorValue : colorValue}
             />
-          </header>  
+          </header>
+            
           <section>
           
             <KeyBoardColors/>

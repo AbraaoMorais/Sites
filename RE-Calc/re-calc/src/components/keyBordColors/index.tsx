@@ -1,9 +1,10 @@
 import './keyBoardColors.css'
-import React, { useEffect,useState} from 'react'
+import React, { useContext, useEffect,useState} from 'react'
 import KeysStepOne from './keysStepOne';
 import KeysStepTwo from './keysStepTwo';
 import KeysStepTree from './keysStepTree';
 import KeysStepTolerance from './keysStepTolerance';
+import KeyColorValueContext from '../../context/keyColorValueContext'
 
 interface KeyBoardColors {
     colorValue : number
@@ -11,6 +12,8 @@ interface KeyBoardColors {
 
 const KeyBoardColors = (props : KeyBoardColors) =>{
    
+    //context
+    const {colorValue} = useContext(KeyColorValueContext)
     
     //set values e states for each keyboard
     const [firstColorValue, setFirstColorValue] = useState({value: props.colorValue ,isClicked: false});
@@ -22,7 +25,8 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
     const [toleranceColorValue, setToleranceColor] = useState({value: -1,isClicked: false});
 
     //armazena o estado atual de color.value
-    const [colorValueFinal, setColorValueFinal ] = useState<number>(3)
+    //const [colorValueFinal, setColorValueFinal ] = useState<number>(3)
+    
 
     //rendered keyboard colors
     const [renderKeyboard, setRenderKeyboard] = useState()as any
