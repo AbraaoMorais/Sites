@@ -19,27 +19,33 @@ function App(props) {
   const [step,setStep] = useState(0)
   
   //Recursos de acessibilidade
-  const [nameColor, setNameColor] = useState(false)
+  const [nameColor, setNameColor] = useState(false);
+ 
+  //ohms - kilo ohms - mega ohms
+  let fisicFactor = 'Ω';
 
   //calculo de resultado
- 
-  const resultado = ()=>{
+    const resultado = ()=>{
 
-    //convert values to string
-    let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
-    
-    let secondCalc = Number(fisrtCalc) * colorTree.val;
-    
-    // secondCalc >= 10000 ? 
-    return secondCalc 
-    
-  }
- 
-  // console.log('Total da operação :' + resultado())  
-
+      //convert values to string
+      let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
+      let secondCalc = Number(fisrtCalc) * colorTree.val;
   
-  // console.log('Total da operação ' + colorOne.color) 
-
+      // CONVERTE PARA AS GRANDEZAS KILO E MEGA
+      if(secondCalc >=10000 && secondCalc < 1000000){
+  
+        secondCalc = secondCalc/1000;
+        fisicFactor = "K"
+  
+      }else if(secondCalc >= 1000000){
+  
+        secondCalc = secondCalc/1000000;
+        fisicFactor = "M"
+        
+      }
+      return secondCalc; 
+    }
+ 
   return (
     <>
       <KeyColorValueContext.Provider value={
@@ -63,14 +69,15 @@ function App(props) {
         <main className="App">
           <header className="App-header">
             <DisplayResult
-              resistenceValue={step > 2 ? resultado() : colorValue}
+              resistenceValue={step == 4 ? resultado() : 'rec'+(step+1)}
+              resultType= {fisicFactor}
             />
           </header>
-            
+
           <section>
-          
             <KeyBoardColors/>
           </section>
+
         </main>
         
         <Footer/>
