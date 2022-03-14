@@ -54,7 +54,6 @@ input:checked + .button-acessibility{
     background-repeat: no-repeat;
 }
 
-
 .keys-wrapper{
     display: flex;
     flex-direction: row;

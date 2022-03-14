@@ -12,19 +12,10 @@ const StepAndAcessibility = (props:StepAndAcessibilityInterface) =>{
 
     const toggleAcessibility = (event) =>{
 
-        // const target = event.target;
-        // console.log('dadad'+target.type === 'checkbox' ? target.checked : target.checked)
             if(nameColor === true){
-                
-                // console.log(target.checked);
-                // setCheckbox(target.checked = false)
                 setNameColor(false);
-
             }else{
-                // console.log(target.checked);
-                // setCheckbox(target.checked = true)
                 setNameColor(true)
-
             }
 } 
 

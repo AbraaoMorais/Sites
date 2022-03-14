@@ -12,14 +12,33 @@ function App(props) {
   //value of color selected
   const[colorValue, setColorValue] = useState('Rec');
   //this variable color is css atribute , step is step of calc
-  const [colorOne, setColorOne] = useState({color: 'white',});
-  const [colorTwo, setColorTwo] = useState({color: 'white',});
-  const [colorTree, setColorTree] = useState({color: 'white',});
-  const [colorFor, setColorFor] = useState({color: 'white',});
+  const [colorOne, setColorOne] = useState({color: 'white', val: null});
+  const [colorTwo, setColorTwo] = useState({color: 'white', val: null});
+  const [colorTree, setColorTree] = useState({color: 'white',val: null});
+  const [colorFor, setColorFor] = useState({color: 'white',val: null});
   const [step,setStep] = useState(0)
   
   //Recursos de acessibilidade
   const [nameColor, setNameColor] = useState(false)
+
+  //calculo de resultado
+ 
+  const resultado = ()=>{
+
+    //convert values to string
+    let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
+    
+    let secondCalc = Number(fisrtCalc) * colorTree.val;
+    
+    // secondCalc >= 10000 ? 
+    return secondCalc 
+    
+  }
+ 
+  // console.log('Total da operação :' + resultado())  
+
+  
+  // console.log('Total da operação ' + colorOne.color) 
 
   return (
     <>
@@ -44,7 +63,7 @@ function App(props) {
         <main className="App">
           <header className="App-header">
             <DisplayResult
-              resistenceValue={step > 3 ? colorValue : colorValue}
+              resistenceValue={step > 2 ? resultado() : colorValue}
             />
           </header>
             

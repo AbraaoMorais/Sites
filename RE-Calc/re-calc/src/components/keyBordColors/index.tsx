@@ -15,10 +15,10 @@ interface KeyBoardColors {
 const KeyBoardColors = (props : KeyBoardColors) =>{
    
     //context
-    const {nameColor,colorValue} = useContext(KeyColorValueContext)
+    const {nameColor,colorValue, step} = useContext(KeyColorValueContext)
     
     //set values e states for each keyboard
-    const [firstColorValue, setFirstColorValue] = useState({value: props.colorValue ,isClicked: false});
+    const [firstColorValue, setFirstColorValue] = useState({value: -1 ,isClicked: false});
 
     const [secondColorValue, setSecondColorValue] = useState({value: -1,isClicked: false});
 
@@ -26,22 +26,17 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
 
     const [toleranceColorValue, setToleranceColor] = useState({value: -1,isClicked: false});
 
-    //armazena o estado atual de color.value
-    //const [colorValueFinal, setColorValueFinal ] = useState<number>(3)
-    
-
     //rendered keyboard colors
     const [renderKeyboard, setRenderKeyboard] = useState()as any
 
    useEffect (()=>{
-    
-       
+
         // set keybord to each step
        const setKeyboard = () => {
-        console.log('COLORnAME: '+nameColor)
+        
             //keyboard to first color value
             if(firstColorValue.isClicked === false){
-               
+                
                 setRenderKeyboard( 
                     <KeysStepOne
                         nameColor
@@ -55,7 +50,8 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                                 {
                                     value: props.colorValue, isClicked: true
                                 }
-                            )}
+                            )
+                        }
                     />
                 )
             }
@@ -76,7 +72,8 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                                 {
                                     value: props.colorValue, isClicked: true
                                 }
-                            )}
+                            )
+                        }
                     />
                 )
             }
