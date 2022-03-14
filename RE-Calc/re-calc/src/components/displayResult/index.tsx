@@ -23,7 +23,7 @@ const DisplayResult = (props: DisplayResult) => {
             
             <div className='display-result-details'>
                 <span className='result-details-type'>
-                    M{props.resultType}
+                    {props.resultType}
                 </span>
                 {
                     isMobile ? <ResistenceDisplay/> : <span className='result-details-symbol'>

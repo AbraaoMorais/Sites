@@ -12,15 +12,40 @@ function App(props) {
   //value of color selected
   const[colorValue, setColorValue] = useState('Rec');
   //this variable color is css atribute , step is step of calc
-  const [colorOne, setColorOne] = useState({color: 'white',});
-  const [colorTwo, setColorTwo] = useState({color: 'white',});
-  const [colorTree, setColorTree] = useState({color: 'white',});
-  const [colorFor, setColorFor] = useState({color: 'white',});
+  const [colorOne, setColorOne] = useState({color: 'white', val: null});
+  const [colorTwo, setColorTwo] = useState({color: 'white', val: null});
+  const [colorTree, setColorTree] = useState({color: 'white',val: null});
+  const [colorFor, setColorFor] = useState({color: 'white',val: null});
   const [step,setStep] = useState(0)
   
   //Recursos de acessibilidade
-  const [nameColor, setNameColor] = useState(false)
+  const [nameColor, setNameColor] = useState(false);
+ 
+  //ohms - kilo ohms - mega ohms
+  let fisicFactor = 'Ω';
 
+  //calculo de resultado
+    const resultado = ()=>{
+
+      //convert values to string
+      let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
+      let secondCalc = Number(fisrtCalc) * colorTree.val;
+  
+      // CONVERTE PARA AS GRANDEZAS KILO E MEGA
+      if(secondCalc >=10000 && secondCalc < 1000000){
+  
+        secondCalc = secondCalc/1000;
+        fisicFactor = "K"
+  
+      }else if(secondCalc >= 1000000){
+  
+        secondCalc = secondCalc/1000000;
+        fisicFactor = "M"
+        
+      }
+      return secondCalc; 
+    }
+ 
   return (
     <>
       <KeyColorValueContext.Provider value={
@@ -44,14 +69,15 @@ function App(props) {
         <main className="App">
           <header className="App-header">
             <DisplayResult
-              resistenceValue={step > 3 ? colorValue : colorValue}
+              resistenceValue={step == 4 ? resultado() : 'rec'+(step+1)}
+              resultType= {fisicFactor}
             />
           </header>
-            
+
           <section>
-          
             <KeyBoardColors/>
           </section>
+
         </main>
         
         <Footer/>

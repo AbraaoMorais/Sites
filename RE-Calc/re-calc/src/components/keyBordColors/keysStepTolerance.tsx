@@ -40,7 +40,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(0);
-                                setColorFor({ color: 'silver',}) as colorInterface;
+                                setColorFor({ color: 'silver',val: 0}) as colorInterface;
                                 setStep(4);
                             }
                         }
@@ -53,7 +53,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(9);
-                                setColorFor({color:'red',});
+                                setColorFor({color:'red',val: 9});
                                 setStep(4);
                             }
                         }
@@ -71,7 +71,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(1);
-                                setColorFor({color:'gold',});
+                                setColorFor({color:'gold',val: 1});
                                 setStep(4);
                             }
                         }
@@ -84,7 +84,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(3);
-                                setColorFor({color:'orange',});
+                                setColorFor({color:'orange',val: 3});
                                 setStep(4);
                             }
                         }
@@ -100,7 +100,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(2);
-                                setColorFor({color:'brown',});
+                                setColorFor({color:'brown',val: 2});
                                 setStep(4);
                             }
                         }
@@ -113,7 +113,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                             ()=>{
                                 props.getValue();
                                 setColorValue(4);
-                                setColorFor({color:'yellow',});
+                                setColorFor({color:'yellow',val: 4});
                                 setStep(4);
                             }
                         }
