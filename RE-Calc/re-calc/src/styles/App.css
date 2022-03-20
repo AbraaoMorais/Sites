@@ -18,9 +18,9 @@ body{
   height: 110vh;
   background-image: url(../images/backgroundDetails-mobile.png);
   background-repeat: no-repeat;
-  background-size: 93% 43%;
+  background-size: 93% 46%;
   background-position: 0vw 100%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .desktop-details{
   background-repeat: no-repeat;
