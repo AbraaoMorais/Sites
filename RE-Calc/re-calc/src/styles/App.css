@@ -13,6 +13,16 @@ body{
   text-align: center;
 }
 
+.mobile-details{
+  background-image: url(../images/backgroundDetails-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 86% 43%;
+  background-position: 0vw 60vh;
+}
+.desktop-details{
+  background-repeat: no-repeat;
+}
+
 .App-header {
   /* background-color: #2863d8; */
   min-height: 26vh;

@@ -31,7 +31,7 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
 
    useEffect (()=>{
 
-        // set keybord to each step
+        // set keybord RENDER to each step IN MOBILE
        const setKeyboard = () => {
         
             //keyboard to first color value

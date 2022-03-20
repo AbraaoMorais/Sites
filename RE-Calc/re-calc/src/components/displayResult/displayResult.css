@@ -1,8 +1,10 @@
-@font-face {
-    font-family: Digital;
-    src: local('helvetica neue');
-    src: url(../../styles/fonts/Digital.woff) format("woff");
-  }  
+
+  @font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('../../styles/fonts/DigitalNumbers-Regular.woff') format('woff');
+    }    
 .display-wrapper{
     width: 74%;
     height: 19vmax;
@@ -15,9 +17,10 @@
 }
 
 .display-value{
-    font-family: Digital,Helvetica, Arial, sans-serif;
-    font-size: 18vmax;
+    font-family: Digital Numbers Regular,Helvetica, Arial, sans-serif;
+    font-size: 11vmax;
     font-stretch:wider;
+    letter-spacing: -3px;
     text-align: left;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 19px rgb(0, 106, 206);
@@ -34,6 +37,18 @@
 .result-details-type{
     font-size: 3vmax;
     line-height: 1.3rem;
+    transition: 1.6s;
+    -webkit-transition: 1.6s;
+    -moz-transition: 1.6s;
+    -ms-transition: 1.6s;
+    -o-transition: 1.6s;
+}
+.result-details-name{
+    transition: 1.6s;
+    -webkit-transition: 1.6s;
+    -moz-transition: 1.6s;
+    -ms-transition: 1.6s;
+    -o-transition: 1.6s;
 }
 .result-details-symbol{
     display: flex;
@@ -41,6 +56,10 @@
     align-items: center;
     font-size: 13vmax;
     line-height: 0.8em;
+}
+
+.inactive{
+    opacity: 0.3;
 }
 
 .resistence-D-wrapper{
