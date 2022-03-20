@@ -20,7 +20,7 @@ const Footer = () =>{
             </div>
         </div>      
         <div>
-            <h4>&#x2713; 1.0</h4>
+            <h4>&#x2713; 1.1</h4>
         </div>
         </footer>
     )
