@@ -30,20 +30,26 @@ function App(props) {
       //convert values to string
       let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
       let secondCalc = Number(fisrtCalc) * colorTree.val;
-  
+
       // CONVERTE PARA AS GRANDEZAS KILO E MEGA
       if(secondCalc >=10000 && secondCalc < 1000000){
   
         secondCalc = secondCalc/1000;
-        fisicFactor = "K"
+        //define quantidade de casas decimais após a virgula
+        secondCalc.toFixed(2);
+        
+        fisicFactor = "K";
   
       }else if(secondCalc >= 1000000){
   
         secondCalc = secondCalc/1000000;
-        fisicFactor = "M"
+
+        fisicFactor = "M";
         
       }
-      return secondCalc; 
+      
+      //define quantidade de casas decimais após a virgula e retorna valor em string;
+      return secondCalc.toFixed(2); 
     }
  
   return (
