@@ -1,3 +1,7 @@
+.section-keybord{
+    position: sticky;
+    top: 24vh;
+}
 .keys-header{
     display: flex;
     justify-content: space-between;

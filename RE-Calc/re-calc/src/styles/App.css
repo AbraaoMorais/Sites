@@ -10,14 +10,17 @@ body{
   background-image: linear-gradient(#076F9C,#51079C);
 }
 .App {
+  width: 100%;
   text-align: center;
 }
 
 .mobile-details{
+  height: 110vh;
   background-image: url(../images/backgroundDetails-mobile.png);
   background-repeat: no-repeat;
-  background-size: 86% 43%;
-  background-position: 0vw 60vh;
+  background-size: 93% 43%;
+  background-position: 0vw 100%;
+  background-attachment: fixed;
 }
 .desktop-details{
   background-repeat: no-repeat;
@@ -25,6 +28,8 @@ body{
 
 .App-header {
   /* background-color: #2863d8; */
+  position: sticky;
+  top: 0;
   min-height: 26vh;
   display: flex;
   flex-direction: column;

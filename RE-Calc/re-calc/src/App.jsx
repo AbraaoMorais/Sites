@@ -80,7 +80,7 @@ function App(props) {
             />
           </header>
 
-          <section>
+          <section className='section-keybord'>
             <KeyBoardColors/>
           </section>
 
