@@ -37,6 +37,18 @@
 .result-details-type{
     font-size: 3vmax;
     line-height: 1.3rem;
+    transition: 1.6s;
+    -webkit-transition: 1.6s;
+    -moz-transition: 1.6s;
+    -ms-transition: 1.6s;
+    -o-transition: 1.6s;
+}
+.result-details-name{
+    transition: 1.6s;
+    -webkit-transition: 1.6s;
+    -moz-transition: 1.6s;
+    -ms-transition: 1.6s;
+    -o-transition: 1.6s;
 }
 .result-details-symbol{
     display: flex;
@@ -44,6 +56,10 @@
     align-items: center;
     font-size: 13vmax;
     line-height: 0.8em;
+}
+
+.inactive{
+    opacity: 0.3;
 }
 
 .resistence-D-wrapper{
