@@ -1,16 +1,23 @@
-.section-keybord{
+/* .section-keybord{
+    display: flex;
+    height: 50vh;
     position: sticky;
-    top: 24vh;
-}
+    top: 164px;
+} */
 .keys-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .key-board-colors-wrapper{
    margin: 0 auto;
+}
+
+.key-step-wrapper{
+    margin: 0 auto;
+   text-align: center;
 }
 .color-select-step{
     width: 73%;
@@ -169,6 +176,44 @@ input:checked + .button-acessibility{
     color: #E7EBDE;
 }
 
+/* ------------------- DESKTOP -----------------------------*/
+@media screen and (min-width:1025px){
+
+    .key-board-colors-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 9px;
+        padding:29px; 
+    }
+
+    .key-step-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .color-select-step{
+        width: 100%;
+        font-size: small;
+     }
+
+    .key-black, .key-brown, .key-red, .key-orange, .key-yellow, .key-green, .key-blue, .key-violet, .key-grey, .key-white, .key-gold, .key-silver{
+        max-width: 6vw;
+        width: 4vw;
+        min-width: 30px;
+        height: 3vmax;
+    }
+    .recalc-btn{
+        width: 14vw;
+        height: 9vh;
+        /* background-color: #f1f2f3;
+        color: #000000; */
+    }
+    
+}
+/* ------------------- FIM DESKTOP --------------------------*/
 
 /* ------ ANIMATIONS ----- */
 

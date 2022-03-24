@@ -71,21 +71,36 @@ function App(props) {
           setColorOne, 
           setStep
         }}>
-        
-        <main className={isMobile === true ? "App mobile-details": "App"}>
-          <header className="App-header">
-            <DisplayResult
-              resistenceValue={step == 4 ? resultado() : 'rec'+(step+1)}
-              resultType= {fisicFactor}
-            />
-          </header>
+        <div className={isMobile === true ? "App mobile-app ": "App desktop-app"}>
 
-          <section className='section-keybord'>
-            <KeyBoardColors/>
-          </section>
+        <div> 
+          <main className='main-content-wrapper'>
+            
+            <div>
 
+              <header className="App-header">
+                <DisplayResult
+                  resistenceValue={step == 4 ? resultado()  : 'rec'+(step+1)}
+                  resultType= {fisicFactor}
+                />
+              </header>
+
+              <section className='section-keybord'>
+                <KeyBoardColors/>
+              </section>
+
+            </div>
+            
+          </main>  
           <Footer/>
-        </main>
+         
+        </div>
+        {isMobile === true ? null : 
+          <aside className='desktop-resistence-display'>
+            dadadaa
+          </aside>
+        }
+        </div>
       </KeyColorValueContext.Provider>
     </>
   );

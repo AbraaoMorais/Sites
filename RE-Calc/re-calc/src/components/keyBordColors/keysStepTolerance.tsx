@@ -26,10 +26,11 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
 
     return(
         <>
-            <StepAndAcessibility
-                step="Anel de Tolerância"
-            />
-            <div className='keys-wrapper'>
+            <div className="key-step-wrapper"> 
+                <StepAndAcessibility
+                    step="Anel de Tolerância"
+                />
+                <div className='keys-wrapper'>
                 <div className='col-1'>
 
                     <Input 
@@ -120,8 +121,8 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                     />
                 </div>
                
-            </div>
-            <div style={{height: '9vmax'}}>
+                </div>
+                <div style={{height: '7vmax'}}>
                       
                 {
                     step === 4 ? 
@@ -134,6 +135,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                     }
                 /> : null
                 }            
+                </div>
             </div>  
         </>
     )

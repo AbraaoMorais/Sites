@@ -25,10 +25,11 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
   
     return(
         <>
-            <StepAndAcessibility
+            <div className="key-step-wrapper">
+                <StepAndAcessibility
                 step="Segundo Anel"
-            />
-            <div className='keys-wrapper'>
+                />
+                <div className='keys-wrapper'>
                 <div className='col-1'>
 
                     <Input
@@ -167,6 +168,7 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
                             }
                         }
                     />
+                </div>
                 </div>
             </div>
         </>
