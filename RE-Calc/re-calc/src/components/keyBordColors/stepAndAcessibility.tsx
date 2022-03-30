@@ -3,6 +3,7 @@ import KeyColorValueContext from '../../context/keyColorValueContext.js'
 
 interface StepAndAcessibilityInterface{
     step: string;
+    acessibility: Boolean;
 }
 
 const StepAndAcessibility = (props:StepAndAcessibilityInterface) =>{
@@ -17,16 +18,26 @@ const StepAndAcessibility = (props:StepAndAcessibilityInterface) =>{
             }else{
                 setNameColor(true)
             }
-} 
+    } 
 
+    let acessibilityBtn = ()=>{
+            return(
+                <>
+                <input checked={nameColor} type="checkbox" onChange=    {toggleAcessibility}/>
+                <span className="button-acessibility"/> 
+                </>
+            )
+        }
+    
     return(
         <div className="keys-header">
             <span className='color-select-step'>
                 {props.step}
             </span>
+
             <label className="button-siwtch">
-                <input checked={nameColor} type="checkbox" onChange={toggleAcessibility}/>
-                <span className="button-acessibility"/>
+                {props.acessibility == true ? acessibilityBtn() : null}
+            
             </label>
         </div>
     )

@@ -22,11 +22,14 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
    
     //contexto
     const {colorValue, setColorValue, nameColor, setColorTwo, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
-  
+    
+    const isMobile = window.innerWidth < 1024 ? true : false
+
     return(
         <>
             <div className="key-step-wrapper">
                 <StepAndAcessibility
+                acessibility={isMobile ? true : false}
                 step="Segundo Anel"
                 />
                 <div className='keys-wrapper'>

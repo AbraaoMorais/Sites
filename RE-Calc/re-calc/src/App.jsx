@@ -22,8 +22,8 @@ function App(props) {
   //Recursos de acessibilidade
   const [nameColor, setNameColor] = useState(false);
  
-  //ohms - kilo ohms - mega ohms
-  let fisicFactor = 'Ω';
+  //ohms - kilo ohms - Mega ohms
+  let fisicFactor = isMobile ? 'Ω' : 'R';
 
   //calculo de resultado
     const resultado = ()=>{

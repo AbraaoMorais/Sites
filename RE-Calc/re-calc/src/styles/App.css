@@ -88,6 +88,7 @@ body{
 
   .App-header::after{
     content: 'SELECIONE AS CORES PARA OBTER O VALOR DA RESISTÊNCIA';
+    opacity: 39%;
     padding: 12px 0;
     font-size: 9px;
     font-weight: 300;

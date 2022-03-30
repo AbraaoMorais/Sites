@@ -30,6 +30,7 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
         <>
             <div className="key-step-wrapper">   
                 <StepAndAcessibility
+                    acessibility={true}
                     step="Primeiro Anel"
                 />
             

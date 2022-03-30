@@ -1,0 +1,8 @@
+# Type of proprieties:
+
+## component StepAndAcessibility
+props:
+
+**acessibility** (active or desactive button acessibility) = *Boolean* 
+
+**step** (text of step in keyboard header) = *string*
