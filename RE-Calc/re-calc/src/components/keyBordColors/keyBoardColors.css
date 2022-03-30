@@ -204,7 +204,19 @@ input:checked + .button-acessibility{
         width: 4vw;
         min-width: 30px;
         height: 3vmax;
+        border: none;
+        box-shadow: 0 3px 9px 1px #00185ada;
     }
+    /* for btn hover efect */
+    .key-black:hover, .key-brown:hover, .key-red:hover, .key-orange:hover, .key-yellow:hover, .key-green:hover, .key-blue:hover, .key-violet:hover, .key-grey:hover, .key-white:hover, .key-gold:hover, .key-silver:hover{
+        box-shadow: 0px 0px 9px 3px #3369ff;
+    }
+    /* for btn active input */
+    .key-black:active, .key-brown:active, .key-red:active, .key-orange:active, .key-yellow:active, .key-green:active, .key-blue:active, .key-violet:active, .key-grey:active, .key-white:active, .key-gold:active, .key-silver:active{
+        box-shadow: 0 3px 19px 6px #a9a8d6;
+        border: 2px solid rgb(146, 221, 255);
+    }
+
     .recalc-btn{
         width: 14vw;
         height: 9vh;
