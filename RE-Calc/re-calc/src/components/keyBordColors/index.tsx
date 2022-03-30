@@ -1,5 +1,5 @@
 import './keyBoardColors.css'
-import React, { useContext, useEffect,useState} from 'react'
+import React, {useEffect,useState} from 'react'
 import KeysStepOne from './keysStepOne';
 import KeysStepTwo from './keysStepTwo';
 import KeysStepTree from './keysStepTree';
@@ -17,8 +17,6 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
     //verifica o device
     let deviceIs = window.innerWidth <= 1024 ? 'mobile' : 'desktop'
    
-    //context
-    //const {nameColor,colorValue, step} = useContext(KeyColorValueContext)
     
     //set values e states for each keyboard
     const [firstColorValue, setFirstColorValue] = useState({value: -1 ,isClicked: false});

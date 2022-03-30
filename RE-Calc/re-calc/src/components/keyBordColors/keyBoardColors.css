@@ -22,7 +22,7 @@
 .color-select-step{
     width: 73%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     color: #fff;
     font-size: medium;
@@ -84,7 +84,7 @@ input:checked + .button-acessibility{
 .col-3{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: flex-start;
     gap: 6px;
     justify-content: center;
@@ -227,8 +227,12 @@ input:checked + .button-acessibility{
 
     .button-siwtch{
         width: 25%;
+        height: 3vh;
     }
-    
+    .button-acessibility{
+        background-size: 80%;
+        background-position: center;
+    }
 }
 /* ------------------- FIM DESKTOP --------------------------*/
 

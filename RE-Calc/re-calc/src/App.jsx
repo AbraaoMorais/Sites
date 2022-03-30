@@ -80,7 +80,7 @@ function App(props) {
 
               <header className="App-header">
                 <DisplayResult
-                  resistenceValue={step == 4 ? resultado()  : 'rec'+(step+1)}
+                  resistenceValue={step === 4 ? resultado()  : 'rec'+(step+1)}
                   resultType= {fisicFactor}
                 />
               </header>

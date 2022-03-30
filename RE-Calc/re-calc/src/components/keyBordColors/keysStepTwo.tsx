@@ -1,4 +1,4 @@
-import React,{ useState,useContext } from "react";
+import React,{useContext } from "react";
 import Input from './Input';
 import StepAndAcessibility from './stepAndAcessibility';
 import KeyColorValueContext from '../../context/keyColorValueContext.js'

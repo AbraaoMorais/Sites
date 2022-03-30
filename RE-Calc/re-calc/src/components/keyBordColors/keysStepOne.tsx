@@ -1,5 +1,5 @@
 import React from "react"
-import { useState,useContext } from "react"
+import {useContext } from "react"
 import Input from './Input'
 import StepAndAcessibility from './stepAndAcessibility'
 import KeyColorValueContext from '../../context/keyColorValueContext.js'

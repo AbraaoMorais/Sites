@@ -36,7 +36,7 @@ const StepAndAcessibility = (props:StepAndAcessibilityInterface) =>{
             </span>
 
             <label className="button-siwtch">
-                {props.acessibility == true ? acessibilityBtn() : null}
+                {props.acessibility === true ? acessibilityBtn() : null}
             
             </label>
         </div>
