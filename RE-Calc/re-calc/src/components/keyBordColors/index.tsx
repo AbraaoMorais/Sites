@@ -99,9 +99,12 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
             
                 setRenderKeyboardMobile( 
                     <KeysStepTolerance
-                        nameColor
-                        colorValue={undefined}
+                        colorOne
+                        colorTwo
+                        colorTree
                         colorFor={undefined}
+                        nameColor
+                        colorValue={undefined}    
                         setColorValue={()=>{}}
                         setColorFor={()=>{}}
                         step={3}
@@ -166,9 +169,12 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                 />
                 
                 <KeysStepTolerance
+                    colorOne
+                    colorTwo
+                    colorTree
+                    colorFor={undefined}
                     nameColor
                     colorValue={undefined}
-                    colorFor={undefined}
                     setColorValue={()=>{}}
                     setColorFor={()=>{}}
                     step={3}

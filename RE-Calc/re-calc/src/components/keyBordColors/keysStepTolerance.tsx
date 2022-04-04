@@ -8,11 +8,15 @@ interface KeysStepToleranceInterface {
     colorValue: number | undefined,
     colorFor: object | undefined,
     nameColor: boolean,
+    colorOne: any, 
+    colorTwo: any,
+    colorTree: any,
     step: number,
     setColorValue: Function,
     setColorFor: Function,
     setStep: Function,
     getValue: Function,
+    
 }
 
 interface colorInterface{
@@ -22,12 +26,21 @@ interface colorInterface{
 const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
    
      //contexto
-     const {colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepToleranceInterface>(KeyColorValueContext);
+     const {colorOne, colorTwo, colorTree, colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepToleranceInterface>(KeyColorValueContext);
 
      const isMobile = window.innerWidth < 1024 ? true : false
     return(
         <>
-            <div className="key-step-wrapper"> 
+            <div style={
+                    {
+                        visibility:`${
+                            colorOne.color !== undefined 
+                            && colorTwo.color !== undefined 
+                            && colorTree.color !== undefined ? 'visible' : 'hidden'
+                        }`
+                    }
+                } 
+                className="key-step-wrapper"> 
                 <StepAndAcessibility
                     acessibility={isMobile ? true : false}
                     step="Anel de Tolerância"
