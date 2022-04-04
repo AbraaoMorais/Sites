@@ -1,3 +1,8 @@
+## Caution:
+
+> keyboard step tolerance no display an information, is peding of implementation functionality.
+
+
 # Type of proprieties:
 
 ## component StepAndAcessibility

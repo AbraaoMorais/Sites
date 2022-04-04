@@ -1,0 +1,29 @@
+.selectedColors-section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.selectedColor-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 19px;
+}
+
+.selectedColor-item{
+    width: 11.5vw;
+    height: 9px;
+    /* background-color: ; */
+    list-style: none;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    
+    /* opacity: 0.3; */
+    
+}

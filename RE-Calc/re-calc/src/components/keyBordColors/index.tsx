@@ -164,7 +164,7 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
                     setStep={()=>{}}
                     getValue = {()=>setThirdColorValue({value: props.colorValue,  isClicked: true})}
                 />
-
+                
                 <KeysStepTolerance
                     nameColor
                     colorValue={undefined}

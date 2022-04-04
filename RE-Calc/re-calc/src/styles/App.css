@@ -16,12 +16,12 @@ body{
 }
 
 .mobile-app{
-  height: 114vh;
+  height: 100vh;
   background-image: url(../images/backgroundDetails-mobile.png);
   background-repeat: no-repeat;
-  background-size: 93% 46%;
+  background-size: 93% 49%;
   background-position: 0vw 100%;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .desktop-app{

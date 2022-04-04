@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 60px 0 0 0;
+    padding: 0vh 0 0 0;
 }
 .copy-wrapper{
     width: 100%;
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 60px 0 0 0;
+    padding: 9px 0 0 0;
 }
 h1{
     text-align: center;
@@ -63,15 +63,21 @@ h4::before{
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-    width: 100%;  
-    height: 16vh;
-    padding: 9px;
-
+      width: 93%;  
+      height: 16vh;
+      padding: 9vh 29px 9px;
+      /* margin: 0; */
   }
   .copy-wrapper{
-      
+      width: 9%;
+      padding: 0;
   }
-  .footer-wrapper h2,h3,h4{
+  .copy-wrapper img{
+    padding-bottom: 2rem;
+}
+  .footer-wrapper h2,
+  .footer-wrapper h3,
+  .footer-wrapper h4{
       display: none;
   }
   .App-logo {

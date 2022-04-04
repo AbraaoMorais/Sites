@@ -13,10 +13,10 @@ function App(props) {
   //value of color selected
   const[colorValue, setColorValue] = useState('Rec');
   //this variable color is css atribute , step is step of calc
-  const [colorOne, setColorOne] = useState({color: 'white', val: null});
-  const [colorTwo, setColorTwo] = useState({color: 'white', val: null});
-  const [colorTree, setColorTree] = useState({color: 'white',val: null});
-  const [colorFor, setColorFor] = useState({color: 'white',val: null});
+  const [colorOne, setColorOne] = useState({color: undefined, val: null});
+  const [colorTwo, setColorTwo] = useState({color: undefined, val: null});
+  const [colorTree, setColorTree] = useState({color: undefined, val: null});
+  const [colorFor, setColorFor] = useState({color: undefined, val: null});
   const [step,setStep] = useState(0)
   
   //Recursos de acessibilidade

@@ -3,7 +3,7 @@ import Input from './Input';
 import StepAndAcessibility from './stepAndAcessibility'
 import KeyColorValueContext from '../../context/keyColorValueContext.js'
 
-interface KeysStepOneInterface {
+interface KeysStepToleranceInterface {
     
     colorValue: number | undefined,
     colorFor: object | undefined,
@@ -19,10 +19,10 @@ interface colorInterface{
     color: string,
 }
 
-const KeysStepOne = (props: KeysStepOneInterface) =>{
+const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
    
      //contexto
-     const {colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
+     const {colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepToleranceInterface>(KeyColorValueContext);
 
      const isMobile = window.innerWidth < 1024 ? true : false
     return(
@@ -143,4 +143,4 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
     )
 }
 
-export default KeysStepOne;
+export default KeysStepTolerance;
