@@ -1,4 +1,4 @@
-import React,{ useState,useContext } from "react";
+import React,{useContext } from "react";
 import Input from './Input';
 import StepAndAcessibility from './stepAndAcessibility';
 import KeyColorValueContext from '../../context/keyColorValueContext.js'
@@ -22,13 +22,17 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
    
     //contexto
     const {colorValue, setColorValue, nameColor, setColorTwo, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
-  
+    
+    const isMobile = window.innerWidth < 1024 ? true : false
+
     return(
         <>
-            <StepAndAcessibility
+            <div className="key-step-wrapper">
+                <StepAndAcessibility
+                acessibility={isMobile ? true : false}
                 step="Segundo Anel"
-            />
-            <div className='keys-wrapper'>
+                />
+                <div className='keys-wrapper'>
                 <div className='col-1'>
 
                     <Input
@@ -167,6 +171,7 @@ const KeysStepTwo = (props: KeysStepOneInterface) =>{
                             }
                         }
                     />
+                </div>
                 </div>
             </div>
         </>

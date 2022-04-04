@@ -13,17 +13,17 @@ function App(props) {
   //value of color selected
   const[colorValue, setColorValue] = useState('Rec');
   //this variable color is css atribute , step is step of calc
-  const [colorOne, setColorOne] = useState({color: 'white', val: null});
-  const [colorTwo, setColorTwo] = useState({color: 'white', val: null});
-  const [colorTree, setColorTree] = useState({color: 'white',val: null});
-  const [colorFor, setColorFor] = useState({color: 'white',val: null});
+  const [colorOne, setColorOne] = useState({color: undefined, val: null});
+  const [colorTwo, setColorTwo] = useState({color: undefined, val: null});
+  const [colorTree, setColorTree] = useState({color: undefined, val: null});
+  const [colorFor, setColorFor] = useState({color: undefined, val: null});
   const [step,setStep] = useState(0)
   
   //Recursos de acessibilidade
   const [nameColor, setNameColor] = useState(false);
  
-  //ohms - kilo ohms - mega ohms
-  let fisicFactor = 'Ω';
+  //ohms - kilo ohms - Mega ohms
+  let fisicFactor = isMobile ? 'Ω' : 'R';
 
   //calculo de resultado
     const resultado = ()=>{
@@ -71,21 +71,36 @@ function App(props) {
           setColorOne, 
           setStep
         }}>
-        
-        <main className={isMobile === true ? "App mobile-details": "App"}>
-          <header className="App-header">
-            <DisplayResult
-              resistenceValue={step == 4 ? resultado() : 'rec'+(step+1)}
-              resultType= {fisicFactor}
-            />
-          </header>
+        <div className={isMobile === true ? "App mobile-app ": "App desktop-app"}>
 
-          <section className='section-keybord'>
-            <KeyBoardColors/>
-          </section>
+        <div> 
+          <main className='main-content-wrapper'>
+            
+            <div>
 
+              <header className="App-header">
+                <DisplayResult
+                  resistenceValue={step === 4 ? resultado()  : 'rec'+(step+1)}
+                  resultType= {fisicFactor}
+                />
+              </header>
+
+              <section className='section-keybord'>
+                <KeyBoardColors/>
+              </section>
+
+            </div>
+            
+          </main>  
           <Footer/>
-        </main>
+         
+        </div>
+        {isMobile === true ? null : 
+          <aside className='desktop-resistence-display'>
+            dadadaa
+          </aside>
+        }
+        </div>
       </KeyColorValueContext.Provider>
     </>
   );

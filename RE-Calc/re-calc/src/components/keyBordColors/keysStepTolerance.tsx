@@ -1,35 +1,51 @@
-import React,{ useState,useContext } from "react"
+import React,{useContext } from "react"
 import Input from './Input';
 import StepAndAcessibility from './stepAndAcessibility'
 import KeyColorValueContext from '../../context/keyColorValueContext.js'
 
-interface KeysStepOneInterface {
+interface KeysStepToleranceInterface {
     
     colorValue: number | undefined,
     colorFor: object | undefined,
     nameColor: boolean,
+    colorOne: any, 
+    colorTwo: any,
+    colorTree: any,
     step: number,
     setColorValue: Function,
     setColorFor: Function,
     setStep: Function,
     getValue: Function,
+    
 }
 
 interface colorInterface{
     color: string,
 }
 
-const KeysStepOne = (props: KeysStepOneInterface) =>{
+const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
    
      //contexto
-     const {colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepOneInterface>(KeyColorValueContext);
+     const {colorOne, colorTwo, colorTree, colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepToleranceInterface>(KeyColorValueContext);
 
+     const isMobile = window.innerWidth < 1024 ? true : false
     return(
         <>
-            <StepAndAcessibility
-                step="Anel de Tolerância"
-            />
-            <div className='keys-wrapper'>
+            <div style={
+                    {
+                        visibility:`${
+                            colorOne.color !== undefined 
+                            && colorTwo.color !== undefined 
+                            && colorTree.color !== undefined ? 'visible' : 'hidden'
+                        }`
+                    }
+                } 
+                className="key-step-wrapper"> 
+                <StepAndAcessibility
+                    acessibility={isMobile ? true : false}
+                    step="Anel de Tolerância"
+                />
+                <div className='keys-wrapper'>
                 <div className='col-1'>
 
                     <Input 
@@ -120,8 +136,8 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                     />
                 </div>
                
-            </div>
-            <div style={{height: '9vmax'}}>
+                </div>
+                <div style={{height: '7vmax'}}>
                       
                 {
                     step === 4 ? 
@@ -134,9 +150,10 @@ const KeysStepOne = (props: KeysStepOneInterface) =>{
                     }
                 /> : null
                 }            
+                </div>
             </div>  
         </>
     )
 }
 
-export default KeysStepOne;
+export default KeysStepTolerance;

@@ -1,21 +1,28 @@
-.section-keybord{
+/* .section-keybord{
+    display: flex;
+    height: 50vh;
     position: sticky;
-    top: 24vh;
-}
+    top: 164px;
+} */
 .keys-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .key-board-colors-wrapper{
    margin: 0 auto;
 }
+
+.key-step-wrapper{
+    margin: 0 auto;
+   text-align: center;
+}
 .color-select-step{
     width: 73%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     color: #fff;
     font-size: medium;
@@ -77,7 +84,7 @@ input:checked + .button-acessibility{
 .col-3{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-self: flex-start;
     gap: 6px;
     justify-content: center;
@@ -161,7 +168,7 @@ input:checked + .button-acessibility{
     color: #8C9195;
 }
 .gold{
-    background-color: #987807;
+    background-color: #cfa302;
     color: #ADFF00;
 }
 .silver{
@@ -169,6 +176,65 @@ input:checked + .button-acessibility{
     color: #E7EBDE;
 }
 
+/* ------------------- DESKTOP -----------------------------*/
+@media screen and (min-width:1025px){
+
+    .key-board-colors-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 9px;
+        padding:29px; 
+    }
+
+    .key-step-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .color-select-step{
+        width: 100%;
+        font-size: small;
+     }
+
+    .key-black, .key-brown, .key-red, .key-orange, .key-yellow, .key-green, .key-blue, .key-violet, .key-grey, .key-white, .key-gold, .key-silver{
+        max-width: 6vw;
+        width: 4vw;
+        min-width: 30px;
+        height: 3vmax;
+        border: none;
+        box-shadow: 0 3px 9px 1px #00185a65;
+        font-size: 0.6rem;
+    }
+    /* for btn hover efect */
+    .key-black:hover, .key-brown:hover, .key-red:hover, .key-orange:hover, .key-yellow:hover, .key-green:hover, .key-blue:hover, .key-violet:hover, .key-grey:hover, .key-white:hover, .key-gold:hover, .key-silver:hover{
+        box-shadow: 0px 0px 9px 3px #0044ff;
+    }
+    /* for btn active input */
+    .key-black:active, .key-brown:active, .key-red:active, .key-orange:active, .key-yellow:active, .key-green:active, .key-blue:active, .key-violet:active, .key-grey:active, .key-white:active, .key-gold:active, .key-silver:active{
+        box-shadow: 0 3px 19px 6px #a9a8d6;
+        border: 2px solid rgb(146, 221, 255);
+    }
+
+    .recalc-btn{
+        width: 14vw;
+        height: 9vh;
+        /* background-color: #f1f2f3;
+        color: #000000; */
+    }
+
+    .button-siwtch{
+        width: 25%;
+        height: 3vh;
+    }
+    .button-acessibility{
+        background-size: 80%;
+        background-position: center;
+    }
+}
+/* ------------------- FIM DESKTOP --------------------------*/
 
 /* ------ ANIMATIONS ----- */
 

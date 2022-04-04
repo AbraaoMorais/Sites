@@ -1,12 +1,13 @@
 
-  @font-face {
+@font-face {
     font-family: 'Digital Numbers Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Digital Numbers Regular'), url('../../styles/fonts/DigitalNumbers-Regular.woff') format('woff');
-    }    
+}
+
 .display-wrapper{
-    width: 74%;
+    width: 85%;
     height: 19vmax;
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,7 @@
 
 .display-value{
     font-family: Digital Numbers Regular,Helvetica, Arial, sans-serif;
-    font-size: 11vmax;
+    font-size: 9vmax;
     font-stretch:wider;
     letter-spacing: -3px;
     text-align: left;
@@ -71,6 +72,7 @@
     margin-top: 1vh;
 }
 .resistence-D-spacer{
+    background-color: #fff;
     min-width: 4vmax;
     height: 1.6vmin;
     border-radius: 3px;
@@ -87,6 +89,16 @@
     -o-animation: pulse 1s ease-in-out infinite;
     animation: pulse 1s ease-in-out infinite;
 }
+/* ------------------- DESKTOP --------------------------*/
+@media screen and (min-width:1025px) {
+    .display-value{
+        font-size: 6vmax;
+    }
+    .result-details-symbol{
+        font-size: 9vmax;
+    }
+}
+/* ------------------- FIM DESKTOP --------------------------*/
 
 
 /*------------- animations------------- */
