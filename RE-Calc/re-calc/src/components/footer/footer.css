@@ -58,7 +58,7 @@ h4::before{
 
   /* ------------------- DESKTOP --------------------------*/
 @media screen and (min-width:1025px) {
-  .footer-wrapper{
+    .footer-wrapper{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -67,23 +67,37 @@ h4::before{
       height: 16vh;
       padding: 9vh 29px 0px;
       /* margin: 0; */
-  }
-  .copy-wrapper{
+    }
+    .copy-wrapper{
       width: 9%;
       padding: 0;
-  }
-  .copy-wrapper img{
-    padding-top: 1.3rem;
-}
-  .footer-wrapper h2,
-  .footer-wrapper h3,
-  .footer-wrapper h4{
+    }
+    .copy-wrapper img{
+        padding-top: 1.3rem;    
+    }
+
+    .footer-wrapper h3{
+        writing-mode:vertical-rl;
+        -webkit-writing-mode:vertical-rl;
+        -ms-writing-mode:vertical-rl;
+    }
+    .footer-wrapper h3{
+        position: absolute;
+        right: 3px;
+        bottom: 20px;
+        letter-spacing: 3px;
+    }
+    .footer-wrapper h3::after{
+        content: " Abraão Morais";
+    }
+    .footer-wrapper h2,
+    .footer-wrapper h4{
       display: none;
-  }
-  .App-logo {
-    width: 4vmax;
-    height: 4vmax;
-  }
+    }
+    .App-logo {
+        width: 4vmax;
+        height: 4vmax;
+    }
 }
 /* ------------------- FIM DESKTOP --------------------------*/
 
