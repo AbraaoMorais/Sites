@@ -12,9 +12,9 @@ const Footer = () =>{
         <footer className="footer-wrapper">
                
             <div className="copy-wrapper">  
-                <h1>
+                <h1 title="Calculadora de reistência eletrônica">
                     Recalc
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={logo} className="App-logo" alt="logo" title="Calculadora de reistência eletrônica"/>
                 </h1>
                 <div>
                     <h3>Developed by:</h3>
@@ -24,7 +24,7 @@ const Footer = () =>{
             <div>
                 <h4>&#x2713; 1.1</h4>
             </div>
-            <SelectedColors/>    
+            {window.innerWidth < 1024 ? null : <SelectedColors/>  }  
         </footer>
     )
 }
