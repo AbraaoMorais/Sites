@@ -4,15 +4,15 @@ import KeysStepOne from './keysStepOne';
 import KeysStepTwo from './keysStepTwo';
 import KeysStepTree from './keysStepTree';
 import KeysStepTolerance from './keysStepTolerance';
-import KeyColorValueContext from '../../context/keyColorValueContext'
+// import KeyColorValueContext from '../../context/keyColorValueContext'
 
-interface KeyBoardColors {
+interface KeyBoardColorsInterface {
     colorValue : number,
     nameColor: boolean,
     setNameColor: Function,
 }
 
-const KeyBoardColors = (props : KeyBoardColors) =>{
+const KeyBoardColors = (props : KeyBoardColorsInterface) =>{
 
     //verifica o device
     let deviceIs = window.innerWidth <= 1024 ? 'mobile' : 'desktop'
@@ -116,7 +116,7 @@ const KeyBoardColors = (props : KeyBoardColors) =>{
        }
        setKeyboard()
         //    console.log(setKeyboard)    
-   },[secondColorValue.isClicked, firstColorValue.isClicked, thirdColorValue.isClicked, toleranceColorValue.isClicked])
+   },[secondColorValue.isClicked, firstColorValue.isClicked, thirdColorValue.isClicked, toleranceColorValue.isClicked,props.colorValue])
    
 
 

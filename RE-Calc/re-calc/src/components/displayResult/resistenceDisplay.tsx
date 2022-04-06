@@ -5,8 +5,10 @@ import KeyColorValueContext from '../../context/keyColorValueContext'
 //     color: object,
 // }
 
-
+//resistence disgn component
 const ResistenceDisplay = () =>{
+
+    const isMobile = window.innerWidth < 1024 ? true : false
 
     const {colorOne, colorTwo, colorTree, colorFor, step} = useContext(KeyColorValueContext);
     
@@ -24,21 +26,39 @@ const ResistenceDisplay = () =>{
     
 
     return(
-        <div className="resistence-D-wrapper">
-             {/* header resistence designer */}
-             <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>
+        <>
+        {isMobile ?  
+            <div className="resistence-D-wrapper">
+             
+                 <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>
 
-            <span className={step === 0 ?corInSelection : selectedColorOne}></span>
+                <span className={step === 0 ?corInSelection : selectedColorOne}></span>
 
-            <span className={step === 1 ?corInSelection : selectedColorTwo}></span>
+                <span className={step === 1 ?corInSelection : selectedColorTwo}></span>
 
-            <span className={step === 2 ?corInSelection : selectedColorTree}></span>
+                <span className={step === 2 ?corInSelection : selectedColorTree}></span>
 
-            <span className={step === 3 ? corInSelection : selectedColorFor}></span>
+                <span className={step === 3 ? corInSelection : selectedColorFor}></span>
 
-             {/* footer resistence designer */}
-            <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>
-        </div>
+            
+                <span className="resistence-D-spacer" style={{backgroundColor: '#fff', width: '5vmax', height:'9px', borderRadius: '50px'}}></span>
+            </div>
+        : 
+            <div className="resistence-D-wrapper-desk">
+
+                <span className={step === 0 ?corInSelection : selectedColorOne}></span>
+
+                <span className={step === 1 ?corInSelection : selectedColorTwo}></span>
+
+                <span className={step === 2 ?corInSelection : selectedColorTree}></span>
+
+                <span className={step === 3 ? corInSelection : selectedColorFor}></span>
+                
+            </div>
+        }
+       
+        </>
+   
     )
 }
 

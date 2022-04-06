@@ -65,7 +65,7 @@ h4::before{
       align-items: center;
       width: 93%;  
       height: 16vh;
-      padding: 9vh 29px 9px;
+      padding: 9vh 29px 0px;
       /* margin: 0; */
   }
   .copy-wrapper{
@@ -73,7 +73,7 @@ h4::before{
       padding: 0;
   }
   .copy-wrapper img{
-    padding-bottom: 2rem;
+    padding-top: 1.3rem;
 }
   .footer-wrapper h2,
   .footer-wrapper h3,

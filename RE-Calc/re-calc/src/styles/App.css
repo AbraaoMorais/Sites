@@ -25,9 +25,15 @@ body{
 }
 
 .desktop-app{
-  padding: 3px;
+  padding: 0 3px;
   display: flex;
   flex-direction: row;
+  background-image: url(../images/backgroundDetails-desktop-left.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0vw 0vh;
+  background-size: 60% 80vh;
+
 }
 
 .main-content-wrapper{
@@ -69,9 +75,10 @@ body{
   }
   
   .desktop-resistence-display{
-    width: 50%;
-    height: 99vh;
-    background-color: #9c076a5b;
+    width: 20%;
+    height: 100vh;
+    padding-left: 3vw;
+    /* background-color: #9c076a46; */
   }
   
   .App-header{

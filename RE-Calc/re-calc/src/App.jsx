@@ -1,6 +1,7 @@
 import DisplayResult from './components/displayResult';
 import KeyBoardColors from './components/keyBordColors'
 import Footer from './components/footer'
+import ResistenceDisplay from './components/displayResult/resistenceDisplay';
 import React from 'react';
 import './styles/App.css';
 import KeyColorValueContext from './context/keyColorValueContext.js';
@@ -97,7 +98,7 @@ function App(props) {
         </div>
         {isMobile === true ? null : 
           <aside className='desktop-resistence-display'>
-            dadadaa
+            <ResistenceDisplay/>
           </aside>
         }
         </div>
