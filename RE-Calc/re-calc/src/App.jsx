@@ -53,11 +53,9 @@ function App(props) {
       return Number.isInteger(secondCalc) ? secondCalc : secondCalc.toFixed(2)
     }
 
-    //calcula os valores de tolerancia
      const toleranceCalc = {
-      toleranceValueMin : step === 4 ? 
-      resultado() - (resultado() * colorFor.val / 100) : '000',
-      toleranceValueMax : step === 4 ?  resultado() + (resultado() * colorFor.val / 100) : '000',
+      toleranceValueMin : step === 4 ? resultado() - (resultado() * colorFor.val / 100) : 0,
+      toleranceValueMax : step === 4 ? resultado() + (resultado() * colorFor.val / 100) : 0,
      }
     
   return (
@@ -90,9 +88,9 @@ function App(props) {
                 <DisplayResult
                   resistenceValue={step === 4 ? resultado()  : 'rec'+(step+1)}
                   resultType= {fisicFactor}
-                  tolerancePercentage = {step === 4 ? colorFor.val : '000'}
-                  toleranceValueMin = {toleranceCalc.toleranceValueMin}
-                  toleranceValueMax = {toleranceCalc.toleranceValueMax} 
+                  tolerancePercentage = {step === 4 ? colorFor.val : 0}
+                  toleranceValueMin   = {toleranceCalc.toleranceValueMin}
+                  toleranceValueMax   = {toleranceCalc.toleranceValueMax} 
                 />
               </header>
 
