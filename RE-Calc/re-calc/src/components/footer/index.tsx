@@ -22,7 +22,7 @@ const Footer = () =>{
                 </div>
             </div>
             <div>
-                <h4>&#x2713; 1.2</h4>
+                <h4>&#x2713; 1.3</h4>
             </div>
             {window.innerWidth < 1024 ? null : <SelectedColors/>  }  
         </footer>

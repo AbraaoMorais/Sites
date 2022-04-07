@@ -29,7 +29,9 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
      const {colorOne, colorTwo, colorTree, colorValue, setColorValue, nameColor, setColorFor, step, setStep} = useContext<KeysStepToleranceInterface>(KeyColorValueContext);
 
      const isMobile = window.innerWidth < 1024 ? true : false
-    return(
+    
+   
+     return(
         <>
             <div style={
                     {
@@ -55,8 +57,8 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                         onClickBtn={
                             ()=>{
                                 props.getValue();
-                                setColorValue(0);
-                                setColorFor({ color: 'silver',val: 0}) as colorInterface;
+                                setColorValue(10);
+                                setColorFor({ color: 'silver',val: 10}) as colorInterface;
                                 setStep(4);
                             }
                         }
@@ -68,8 +70,8 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                         onClickBtn={
                             ()=>{
                                 props.getValue();
-                                setColorValue(9);
-                                setColorFor({color:'red',val: 9});
+                                setColorValue(2);
+                                setColorFor({color:'red',val: 2});
                                 setStep(4);
                             }
                         }
@@ -86,8 +88,8 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                         onClickBtn={
                             ()=>{
                                 props.getValue();
-                                setColorValue(1);
-                                setColorFor({color:'gold',val: 1});
+                                setColorValue(5);
+                                setColorFor({color:'gold',val: 5});
                                 setStep(4);
                             }
                         }
@@ -95,7 +97,7 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                     <Input 
                         value={nameColor === true ? 'Laranja' : ' '}   
                         className='key-orange orange' 
-                        colorValue={3}
+                        colorValue={colorValue}
                         onClickBtn={
                             ()=>{
                                 props.getValue();
@@ -115,8 +117,8 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                         onClickBtn={
                             ()=>{
                                 props.getValue();
-                                setColorValue(2);
-                                setColorFor({color:'brown',val: 2});
+                                setColorValue(1);
+                                setColorFor({color:'brown',val: 1});
                                 setStep(4);
                             }
                         }
@@ -144,7 +146,7 @@ const KeysStepTolerance = (props: KeysStepToleranceInterface) =>{
                     <Input 
                     value='Recalc' 
                     className='recalc-btn'
-                    colorValue={4}
+                    colorValue={undefined}
                     onClickBtn={
                         ()=>{window.location.reload();}
                     }
