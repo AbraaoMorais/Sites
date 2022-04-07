@@ -17,8 +17,10 @@ const Footer = () =>{
                     <img src={logo} className="App-logo" alt="logo" title="Calculadora de reistência eletrônica"/>
                 </h1>
                 <div>
-                    <h3>Developed by:</h3>
-                    <h2>Abraão Morais</h2>
+                    <a href="https://github.com/AbraaoMorais" title="click para acessar o repositório">
+                        <h3>Developed by:</h3>
+                        <h2>Abraão Morais</h2>
+                    </a>
                 </div>
             </div>
             <div>
