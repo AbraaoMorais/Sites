@@ -33,30 +33,30 @@ function App(props) {
       let fisrtCalc = colorOne.val.toString() + colorTwo.val.toString();
       let secondCalc = Number(fisrtCalc) * colorTree.val;
 
-      // CONVERTE PARA AS GRANDEZAS KILO E MEGA
+      // convert to kilo and mega
       if(secondCalc >=10000 && secondCalc < 1000000){
   
         secondCalc = secondCalc/1000;
         
         fisicFactor = "K";
- 
   
       }else if(secondCalc >= 1000000){
   
         secondCalc = secondCalc/1000000;
        
-        fisicFactor = "M";
-        
+        fisicFactor = "M";        
       }
 
-      //verifica se tem virgula, define quantidade de casas decimais após a virgula e retorna valor em string;
+      //checks if there is a comma, defines the number of decimal places after the comma and returns a string value;
       return Number.isInteger(secondCalc) ? secondCalc : secondCalc.toFixed(2)
     }
 
      const toleranceCalc = {
-      toleranceValueMin : step === 4 ? resultado() - (resultado() * colorFor.val / 100) : 0,
-      toleranceValueMax : step === 4 ? resultado() + (resultado() * colorFor.val / 100) : 0,
+      toleranceValueMin : step === 4 ? parseInt(resultado() - (resultado() * colorFor.val / 100)).toFixed(1): '0',
+      toleranceValueMax : step === 4 ? parseInt(resultado() + (resultado() * colorFor.val / 100)).toFixed(1): '0',
      }
+
+     
     
   return (
     <>
@@ -93,7 +93,7 @@ function App(props) {
                   toleranceValueMax   = {toleranceCalc.toleranceValueMax} 
                 />
               </header>
-
+            
               <section className='section-keybord'>
                 <KeyBoardColors/>
               </section>
