@@ -8,8 +8,8 @@ interface DisplayResult {
     resistenceValue: number,
     resultType: string,
     tolerancePercentage: number,
-    toleranceValueMin: number,
-    toleranceValueMax: number,
+    toleranceValueMin: number | string,
+    toleranceValueMax: number | string,
 }
 
 
