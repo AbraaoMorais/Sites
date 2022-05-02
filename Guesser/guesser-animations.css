@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.char-capsule{
+    position: relative;
+    padding: 3vmax 1vmax;
+    width: 30%;
+    height: 80vh;
+    animation: levitacion 3s infinite ease-in-out;
+    -webkit-animation: levitation 3s infinite ease-in-out;
+
+    /* background-color: rgb(63, 10, 10); */
+}
+.char{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(2212px/7);
+    height: 537px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: url(./guesser-talking.png);
+    background-size: 700% 100%;
+    background-repeat: no-repeat;
+    animation: sprite-tranking 1s steps(7) infinite;
+    -webkit-animation: sprite-tranking 1s steps(7) infinite;
+}
+
+@keyframes sprite-tranking {
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: -2212px;
+    }
+}
+
+@keyframes levitation {
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    50%{
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
