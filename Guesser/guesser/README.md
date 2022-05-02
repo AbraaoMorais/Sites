@@ -6,6 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `gulp`
+Runs the gulp compressor, open a new terminal to execulte this comand.
+
+to configure new tasks automation implement the file gulpfile.js
+
 ### `npm start`
 
 Runs the app in the development mode.\

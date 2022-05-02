@@ -1,21 +1,30 @@
 'use strict';
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var cssnano = require('gulp-cssnano');
 var autoprefixer = require('gulp-autoprefixer');
 
+var paths = {
+    sass:['./src/styles/scss/**/*.scss'],
+    sassComponents: ['./src/components/**/*.scss']
+}
 
-gulp.task('workflow', function(){
-    gulp.src('./src/styles/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+gulp.task('sass', function(done){
+    gulp.src('./src/styles/scss/**/*.scss')
+        .pipe(sass()
+        .on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
         .pipe(cssnano())
-    .pipe(gulp.dest('./styles/css/'))
+    .pipe(gulp.dest('./src/styles/css/'))
+    .on('end', done);
 });
 
-gulp.task('default', function(){
-    gulp.watch('./src/styles/**/*.scss',['workflow']);    
+gulp.task('watch', function(){
+    gulp.watch(paths.sass, gulp.series('sass'));
+    gulp.watch(paths.sassComponents, gulp.series('sass'));    
 });
+
+gulp.task('default', gulp.series('watch'));

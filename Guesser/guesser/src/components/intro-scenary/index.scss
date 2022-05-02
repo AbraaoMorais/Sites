@@ -1,0 +1,148 @@
+.scenary-intro-bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/images/background-startScreen2.jpg);
+    background-color: #01002b;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    z-index: 0;
+
+    .intro-overlay{
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1;
+        background-image: linear-gradient(180deg, rgba(1,0,43,1) 0%, rgba(10,9,83,0.9780287114845938) 48%, rgba(3,0,88,0.9500175070028011) 62%, rgba(1,0,43,0.9864320728291317) 100%);
+        
+        background-color: #01002b11;
+
+        .intro-text-rotulo{
+            color: $intro-text-rotulo;
+            font-family: 'Jaldi', Arial, Helvetica, sans-serif sans-serif;
+            font-weight:400;
+            letter-spacing: 0.6rem;
+            padding-bottom: 1.6rem;
+        }
+
+        .intro-header-title{
+            font-size: $header-title3;
+            @include intro-text-title-color();
+            padding-top: 0.6rem;
+            margin: 0 auto;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.6rem;
+    
+            animation: smootIntro 13s ease-in-out;
+            -webkit-animation: smootIntro 13s ease-in-out;
+        }
+    
+        .intro-btn-skip{
+    
+            position: absolute;
+            bottom: 6vh;
+    
+            animation: smootIntro 3s both infinite;
+            -webkit-animation: smootIntro 3s both infinite;
+    
+            font-size:  $header-title5;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.2rem;
+    
+            color: #ffffff8c;
+        }
+    
+        .fadeInIntro{
+            animation: smootIntro 13s ease-in-out;
+            -webkit-animation: smootIntro 13s ease-in-out;
+        }
+    
+        .fadeInIntroFixed{
+            animation: smootIntroFixed 13s ease-in;
+            -webkit-animation: smootIntroFixed 13s ease-in;
+        }
+    
+    }
+    
+}
+
+
+// --------- smooth intro -----------
+@keyframes smootIntro{
+    0%{
+      opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes smootIntro{
+    0%{
+        opacity: 0;
+      }
+      50%{
+          opacity: 100;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+
+  // --------- smooth fix scence -----------
+@keyframes smootIntroFixed{
+    0%{
+      opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+  }
+  @-webkit-keyframes smootIntro{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+
+    // --------- bg trasitions -----------
+@keyframes moveleft{
+    0%{
+      transform: translateX(0px);
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+}
+    100%{
+        transform: translateX(-650px);
+        -webkit-transform: translateX(-650px);
+        -moz-transform: translateX(-650px);
+        -ms-transform: translateX(-650px);
+        -o-transform: translateX(-650px);
+}
+  }
+  @-webkit-keyframes smootIntro{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
