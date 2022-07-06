@@ -7,6 +7,8 @@
 !function(t,e,n,i,r,o,a,d,s,c,p,l){function u(){l||(l=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(w,1e4),e.addEventListener("pt0",f),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):w())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.6.2":"sandbox-sw.html?"+Date.now()),e.body.appendChild(c)}function w(t,n){for(f(),t=0;t<s.length;t++)(n=e.createElement("script")).innerHTML=s[t].innerHTML,e.head.appendChild(n);c&&c.parentNode.removeChild(c)}function f(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){p=t,e.split(".").map((function(e,n,i){p=p[i[n]]=n+1<i.length?"push"==i[n+1]?[]:p[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);
     </script>
     <!-- <script src="/~partytown/partytown.js"></script> -->
+
+    
     <!-- Google Tag Manager -->
 <script type="text/partytown">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -32,6 +34,17 @@
     <script  src="scripts/btnMenu.js"></script>
     <script  src="scripts/menuInScroll.js"></script>
     <title>Rocky - Marketing Digital</title>
+
+   <!-- escripts do carrosel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+
 </head>
 
 <body>
@@ -388,7 +401,42 @@
         </section>
         <div class="content2_footer"></div>
     </footer>
+    
+    <style>
+        .carousel{
+          position: absolute !important;
+          width: 92%;
+          top: 104px;
+          left: 52px;
+          margin: 0 auto;
+          z-index: 9999999;
+          background-color: azure;
+          padding: 40px;
+        }
+      </style>
+      
+      <div class="carousel">
+        <div><img src="https://i.imgur.com/3aIutJi.png" alt="js" /></div>
+        <div><img src="https://i.imgur.com/rWtGeQ0.png" alt="java" /></div>
+        <div><img src="https://i.imgur.com/8946bSF.png" alt="python"/></div>
+        <div><img src="https://i.imgur.com/9Hc7hjb.png" alt="kotlin" /></div>
+        <div><img src="https://i.imgur.com/uZDEpjX.png" alt="scala" /></div>
+        <div><img src="https://i.imgur.com/eQoyQjy.png" alt="C#" /></div>
+        <div><img src="https://i.imgur.com/ko3iAbu.png" alt="PHP" /></div>
+        <div><img src="https://i.imgur.com/Afkz5od.png" alt="dotnet" /></div>
+      </div>
+
+        <script>
+        $('.carousel').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        });</script>
+    
     <script  src="scripts/scrollInClick.js"></script>
+    
 </body>
 
 </html>
