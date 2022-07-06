@@ -5,13 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/images/background-startScreen2.jpg);
-    background-color: #01002b;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    // background-image: url(../../assets/images/background-startScreen2.jpg);
+    background-color: #010127;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 100%;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
 
     .intro-overlay{
         width: 100vw;
@@ -22,10 +22,10 @@
         justify-content: center;
         align-items: center;
 
-        z-index: 1;
-        background-image: linear-gradient(180deg, rgba(1,0,43,1) 0%, rgba(10,9,83,0.9780287114845938) 48%, rgba(3,0,88,0.9500175070028011) 62%, rgba(1,0,43,0.9864320728291317) 100%);
+        z-index: 3;
+        background-image: linear-gradient(180deg, rgba(1, 0, 43, 0.993) 0%, rgba(10, 9, 83, 0.658) 48%, rgba(3, 0, 88, 0.541) 62%, rgba(1, 0, 43, 0.87) 100%);
         
-        background-color: #01002b11;
+        background-color: #02022418;
 
         .intro-text-rotulo{
             color: $intro-text-rotulo;
@@ -75,8 +75,94 @@
         }
     
     }
+
     
+    .historytrack{
+      position: absolute;
+      top: 0;
+      left: 1;
+      width: 100vw;
+      height: 100vh;
+      //opacity: 0.5;
+      overflow: hidden;
+      z-index: 0;
+      // animation: smootIntroFixed 3s ease-in;
+      // -webkit-animation: smootIntroFixed 3s ease-in;
+      
+     
+      .historytrack-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 6920px;
+        height: 100vh;
+        //background-color: #01002b;
+        background-image: url(../../assets/images/linehistory-f1.webp);
+        // background-size: auto 720px;
+        background-repeat: no-repeat;
+        animation: moveleft 99s 0s linear forwards ;
+        -webkit-animation: moveleft 99s 0s linear forwards ;
+        z-index: 0;
 }
+
+      .linePowerUp{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 289%;
+        height: 100vh;
+        //background-color: #01002b;
+        background-image: url(../../assets/images/linehistorypoewup.webp);
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        animation: powerUpPulse 60s 40s linear forwards ;
+        -webkit-animation: powerUpPulse 60s 40s linear forwards ;
+}
+
+      .historytrackOverlay-img{
+        position:fixed;
+        left: 0vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../assets/images/bgdarkcover.webp);
+        background-size: 110vw 120vh;
+        background-repeat: no-repeat;
+        background-position: -6vw -6vw;
+
+        z-index: 1;
+      }
+      
+      .lineRai{
+        width: 29vw;
+        height: 1vh;
+        background-color: rgb(0, 255, 221);
+        box-shadow: 0 0 0.6em 0.2em rgb(0, 255, 242);
+        border-radius: 5px;
+        position:fixed;
+        left: calc(100% - 2330px);
+        right: 0;
+        top: 50vh;
+        bottom: 0;
+        animation: lineray 73s 43s linear forwards;
+        -webkit-animation: lineray 73s 43s linear forwards;
+        opacity: 0;
+        z-index: 2;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+      
+    }
+    
+  }
 
 
 // --------- smooth intro -----------
@@ -122,21 +208,21 @@
   }
 
     // --------- bg trasitions -----------
-@keyframes moveleft{
+  @keyframes moveleft{
     0%{
       transform: translateX(0px);
       -webkit-transform: translateX(0px);
       -moz-transform: translateX(0px);
       -ms-transform: translateX(0px);
       -o-transform: translateX(0px);
-}
+    }
     100%{
-        transform: translateX(-650px);
-        -webkit-transform: translateX(-650px);
-        -moz-transform: translateX(-650px);
-        -ms-transform: translateX(-650px);
-        -o-transform: translateX(-650px);
-}
+        transform: translateX(-65%);
+        -webkit-transform: translateX(-65%);
+        -moz-transform: translateX(-65%);
+        -ms-transform: translateX(-65%);
+        -o-transform: translateX(-65%);
+      }
   }
   @-webkit-keyframes smootIntro{
     0%{
@@ -146,3 +232,62 @@
       opacity: 100;
     }
   }
+
+  @keyframes lineray{
+    0%{
+      opacity: 0;
+      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+      transform-origin: left;
+    }
+    5%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+      transform-origin: left;
+      transform: scaleX(7.58);
+      -webkit-transform: scaleX(7.58);
+      -moz-transform: scaleX(7.58);
+      -ms-transform: scaleX(7.58);
+      -o-transform: scaleX(7.58);
+    }
+  }
+
+  @keyframes powerUpPulse {
+    0%{opacity: 0;}
+
+    16%{opacity: 0;}
+    20%{opacity: 1;}
+    23%{opacity: 0;}
+
+    32%{opacity: 0;}
+    35%{opacity: 1;}
+    38%{opacity: 0;}
+
+    47%{opacity: 0;}
+    50%{opacity: 1;}
+    52%{opacity: 0;}
+
+    62%{opacity: 0;}
+    65%{opacity: 1;}
+    67%{opacity: 0;}
+
+    81%{opacity: 0;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+
+    85%{opacity:1}
+    86%{opacity: 0;}
+    87%{opacity:1}
+    88%{opacity: 1;}
+    89%{opacity:0}
+    90%{opacity: 1;}
+    91%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 1;}
+  }
+
