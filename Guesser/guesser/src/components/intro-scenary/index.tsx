@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import tecnologies from '../../assets/images/tecnologies.png'
-import historytrack from '../../assets/images/linehistory-f1.webp'
 
 // const oneSecond = 1000;
 // const twoSecond = 2000;
 // const treeSecond = 3000
-const getHeigth = window.innerHeight;
 
 //set framerate base based in animation css seconds
 const framerateBase = 13 - 1;
@@ -133,17 +131,9 @@ const Intro = () =>{
                     }
                     <span className="intro-btn-skip">
                         Press any button to skip
-                    </span>
-                </div>
-                <div className="historytrack">
-                   
-                    <span className="historytrackOverlay-img"></span>
-                    <div className="historytrack-img" style={{backgroundSize: "auto "+ getHeigth+"px"}}>
-                        <span className="linePowerUp"></span>
-                        <span className="lineRai"></span>
+                        </span>
                     </div>
-                   
-                </div>
+                
             </section>
             
         </>
